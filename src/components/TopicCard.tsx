@@ -5,73 +5,55 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useTrackerStore } from "@/store/useTrackerStore";
 import { ProblemRow } from "./ProblemRow";
+import type { SheetPattern, SheetQuestion } from "@/lib/sheets/types";
 
 interface TopicCardProps {
-  topic: {
-    id: string;
-    title: string;
-    problems: any[];
-  };
+  pattern: SheetPattern;
   index: number;
 }
 
-export function TopicCard({ topic, index }: TopicCardProps) {
+export function TopicCard({ pattern, index }: TopicCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const { problemStates } = useTrackerStore();
 
-  const totalProblems = topic.problems.length;
-  const solvedCount = topic.problems.filter(p => problemStates[p.id]?.status === 'solved').length;
+  const allQuestions = pattern.groups.flatMap(g => g.questions);
+  const totalProblems = allQuestions.length;
+  const solvedCount = allQuestions.filter(p => problemStates[p.id]?.status === 'solved').length;
   const progressPercent = totalProblems === 0 ? 0 : Math.round((solvedCount / totalProblems) * 100);
 
-  const groupedProblems = {
-    Videos: [] as any[],
-    Easy: [] as any[],
-    Medium: [] as any[],
-    Hard: [] as any[],
-    Uncategorized: [] as any[],
-  };
-
-  topic.problems.forEach(p => {
-    if (p.difficulty === 'Easy') groupedProblems.Easy.push(p);
-    else if (p.difficulty === 'Medium') groupedProblems.Medium.push(p);
-    else if (p.difficulty === 'Hard') groupedProblems.Hard.push(p);
-    else if (p.link.includes('youtu') || p.title.toLowerCase().includes('video')) groupedProblems.Videos.push(p);
-    else groupedProblems.Uncategorized.push(p);
-  });
-
-  const renderGroup = (title: string, problems: any[], colorClass: string) => {
-    if (problems.length === 0) return null;
-    return <ProblemGroup key={title} title={title} problems={problems} colorClass={colorClass} />;
+  const renderGroup = (title: string, questions: SheetQuestion[], colorClass: string) => {
+    if (questions.length === 0) return null;
+    return <ProblemGroup key={title} title={title} problems={questions} colorClass={colorClass} />;
   };
 
   return (
-    <div className="glass rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-0.5 group/card">
+    <div className="bg-card border border-border rounded-xl overflow-hidden transition-all duration-200 hover:border-primary/30 hover:shadow-sm group/card">
       <button 
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full px-6 py-4 flex items-center justify-between hover:bg-white/5 dark:hover:bg-white/5 transition-colors"
+        className="w-full px-5 py-4 flex items-center justify-between hover:bg-muted/30 transition-colors"
       >
         <div className="flex items-center space-x-4">
-          <div className="w-10 h-10 rounded-full bg-gradient-premium shadow-md shadow-primary/20 text-white flex items-center justify-center font-bold text-sm">
+          <div className="w-8 h-8 rounded-md bg-muted text-foreground flex items-center justify-center font-medium text-sm border border-border">
             {index}
           </div>
           <div className="text-left">
-            <h2 className="text-lg font-semibold">{topic.title}</h2>
-            <p className="text-sm text-muted-foreground">{solvedCount} / {totalProblems} Solved</p>
+            <h2 className="text-base font-semibold">{pattern.title}</h2>
+            <p className="text-xs text-muted-foreground mt-0.5">{solvedCount} / {totalProblems} Solved</p>
           </div>
         </div>
 
         <div className="flex items-center space-x-6">
-          <div className="hidden md:flex flex-col items-end w-40">
-            <span className="text-xs font-medium text-muted-foreground mb-2">{progressPercent}% Completed</span>
-            <div className="h-2 w-full bg-muted/50 rounded-full overflow-hidden shadow-inner">
+          <div className="hidden md:flex flex-col items-end w-32">
+            <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mb-1.5">{progressPercent}% Completed</span>
+            <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
               <div 
-                className="h-full bg-gradient-premium shadow-[0_0_10px_rgba(99,102,241,0.5)] transition-all duration-700 ease-out" 
+                className="h-full bg-primary transition-all duration-500 ease-out" 
                 style={{ width: `${progressPercent}%` }}
               />
             </div>
           </div>
           <div className="text-muted-foreground">
-            {isExpanded ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
+            {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
           </div>
         </div>
       </button>
@@ -82,14 +64,31 @@ export function TopicCard({ topic, index }: TopicCardProps) {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="border-t border-border bg-black/5 dark:bg-white/5 backdrop-blur-sm"
+            className="border-t border-border bg-muted/10"
           >
-            <div className="p-4 sm:p-6">
-              {renderGroup("Videos & Resources", groupedProblems.Videos, "text-primary")}
-              {renderGroup("Easy", groupedProblems.Easy, "text-success")}
-              {renderGroup("Medium", groupedProblems.Medium, "text-warning")}
-              {renderGroup("Hard", groupedProblems.Hard, "text-danger")}
-              {renderGroup("Other Practices", groupedProblems.Uncategorized, "text-muted-foreground")}
+            <div className="p-4 sm:p-5 space-y-4">
+              {pattern.resources && pattern.resources.length > 0 && (
+                <div className="mb-4">
+                  <h3 className="text-xs font-semibold tracking-wide uppercase text-primary mb-2">Videos & Resources</h3>
+                  <div className="space-y-2">
+                    {pattern.resources.map(resource => {
+                       const pseudoQuestion: SheetQuestion = {
+                         id: resource.id,
+                         title: resource.title,
+                         difficulty: "Uncategorized",
+                         links: resource.links,
+                         platform: resource.links[0]?.platform || "Other"
+                       };
+                       return <ProblemRow key={pseudoQuestion.id} problem={pseudoQuestion} isResourceOnly={true} />;
+                    })}
+                  </div>
+                </div>
+              )}
+              
+              {pattern.groups.find(g => g.difficulty === "Easy") && renderGroup("Easy", pattern.groups.find(g => g.difficulty === "Easy")!.questions, "text-emerald-500")}
+              {pattern.groups.find(g => g.difficulty === "Medium") && renderGroup("Medium", pattern.groups.find(g => g.difficulty === "Medium")!.questions, "text-amber-500")}
+              {pattern.groups.find(g => g.difficulty === "Hard") && renderGroup("Hard", pattern.groups.find(g => g.difficulty === "Hard")!.questions, "text-rose-500")}
+              {pattern.groups.find(g => g.difficulty === "Uncategorized") && renderGroup("Other Practices", pattern.groups.find(g => g.difficulty === "Uncategorized")!.questions, "text-muted-foreground")}
             </div>
           </motion.div>
         )}
@@ -98,18 +97,18 @@ export function TopicCard({ topic, index }: TopicCardProps) {
   );
 }
 
-function ProblemGroup({ title, problems, colorClass }: { title: string, problems: any[], colorClass: string }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+function ProblemGroup({ title, problems, colorClass }: { title: string, problems: SheetQuestion[], colorClass: string }) {
+  const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <div className="mb-4 last:mb-0 bg-background/50 rounded-lg border border-border/50 overflow-hidden">
+    <div className="bg-background rounded-lg border border-border overflow-hidden">
       <button 
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full px-4 py-3 flex items-center justify-between hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+        className="w-full px-4 py-2.5 flex items-center justify-between hover:bg-muted/50 transition-colors"
       >
         <div className="flex items-center gap-3">
-          <h3 className={`text-sm font-semibold tracking-wide uppercase ${colorClass}`}>{title}</h3>
-          <span className="text-xs text-muted-foreground bg-muted px-2 py-0.5 rounded-full">
+          <h3 className={`text-xs font-semibold tracking-wider uppercase ${colorClass}`}>{title}</h3>
+          <span className="text-[10px] text-muted-foreground bg-muted px-2 py-0.5 rounded-full font-medium">
             {problems.length} items
           </span>
         </div>
@@ -124,9 +123,9 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="border-t border-border/50 bg-black/5 dark:bg-white/5"
+            className="border-t border-border bg-background"
           >
-            <div className="p-3 space-y-2">
+            <div className="p-2 space-y-1.5">
               {problems.map((problem) => (
                 <ProblemRow key={problem.id} problem={problem} />
               ))}
@@ -137,3 +136,4 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
     </div>
   );
 }
+

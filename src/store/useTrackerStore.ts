@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
+import { remapLegacyProblemStates } from '@/lib/sheets/migration';
 
 export interface ProblemState {
   status: 'unsolved' | 'solved' | 'revising';
@@ -58,6 +59,17 @@ export const useTrackerStore = create<TrackerStore>()(
     }),
     {
       name: 'dsa-tracker-storage', // key in local storage
+      version: 1,
+      migrate: (persistedState) => {
+        const nextState = persistedState as Partial<TrackerStore> & {
+          problemStates?: Record<string, ProblemState>;
+        };
+
+        return {
+          ...nextState,
+          problemStates: remapLegacyProblemStates(nextState.problemStates || {}),
+        };
+      },
     }
   )
 );

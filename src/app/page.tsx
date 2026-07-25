@@ -1,119 +1,161 @@
 "use client";
 
 import { useTrackerStore } from "@/store/useTrackerStore";
-import dsaData from "@/data/dsa-data.json";
+import { sheetCatalog, loadSheetDataset } from "@/lib/sheets/catalog";
+import type { SheetDataset, SheetId } from "@/lib/sheets/types";
 import { motion } from "framer-motion";
-import { Target, Trophy, Flame, BrainCircuit, ArrowRight } from "lucide-react";
+import { Target, Trophy, Flame, BrainCircuit, ArrowRight, Code2, Loader2, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Dashboard() {
   const { problemStates } = useTrackerStore();
   const [mounted, setMounted] = useState(false);
+  const [sheetsData, setSheetsData] = useState<SheetDataset[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setMounted(true);
+    
+    let active = true;
+    Promise.all(sheetCatalog.map(s => loadSheetDataset(s.id)))
+      .then(datasets => {
+        if (active) {
+          setSheetsData(datasets);
+          setIsLoading(false);
+        }
+      })
+      .catch(console.error);
+      
+    return () => { active = false; };
   }, []);
 
-  const totalProblems = dsaData.topics.reduce((acc, topic) => acc + topic.problems.length, 0);
+  if (!mounted) return null;
+
+  const totalQuestions = sheetsData.reduce((acc, sheet) => {
+    return acc + sheet.patterns.reduce((pAcc, pattern) => {
+      return pAcc + pattern.groups.reduce((gAcc, group) => gAcc + group.questions.length, 0);
+    }, 0);
+  }, 0);
   
   const solvedCount = Object.values(problemStates).filter(s => s.status === 'solved').length;
   const revisingCount = Object.values(problemStates).filter(s => s.status === 'revising').length;
   const bookmarkedCount = Object.values(problemStates).filter(s => s.bookmarked).length;
 
-  const progressPercentage = totalProblems === 0 ? 0 : Math.round((solvedCount / totalProblems) * 100);
-
-  if (!mounted) return null;
+  const progressPercentage = totalQuestions === 0 ? 0 : Math.round((solvedCount / totalQuestions) * 100);
 
   return (
-    <div className="space-y-8 animate-in fade-in duration-500 mt-12 lg:mt-0">
+    <div className="space-y-8 mt-12 lg:mt-0 pb-20 animate-in fade-in duration-500 max-w-6xl">
       <header>
-        <h1 className="text-3xl font-bold tracking-tight mb-2">Welcome back! 👋</h1>
+        <h1 className="text-3xl font-semibold tracking-tight mb-2">Welcome back! 👋</h1>
         <p className="text-muted-foreground">Keep up the momentum. You're doing great!</p>
       </header>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <StatCard 
           title="Total Solved" 
-          value={`${solvedCount} / ${totalProblems}`} 
+          value={isLoading ? "-" : `${solvedCount}`} 
           icon={Target} 
-          color="text-blue-500" 
-          bg="bg-blue-500/10" 
+          color="text-primary" 
+          bg="bg-primary/10 border-primary/20" 
         />
         <StatCard 
-          title="Completion" 
-          value={`${progressPercentage}%`} 
+          title="Overall Progress" 
+          value={isLoading ? "-" : `${progressPercentage}%`} 
           icon={Trophy} 
-          color="text-yellow-500" 
-          bg="bg-yellow-500/10" 
+          color="text-emerald-500" 
+          bg="bg-emerald-500/10 border-emerald-500/20" 
         />
         <StatCard 
-          title="To Revise" 
+          title="Needs Revision" 
           value={revisingCount.toString()} 
           icon={BrainCircuit} 
-          color="text-orange-500" 
-          bg="bg-orange-500/10" 
+          color="text-amber-500" 
+          bg="bg-amber-500/10 border-amber-500/20" 
         />
         <StatCard 
           title="Bookmarked" 
           value={bookmarkedCount.toString()} 
           icon={Flame} 
-          color="text-red-500" 
-          bg="bg-red-500/10" 
+          color="text-rose-500" 
+          bg="bg-rose-500/10 border-rose-500/20" 
         />
       </div>
 
       <div className="grid gap-6 lg:grid-cols-2">
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="bg-card border border-border rounded-xl p-6 shadow-sm"
+          className="bg-card border border-border rounded-xl p-6 shadow-sm flex flex-col"
         >
-          <h2 className="text-xl font-semibold mb-4">Topic Progress</h2>
-          <div className="space-y-4 max-h-[300px] overflow-y-auto pr-2">
-            {dsaData.topics.slice(0, 6).map(topic => {
-              const topicTotal = topic.problems.length;
-              const topicSolved = topic.problems.filter(p => problemStates[p.id]?.status === 'solved').length;
-              const percent = topicTotal === 0 ? 0 : Math.round((topicSolved / topicTotal) * 100);
-              
-              return (
-                <div key={topic.id} className="space-y-2">
-                  <div className="flex justify-between text-sm">
-                    <span className="font-medium">{topic.title}</span>
-                    <span className="text-muted-foreground">{topicSolved}/{topicTotal}</span>
-                  </div>
-                  <div className="h-2 w-full bg-muted rounded-full overflow-hidden">
-                    <div 
-                      className="h-full bg-primary transition-all duration-1000 ease-out" 
-                      style={{ width: `${percent}%` }}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <Link href="/sheet" className="inline-flex items-center text-sm text-primary hover:underline mt-4">
-            View all topics <ArrowRight className="w-4 h-4 ml-1" />
-          </Link>
+          <h2 className="text-lg font-semibold mb-5 flex items-center gap-2">
+            <BookOpen className="w-5 h-5 text-muted-foreground" />
+            Your Sheets
+          </h2>
+          
+          {isLoading ? (
+            <div className="flex-1 flex items-center justify-center py-12 text-muted-foreground">
+               <Loader2 className="w-6 h-6 animate-spin mr-2" /> Loading sheets...
+            </div>
+          ) : (
+            <div className="space-y-4 flex-1">
+              {sheetsData.map(sheet => {
+                const sheetTotal = sheet.patterns.reduce((pAcc, pattern) => {
+                  return pAcc + pattern.groups.reduce((gAcc, group) => gAcc + group.questions.length, 0);
+                }, 0);
+                const sheetSolved = sheet.patterns.reduce((pAcc, pattern) => {
+                  return pAcc + pattern.groups.reduce((gAcc, group) => {
+                    return gAcc + group.questions.filter(q => problemStates[q.id]?.status === 'solved').length;
+                  }, 0);
+                }, 0);
+                const percent = sheetTotal === 0 ? 0 : Math.round((sheetSolved / sheetTotal) * 100);
+                const meta = sheetCatalog.find(s => s.id === sheet.id);
+                
+                return (
+                  <Link href={meta?.href || "#"} key={sheet.id} className="block group">
+                    <div className="p-4 rounded-lg border border-border bg-background hover:bg-muted/30 transition-all duration-200">
+                      <div className="flex justify-between items-center mb-3">
+                        <div className="flex items-center gap-2">
+                          <span className="text-lg">{meta?.emoji}</span>
+                          <span className="font-medium">{sheet.title}</span>
+                        </div>
+                        <span className="text-xs font-medium text-muted-foreground">{sheetSolved}/{sheetTotal} Solved</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-primary transition-all duration-1000 ease-out" 
+                          style={{ width: `${percent}%` }}
+                        />
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
+            </div>
+          )}
         </motion.div>
 
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="bg-card border border-border rounded-xl p-6 shadow-sm flex flex-col items-center justify-center text-center space-y-4"
+          className="bg-card border border-border rounded-xl p-8 shadow-sm flex flex-col items-center justify-center text-center space-y-5"
         >
-          <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mb-2">
+          <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-2 border border-primary/20 rotate-3 group-hover:rotate-6 transition-transform">
             <Code2 className="w-10 h-10 text-primary" />
           </div>
           <h2 className="text-xl font-semibold">Ready to code?</h2>
           <p className="text-muted-foreground text-sm max-w-sm">
-            Jump back into the DSA sheet and tackle the next problem. Consistency is key to mastering Data Structures and Algorithms.
+            Jump back into your sheets and tackle the next problem. Consistency is key to mastering Data Structures and Algorithms.
           </p>
-          <Link href="/sheet" className="px-6 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors font-medium">
-            Continue Practice
-          </Link>
+          <div className="flex flex-wrap justify-center gap-3 mt-4">
+            {sheetCatalog.map(sheet => (
+              <Link key={sheet.id} href={sheet.href} className="px-5 py-2.5 bg-background border border-border text-foreground rounded-md hover:bg-muted transition-colors font-medium text-sm flex items-center gap-2 shadow-sm">
+                <span>{sheet.emoji}</span> {sheet.shortTitle}
+              </Link>
+            ))}
+          </div>
         </motion.div>
       </div>
     </div>
@@ -123,19 +165,18 @@ export default function Dashboard() {
 function StatCard({ title, value, icon: Icon, color, bg }: { title: string, value: string, icon: any, color: string, bg: string }) {
   return (
     <motion.div 
-      initial={{ opacity: 0, scale: 0.95 }}
+      initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
-      className="bg-card border border-border rounded-xl p-6 shadow-sm flex items-center space-x-4"
+      className="bg-card border border-border rounded-xl p-5 shadow-sm flex items-center space-x-4 transition-all hover:border-primary/20 hover:shadow-md"
     >
-      <div className={`p-3 rounded-lg ${bg}`}>
-        <Icon className={`w-6 h-6 ${color}`} />
+      <div className={`p-3 rounded-lg border ${bg}`}>
+        <Icon className={`w-5 h-5 ${color}`} />
       </div>
       <div>
-        <p className="text-sm text-muted-foreground font-medium">{title}</p>
-        <p className="text-2xl font-bold">{value}</p>
+        <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">{title}</p>
+        <p className="text-2xl font-semibold tracking-tight">{value}</p>
       </div>
     </motion.div>
   );
 }
 
-import { Code2 } from "lucide-react";
