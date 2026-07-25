@@ -8,6 +8,7 @@ export type SheetMeta = {
   href: string;
   accent: string;
   emoji: string;
+  playlistUrl?: string;
 };
 
 export const sheetCatalog: SheetMeta[] = [
@@ -19,6 +20,7 @@ export const sheetCatalog: SheetMeta[] = [
     href: "/kunal",
     accent: "sky",
     emoji: "📘",
+    playlistUrl: "https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ",
   },
   {
     id: "pratyush",
@@ -28,6 +30,7 @@ export const sheetCatalog: SheetMeta[] = [
     href: "/pratyush",
     accent: "emerald",
     emoji: "📗",
+    playlistUrl: "https://www.youtube.com/playlist?list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
   },
 ];
 

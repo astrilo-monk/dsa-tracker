@@ -5,10 +5,12 @@ import { useSheetData } from "@/hooks/useSheetData";
 import { TopicCard } from "@/components/TopicCard";
 import { Search, Loader2 } from "lucide-react";
 import type { SheetId, SheetPattern } from "@/lib/sheets/types";
+import { getSheetMeta } from "@/lib/sheets/catalog";
 
 export function SheetView({ sheetId }: { sheetId: SheetId }) {
   const [searchQuery, setSearchQuery] = useState("");
   const { data, isLoading, error } = useSheetData(sheetId);
+  const sheetMeta = getSheetMeta(sheetId);
 
   if (isLoading) {
     return (
@@ -55,7 +57,22 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
     <div className="space-y-6 mt-12 lg:mt-0 pb-20">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-gradient">{data.title}</h1>
+          <h1 className="text-3xl md:text-4xl font-bold tracking-tight flex flex-wrap items-center gap-2">
+            <span className="text-gradient">{data.title}</span>
+            {sheetMeta.playlistUrl && (
+              <>
+                <span className="text-muted-foreground">-</span>
+                <a 
+                  href={sheetMeta.playlistUrl} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline hover:text-primary/80 transition-colors text-xl md:text-2xl mt-1"
+                >
+                  Playlist
+                </a>
+              </>
+            )}
+          </h1>
           <p className="text-muted-foreground mt-2 text-sm md:text-base">{data.description || "Master Data Structures and Algorithms topic by topic."}</p>
         </div>
         
