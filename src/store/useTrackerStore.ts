@@ -14,6 +14,7 @@ interface TrackerStore {
   problemStates: Record<string, ProblemState>;
   lastSyncedAt: number | null;
   isSyncing: boolean;
+  hasHydrated: boolean;
   markStatus: (id: string, status: ProblemState['status']) => void;
   updateNotes: (id: string, notes: string) => void;
   toggleBookmark: (id: string) => void;
@@ -21,6 +22,7 @@ interface TrackerStore {
   resetProgress: () => void;
   setSyncStatus: (isSyncing: boolean) => void;
   setCloudState: (states: Record<string, ProblemState>, syncTime: number) => void;
+  setHasHydrated: (hydrated: boolean) => void;
 }
 
 export const useTrackerStore = create<TrackerStore>()(
@@ -29,6 +31,7 @@ export const useTrackerStore = create<TrackerStore>()(
       problemStates: {},
       lastSyncedAt: null,
       isSyncing: false,
+      hasHydrated: false,
       markStatus: (id, status) => set((state) => ({
         problemStates: {
           ...state.problemStates,
@@ -55,7 +58,8 @@ export const useTrackerStore = create<TrackerStore>()(
       })),
       resetProgress: () => set({ problemStates: {}, lastSyncedAt: null }),
       setSyncStatus: (isSyncing) => set({ isSyncing }),
-      setCloudState: (states, syncTime) => set({ problemStates: states, lastSyncedAt: syncTime, isSyncing: false })
+      setCloudState: (states, syncTime) => set({ problemStates: states, lastSyncedAt: syncTime, isSyncing: false }),
+      setHasHydrated: (hydrated) => set({ hasHydrated: hydrated }),
     }),
     {
       name: 'dsa-tracker-storage', // key in local storage
@@ -68,6 +72,11 @@ export const useTrackerStore = create<TrackerStore>()(
         return {
           ...nextState,
           problemStates: remapLegacyProblemStates(nextState.problemStates || {}),
+        };
+      },
+      onRehydrateStorage: () => {
+        return () => {
+          useTrackerStore.getState().setHasHydrated(true);
         };
       },
     }

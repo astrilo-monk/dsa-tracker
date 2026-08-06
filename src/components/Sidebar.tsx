@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Bookmark, RotateCcw, Settings, Menu, X, Code2, CloudSync, CheckCircle2, Loader2, BookOpen, BookCopy } from "lucide-react";
+import { Home, Bookmark, RotateCcw, Settings, Menu, X, Code2, CloudOff, CheckCircle2, Loader2, BookOpen, BookCopy } from "lucide-react";
 import { useState } from "react";
 import { useSession, signIn } from "next-auth/react";
 import { useTrackerStore } from "@/store/useTrackerStore";
@@ -89,8 +89,10 @@ export function Sidebar() {
                   <div className="flex items-center space-x-1 text-xs text-muted-foreground">
                     {isSyncing ? (
                       <><Loader2 className="w-3 h-3 animate-spin text-primary" /> <span>Syncing...</span></>
-                    ) : (
+                    ) : lastSyncedAt ? (
                       <><CheckCircle2 className="w-3 h-3 text-emerald-500" /> <span>Synced</span></>
+                    ) : (
+                      <><CloudOff className="w-3 h-3 text-muted-foreground" /> <span>Not synced</span></>
                     )}
                   </div>
                 </div>
