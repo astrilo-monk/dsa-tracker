@@ -69,21 +69,9 @@ export async function POST(req: Request) {
       }
     }
 
-    // 3. Upsert newer local states to Supabase
-    if (toUpsert.length > 0) {
-      const { error: upsertError } = await supabaseAdmin
-        .from("problems")
-        .upsert(toUpsert, { onConflict: "user_id,problem_id" });
-
-      if (upsertError) {
-        console.error("Supabase upsert error:", upsertError);
-        return NextResponse.json({ error: "Failed to update cloud data" }, { status: 500 });
-      }
-    }
-
-    // Update user's last_synced_at timestamp
+    // 3. Update user's last_synced_at timestamp and ensure user exists
     const now = new Date().toISOString();
-    await supabaseAdmin
+    const { error: userUpsertError } = await supabaseAdmin
       .from("users")
       .upsert(
         { 
@@ -95,6 +83,23 @@ export async function POST(req: Request) {
         }, 
         { onConflict: "id" }
       );
+
+    if (userUpsertError) {
+      console.error("Supabase user upsert error:", userUpsertError);
+      // We can continue, but it's good to log
+    }
+
+    // 4. Upsert newer local states to Supabase
+    if (toUpsert.length > 0) {
+      const { error: upsertError } = await supabaseAdmin
+        .from("problems")
+        .upsert(toUpsert, { onConflict: "user_id,problem_id" });
+
+      if (upsertError) {
+        console.error("Supabase upsert error:", upsertError);
+        return NextResponse.json({ error: "Failed to update cloud data" }, { status: 500 });
+      }
+    }
 
     return NextResponse.json({
       success: true,
