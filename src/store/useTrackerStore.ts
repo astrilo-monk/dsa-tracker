@@ -74,9 +74,11 @@ export const useTrackerStore = create<TrackerStore>()(
           problemStates: remapLegacyProblemStates(nextState.problemStates || {}),
         };
       },
-      onRehydrateStorage: () => {
-        return () => {
-          useTrackerStore.getState().setHasHydrated(true);
+      onRehydrateStorage: (state) => {
+        return (state, error) => {
+          if (state) {
+            state.setHasHydrated(true);
+          }
         };
       },
     }
