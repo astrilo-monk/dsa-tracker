@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTrackerStore, ProblemState } from "@/store/useTrackerStore";
-import { Check, Flame, Bookmark, ExternalLink, MessageSquare, Link2, BookOpen, Maximize2, X } from "lucide-react";
+import { Check, Flame, ExternalLink, MessageSquare, Link2, BookOpen, Maximize2, X } from "lucide-react";
 import { cn } from "./Sidebar";
 import { motion, AnimatePresence } from "framer-motion";
 import type { SheetQuestion, SheetLink } from "@/lib/sheets/types";
@@ -13,7 +13,7 @@ interface ProblemRowProps {
 }
 
 export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps) {
-  const { problemStates, markStatus, toggleBookmark, toggleImportant, updateNotes } = useTrackerStore();
+  const { problemStates, markStatus, toggleImportant, updateNotes } = useTrackerStore();
   const state = problemStates[problem.id] || { status: 'unsolved', notes: '', bookmarked: false, important: false };
   const links = problem.links || [];
   
@@ -41,7 +41,7 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
   };
 
   return (
-    <div className="group rounded-lg border border-transparent bg-transparent hover:bg-muted/30 transition-all duration-200 hover:border-border relative overflow-hidden">
+    <div className="group rounded-xl border border-transparent bg-transparent hover:bg-[#151d16] transition-all duration-200 hover:border-border/80 relative overflow-hidden">
       <div className="px-3 py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 relative z-10">
         
         {/* Left Side: Status & Title */}
@@ -52,7 +52,7 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
               "mt-0.5 sm:mt-0 flex-shrink-0 w-5 h-5 rounded-[6px] border flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50",
               state.status === 'solved' ? "bg-primary border-primary text-primary-foreground shadow-sm" : 
               state.status === 'revising' ? "bg-amber-500 border-amber-500 text-white shadow-sm" : 
-              "border-border/80 hover:border-primary/50 text-transparent bg-background"
+              "border-border/80 hover:border-primary/70 text-transparent bg-background/80"
             )}
             title={`Status: ${state.status}`}
           >
@@ -98,7 +98,7 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded border border-border bg-background px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
+                  className="inline-flex items-center gap-1 rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
                 >
                   {link.kind === 'resource' || link.label.toLowerCase().includes('video') || link.url.includes('youtu') ? (
                     <BookOpen className="w-3 h-3" />
@@ -114,24 +114,17 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
           <div className="flex items-center space-x-0.5 flex-shrink-0">
             <button 
               onClick={() => setShowNotes(!showNotes)}
-              className={cn("p-1.5 rounded-md transition-all duration-200", state.notes ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
+              className={cn("p-1.5 rounded-lg transition-all duration-200", state.notes ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
               title="Notes"
             >
               <MessageSquare className="w-4 h-4" />
             </button>
             <button 
               onClick={() => toggleImportant(problem.id)}
-              className={cn("p-1.5 rounded-md transition-all duration-200", state.important ? "text-orange-500 bg-orange-500/10" : "text-muted-foreground hover:bg-muted/80")}
+              className={cn("p-1.5 rounded-lg transition-all duration-200", state.important ? "text-orange-500 bg-orange-500/10" : "text-muted-foreground hover:bg-muted/80")}
               title="Mark Important"
             >
               <Flame className="w-4 h-4" />
-            </button>
-            <button 
-              onClick={() => toggleBookmark(problem.id)}
-              className={cn("p-1.5 rounded-md transition-all duration-200", state.bookmarked ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
-              title="Bookmark"
-            >
-              <Bookmark className={cn("w-4 h-4", state.bookmarked && "fill-current")} />
             </button>
           </div>
         </div>
