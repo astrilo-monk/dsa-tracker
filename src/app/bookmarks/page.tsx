@@ -2,12 +2,12 @@
 
 import { useTrackerStore } from "@/store/useTrackerStore";
 import { ProblemRow } from "@/components/ProblemRow";
-import { Bookmark, Flame, Loader2 } from "lucide-react";
+import { Flame, Loader2 } from "lucide-react";
 import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { SheetTabs } from "@/components/sheets/SheetTabs";
 import { resolveSheetSlug, loadSheetDataset } from "@/lib/sheets/catalog";
-import type { SheetDataset, SheetQuestion } from "@/lib/sheets/types";
+import type { SheetDataset } from "@/lib/sheets/types";
 
 function BookmarksContent() {
   const searchParams = useSearchParams();
@@ -43,7 +43,6 @@ function BookmarksContent() {
 
   const allProblems = dataset.patterns.flatMap(p => p.groups.flatMap(g => g.questions));
   
-  const bookmarkedProblems = allProblems.filter(p => problemStates[p.id]?.bookmarked);
   const importantProblems = allProblems.filter(p => problemStates[p.id]?.important);
   
   return (
@@ -66,22 +65,6 @@ function BookmarksContent() {
             </div>
           )}
         </section>
-
-        <section>
-          <div className="flex items-center space-x-2 mb-4">
-            <Bookmark className="w-5 h-5 text-primary" />
-            <h2 className="text-xl font-semibold">Bookmarks</h2>
-          </div>
-          {bookmarkedProblems.length === 0 ? (
-            <div className="p-8 text-center bg-card border border-border rounded-xl">
-              <p className="text-muted-foreground">No bookmarks added in this sheet yet.</p>
-            </div>
-          ) : (
-            <div className="space-y-2">
-              {bookmarkedProblems.map(p => <ProblemRow key={p.id} problem={p} />)}
-            </div>
-          )}
-        </section>
       </div>
     </div>
   );
@@ -99,8 +82,8 @@ export default function BookmarksPage() {
   return (
     <div className="space-y-8 mt-12 lg:mt-0 pb-20 max-w-4xl mx-auto">
       <div>
-        <h1 className="text-3xl font-semibold tracking-tight">Saved & Important</h1>
-        <p className="text-muted-foreground mt-1">Quick access to problems you want to revisit.</p>
+        <h1 className="text-3xl font-semibold tracking-tight">Important Problems</h1>
+        <p className="text-muted-foreground mt-1">Keep the problems that deserve another look close at hand.</p>
       </div>
       
       <Suspense fallback={<div className="flex justify-center py-20"><Loader2 className="w-8 h-8 animate-spin text-muted-foreground" /></div>}>
@@ -109,4 +92,3 @@ export default function BookmarksPage() {
     </div>
   );
 }
-

@@ -40,8 +40,6 @@ export default function Dashboard() {
   
   const solvedCount = Object.values(problemStates).filter(s => s.status === 'solved').length;
   const revisingCount = Object.values(problemStates).filter(s => s.status === 'revising').length;
-  const bookmarkedCount = Object.values(problemStates).filter(s => s.bookmarked).length;
-
   const progressPercentage = totalQuestions === 0 ? 0 : Math.round((solvedCount / totalQuestions) * 100);
 
   return (
@@ -51,7 +49,7 @@ export default function Dashboard() {
         <p className="text-muted-foreground">Keep up the momentum. You're doing great!</p>
       </header>
 
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-4 md:grid-cols-3">
         <StatCard 
           title="Total Solved" 
           value={isLoading ? "-" : `${solvedCount}`} 
@@ -74,11 +72,11 @@ export default function Dashboard() {
           bg="bg-amber-500/10 border-amber-500/20" 
         />
         <StatCard 
-          title="Bookmarked" 
-          value={bookmarkedCount.toString()} 
+          title="Important"
+          value={Object.values(problemStates).filter(s => s.important).length.toString()}
           icon={Flame} 
-          color="text-rose-500" 
-          bg="bg-rose-500/10 border-rose-500/20" 
+          color="text-orange-500"
+          bg="bg-orange-500/10 border-orange-500/20"
         />
       </div>
 
@@ -179,4 +177,3 @@ function StatCard({ title, value, icon: Icon, color, bg }: { title: string, valu
     </motion.div>
   );
 }
-

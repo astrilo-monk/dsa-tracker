@@ -27,17 +27,17 @@ export function TopicCard({ pattern, index }: TopicCardProps) {
   };
 
   return (
-    <div className="bg-card border border-border rounded-xl overflow-hidden transition-all duration-200 hover:border-primary/30 hover:shadow-sm group/card">
+    <div className="bg-card/90 border border-border rounded-2xl overflow-hidden transition-all duration-200 hover:border-primary/40 hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)] group/card">
       <button 
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full px-5 py-4 flex items-center justify-between hover:bg-muted/30 transition-colors"
+        className="w-full px-5 py-4 flex items-center justify-between hover:bg-muted/40 transition-colors"
       >
         <div className="flex items-center space-x-4">
-          <div className="w-8 h-8 rounded-md bg-muted text-foreground flex items-center justify-center font-medium text-sm border border-border">
+          <div className="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center font-semibold text-sm border border-primary/20">
             {index}
           </div>
           <div className="text-left">
-            <h2 className="text-base font-semibold">{pattern.title}</h2>
+            <h2 className="text-base font-semibold tracking-tight">{pattern.title}</h2>
             <p className="text-xs text-muted-foreground mt-0.5">{solvedCount} / {totalProblems} Solved</p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export function TopicCard({ pattern, index }: TopicCardProps) {
             <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-wider mb-1.5">{progressPercent}% Completed</span>
             <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
               <div 
-                className="h-full bg-primary transition-all duration-500 ease-out" 
+                className="h-full bg-primary shadow-[0_0_12px_rgba(199,243,107,0.7)] transition-all duration-500 ease-out"
                 style={{ width: `${progressPercent}%` }}
               />
             </div>
@@ -64,7 +64,7 @@ export function TopicCard({ pattern, index }: TopicCardProps) {
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="border-t border-border bg-muted/10"
+            className="border-t border-border bg-[#0c100d]/60"
           >
             <div className="p-4 sm:p-5 space-y-4">
               {pattern.resources && pattern.resources.length > 0 && (
@@ -101,7 +101,7 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <div className="bg-background rounded-lg border border-border overflow-hidden">
+    <div className="bg-background/70 rounded-xl border border-border/80 overflow-hidden">
       <button 
         onClick={() => setIsExpanded(!isExpanded)}
         className="w-full px-4 py-2.5 flex items-center justify-between hover:bg-muted/50 transition-colors"
@@ -123,7 +123,7 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            className="border-t border-border bg-background"
+            className="border-t border-border bg-background/50"
           >
             <div className="p-2 space-y-1.5">
               {problems.map((problem) => (
@@ -136,4 +136,3 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
     </div>
   );
 }
-
