@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { useTrackerStore, ProblemState } from "@/store/useTrackerStore";
-import { Check, Flame, Bookmark, ExternalLink, MessageSquare, Link2, BookOpen } from "lucide-react";
+import { Check, Flame, Bookmark, ExternalLink, MessageSquare, Link2, BookOpen, Maximize2, X } from "lucide-react";
 import { cn } from "./Sidebar";
 import { motion, AnimatePresence } from "framer-motion";
 import type { SheetQuestion, SheetLink } from "@/lib/sheets/types";
@@ -18,6 +18,7 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
   const links = problem.links || [];
   
   const [showNotes, setShowNotes] = useState(false);
+  const [isNotesExpanded, setIsNotesExpanded] = useState(false);
   const [tempNotes, setTempNotes] = useState(state.notes);
 
   const getDifficultyColor = (diff: string) => {
@@ -145,12 +146,23 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
             exit={{ height: 0, opacity: 0 }}
             className="border-t border-border bg-muted/20 px-3 py-2.5"
           >
-            <textarea 
-              value={tempNotes}
-              onChange={(e) => setTempNotes(e.target.value)}
-              placeholder="Add your personal notes, intuitions, or time complexities here..."
-              className="w-full h-20 min-h-20 min-w-full p-2.5 bg-background border border-border rounded-md focus:outline-none focus:ring-1 focus:ring-primary text-sm resize shadow-sm"
-            />
+            <div className="relative">
+              <textarea 
+                value={tempNotes}
+                onChange={(e) => setTempNotes(e.target.value)}
+                placeholder="Add your personal notes, intuitions, or time complexities here..."
+                className="w-full h-20 p-2.5 pr-10 bg-background border border-border rounded-md focus:outline-none focus:ring-1 focus:ring-primary text-sm resize-none shadow-sm"
+              />
+              <button
+                type="button"
+                onClick={() => setIsNotesExpanded(true)}
+                className="absolute top-2 right-2 rounded p-1 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                title="Expand notes"
+                aria-label="Expand notes"
+              >
+                <Maximize2 className="h-4 w-4" />
+              </button>
+            </div>
             <div className="flex justify-end space-x-2 mt-2">
               <button 
                 onClick={() => { setTempNotes(state.notes); setShowNotes(false); }}
@@ -165,6 +177,69 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
                 Save Notes
               </button>
             </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {isNotesExpanded && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[70] flex items-center justify-center bg-background/45 p-4 backdrop-blur-sm"
+            onMouseDown={(event) => {
+              if (event.target === event.currentTarget) setIsNotesExpanded(false);
+            }}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.96 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.96 }}
+              className="flex h-[min(28rem,calc(100vh-2rem))] w-[min(32rem,calc(100vw-2rem))] flex-col rounded-xl border border-border bg-card p-4 shadow-2xl"
+            >
+              <div className="mb-3 flex items-center justify-between">
+                <h3 className="text-sm font-semibold">Notes</h3>
+                <button
+                  type="button"
+                  onClick={() => setIsNotesExpanded(false)}
+                  className="rounded p-1 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  title="Close expanded notes"
+                  aria-label="Close expanded notes"
+                >
+                  <X className="h-4 w-4" />
+                </button>
+              </div>
+              <textarea
+                autoFocus
+                value={tempNotes}
+                onChange={(e) => setTempNotes(e.target.value)}
+                placeholder="Add your personal notes, intuitions, or time complexities here..."
+                className="min-h-0 flex-1 resize-none rounded-md border border-border bg-background p-3 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+              />
+              <div className="mt-3 flex justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setTempNotes(state.notes);
+                    setIsNotesExpanded(false);
+                  }}
+                  className="rounded-md px-3 py-1.5 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    saveNotes();
+                    setIsNotesExpanded(false);
+                  }}
+                  className="rounded-md bg-foreground px-3 py-1.5 text-xs font-medium text-background transition-colors hover:bg-foreground/90"
+                >
+                  Save Notes
+                </button>
+              </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
