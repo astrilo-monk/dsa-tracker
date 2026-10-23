@@ -149,7 +149,7 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
               value={tempNotes}
               onChange={(e) => setTempNotes(e.target.value)}
               placeholder="Add your personal notes, intuitions, or time complexities here..."
-              className="w-full h-20 p-2.5 bg-background border border-border rounded-md focus:outline-none focus:ring-1 focus:ring-primary text-sm resize-none shadow-sm"
+              className="w-full h-20 min-h-20 min-w-full p-2.5 bg-background border border-border rounded-md focus:outline-none focus:ring-1 focus:ring-primary text-sm resize shadow-sm"
             />
             <div className="flex justify-end space-x-2 mt-2">
               <button 
@@ -171,4 +171,3 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
     </div>
   );
 }
-
