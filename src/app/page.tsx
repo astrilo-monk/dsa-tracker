@@ -1,139 +1,179 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
-import { ArrowUpRight } from "lucide-react";
 import { useTrackerStore } from "@/store/useTrackerStore";
 import { sheetCatalog, loadSheetDataset } from "@/lib/sheets/catalog";
-import { summarize } from "@/lib/sheets/stats";
-import type { SheetDataset } from "@/lib/sheets/types";
-import { ListSkeleton, PageHeader, ProgressBar, SectionLabel } from "@/components/ui";
+import type { SheetDataset, SheetId } from "@/lib/sheets/types";
+import { motion } from "framer-motion";
+import { Target, Trophy, Flame, BrainCircuit, ArrowRight, Code2, Loader2, BookOpen } from "lucide-react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Dashboard() {
-  const problemStates = useTrackerStore((s) => s.problemStates);
-  const [datasets, setDatasets] = useState<SheetDataset[] | null>(null);
+  const { problemStates } = useTrackerStore();
+  const [mounted, setMounted] = useState(false);
+  const [sheetsData, setSheetsData] = useState<SheetDataset[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    setMounted(true);
+    
     let active = true;
-    Promise.all(sheetCatalog.map((s) => loadSheetDataset(s.id)))
-      .then((d) => active && setDatasets(d))
+    Promise.all(sheetCatalog.map(s => loadSheetDataset(s.id)))
+      .then(datasets => {
+        if (active) {
+          setSheetsData(datasets);
+          setIsLoading(false);
+        }
+      })
       .catch(console.error);
-    return () => {
-      active = false;
-    };
+      
+    return () => { active = false; };
   }, []);
 
-  const sheets = useMemo(
-    () => datasets?.map((dataset) => ({ dataset, stats: summarize(dataset, problemStates) })) ?? null,
-    [datasets, problemStates]
-  );
+  if (!mounted) return null;
 
-  const totals = (sheets ?? []).reduce(
-    (acc, { stats }) => ({
-      total: acc.total + stats.total,
-      solved: acc.solved + stats.solved,
-      revising: acc.revising + stats.revising,
-      important: acc.important + stats.important,
-    }),
-    { total: 0, solved: 0, revising: 0, important: 0 }
-  );
-  const percent = totals.total === 0 ? 0 : Math.round((totals.solved / totals.total) * 100);
+  const totalQuestions = sheetsData.reduce((acc, sheet) => {
+    return acc + sheet.patterns.reduce((pAcc, pattern) => {
+      return pAcc + pattern.groups.reduce((gAcc, group) => gAcc + group.questions.length, 0);
+    }, 0);
+  }, 0);
+  
+  const solvedCount = Object.values(problemStates).filter(s => s.status === 'solved').length;
+  const revisingCount = Object.values(problemStates).filter(s => s.status === 'revising').length;
+  const progressPercentage = totalQuestions === 0 ? 0 : Math.round((solvedCount / totalQuestions) * 100);
 
   return (
-    <div>
-      <PageHeader title="Overview" />
+    <div className="space-y-8 mt-12 lg:mt-0 pb-20 animate-in fade-in duration-500 max-w-6xl">
+      <header>
+        <h1 className="text-3xl font-semibold tracking-tight mb-2">Welcome back! 👋</h1>
+        <p className="text-muted-foreground">Keep up the momentum. You're doing great!</p>
+      </header>
 
-      {!sheets ? (
-        <div className="mt-8">
-          <ListSkeleton rows={4} />
-        </div>
-      ) : (
-        <>
-          <dl className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-border bg-border sm:grid-cols-4">
-            <Stat label="Solved" value={totals.solved} suffix={`/${totals.total}`} />
-            <Stat label="Progress" value={`${percent}%`} />
-            <Stat label="Revising" value={totals.revising} href="/revision" />
-            <Stat label="Important" value={totals.important} href="/bookmarks" />
-          </dl>
+      <div className="grid gap-4 md:grid-cols-3">
+        <StatCard 
+          title="Total Solved" 
+          value={isLoading ? "-" : `${solvedCount}`} 
+          icon={Target} 
+          color="text-primary" 
+          bg="bg-primary/10 border-primary/20" 
+        />
+        <StatCard 
+          title="Overall Progress" 
+          value={isLoading ? "-" : `${progressPercentage}%`} 
+          icon={Trophy} 
+          color="text-sky-500" 
+          bg="bg-sky-500/10 border-sky-500/20" 
+        />
+        <StatCard 
+          title="Needs Revision" 
+          value={revisingCount.toString()} 
+          icon={BrainCircuit} 
+          color="text-amber-500" 
+          bg="bg-amber-500/10 border-amber-500/20" 
+        />
+        <StatCard 
+          title="Important"
+          value={Object.values(problemStates).filter(s => s.important).length.toString()}
+          icon={Flame} 
+          color="text-orange-500"
+          bg="bg-orange-500/10 border-orange-500/20"
+        />
+      </div>
 
-          <div className="mt-12">
-            <SectionLabel>Sheets</SectionLabel>
-            <div className="mt-3 border-t border-border">
-              {sheets.map(({ dataset, stats }) => {
-                const meta = sheetCatalog.find((s) => s.id === dataset.id);
-                const next = stats.next;
+      <div className="grid gap-6 lg:grid-cols-2">
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="bg-card border border-border rounded-xl p-6 shadow-sm flex flex-col"
+        >
+          <h2 className="text-lg font-semibold mb-5 flex items-center gap-2">
+            <BookOpen className="w-5 h-5 text-muted-foreground" />
+            Your Sheets
+          </h2>
+          
+          {isLoading ? (
+            <div className="flex-1 flex items-center justify-center py-12 text-muted-foreground">
+               <Loader2 className="w-6 h-6 animate-spin mr-2" /> Loading sheets...
+            </div>
+          ) : (
+            <div className="space-y-4 flex-1">
+              {sheetsData.map(sheet => {
+                const sheetTotal = sheet.patterns.reduce((pAcc, pattern) => {
+                  return pAcc + pattern.groups.reduce((gAcc, group) => gAcc + group.questions.length, 0);
+                }, 0);
+                const sheetSolved = sheet.patterns.reduce((pAcc, pattern) => {
+                  return pAcc + pattern.groups.reduce((gAcc, group) => {
+                    return gAcc + group.questions.filter(q => problemStates[q.id]?.status === 'solved').length;
+                  }, 0);
+                }, 0);
+                const percent = sheetTotal === 0 ? 0 : Math.round((sheetSolved / sheetTotal) * 100);
+                const meta = sheetCatalog.find(s => s.id === sheet.id);
+                
                 return (
-                  <div key={dataset.id} className="border-b border-border py-5">
-                    <div className="flex items-baseline justify-between gap-4">
-                      <Link
-                        href={meta?.href ?? "#"}
-                        className="text-[15px] font-medium underline-offset-4 hover:underline"
-                      >
-                        {meta?.title ?? dataset.title}
-                      </Link>
-                      <span className="font-mono text-xs tabular-nums text-muted-foreground">
-                        {stats.solved}/{stats.total}
-                      </span>
+                  <Link href={meta?.href || "#"} key={sheet.id} className="block group">
+                    <div className="p-4 rounded-lg border border-border bg-background hover:bg-muted/30 transition-all duration-200">
+                      <div className="flex justify-between items-center mb-3">
+                        <div className="flex items-center gap-2">
+                          <span className="text-lg">{meta?.emoji}</span>
+                          <span className="font-medium">{sheet.title}</span>
+                        </div>
+                        <span className="text-xs font-medium text-muted-foreground">{sheetSolved}/{sheetTotal} Solved</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-primary transition-all duration-1000 ease-out" 
+                          style={{ width: `${percent}%` }}
+                        />
+                      </div>
                     </div>
-                    <ProgressBar value={stats.solved} total={stats.total} className="mt-3" />
-                    <div className="mt-3 flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
-                      <p className="flex gap-4 font-mono text-[11px] tabular-nums text-muted-foreground">
-                        <span><span className="text-easy">E</span> {stats.byDifficulty.Easy.solved}/{stats.byDifficulty.Easy.total}</span>
-                        <span><span className="text-medium">M</span> {stats.byDifficulty.Medium.solved}/{stats.byDifficulty.Medium.total}</span>
-                        <span><span className="text-hard">H</span> {stats.byDifficulty.Hard.solved}/{stats.byDifficulty.Hard.total}</span>
-                      </p>
-                      {next ? (
-                        <a
-                          href={next.links[0]?.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="group flex min-w-0 items-center gap-1.5 text-xs text-muted-foreground transition-colors hover:text-foreground"
-                        >
-                          <span className="font-mono text-faint">next</span>
-                          <span className="truncate">{next.title}</span>
-                          <ArrowUpRight className="size-3 shrink-0" />
-                        </a>
-                      ) : (
-                        <span className="font-mono text-xs text-muted-foreground">all done</span>
-                      )}
-                    </div>
-                  </div>
+                  </Link>
                 );
               })}
             </div>
+          )}
+        </motion.div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="bg-card border border-border rounded-xl p-8 shadow-sm flex flex-col items-center justify-center text-center space-y-5"
+        >
+          <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-2 border border-primary/20 rotate-3 group-hover:rotate-6 transition-transform">
+            <Code2 className="w-10 h-10 text-primary" />
           </div>
-        </>
-      )}
+          <h2 className="text-xl font-semibold">Ready to code?</h2>
+          <p className="text-muted-foreground text-sm max-w-sm">
+            Jump back into your sheets and tackle the next problem. Consistency is key to mastering Data Structures and Algorithms.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 mt-4">
+            {sheetCatalog.map(sheet => (
+              <Link key={sheet.id} href={sheet.href} className="px-5 py-2.5 bg-background border border-border text-foreground rounded-md hover:bg-muted transition-colors font-medium text-sm flex items-center gap-2 shadow-sm">
+                <span>{sheet.emoji}</span> {sheet.shortTitle}
+              </Link>
+            ))}
+          </div>
+        </motion.div>
+      </div>
     </div>
   );
 }
 
-function Stat({
-  label,
-  value,
-  suffix,
-  href,
-}: {
-  label: string;
-  value: string | number;
-  suffix?: string;
-  href?: string;
-}) {
-  const body = (
-    <>
-      <dt className="text-xs text-muted-foreground">{label}</dt>
-      <dd className="mt-1 font-mono tabular-nums">
-        <span className="text-2xl">{value}</span>
-        {suffix && <span className="text-sm text-faint">{suffix}</span>}
-      </dd>
-    </>
-  );
-  const cls = "block bg-background p-4";
-  return href ? (
-    <Link href={href} className={`${cls} transition-colors hover:bg-surface`}>
-      {body}
-    </Link>
-  ) : (
-    <div className={cls}>{body}</div>
+function StatCard({ title, value, icon: Icon, color, bg }: { title: string, value: string, icon: any, color: string, bg: string }) {
+  return (
+    <motion.div 
+      initial={{ opacity: 0, scale: 0.98 }}
+      animate={{ opacity: 1, scale: 1 }}
+      className="bg-card border border-border rounded-xl p-5 shadow-sm flex items-center space-x-4 transition-all hover:border-primary/20 hover:shadow-md"
+    >
+      <div className={`p-3 rounded-lg border ${bg}`}>
+        <Icon className={`w-5 h-5 ${color}`} />
+      </div>
+      <div>
+        <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">{title}</p>
+        <p className="text-2xl font-semibold tracking-tight">{value}</p>
+      </div>
+    </motion.div>
   );
 }

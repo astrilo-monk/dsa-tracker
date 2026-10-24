@@ -28,7 +28,7 @@ export const sheetCatalog: SheetMeta[] = [
     shortTitle: "Pratyush",
     slug: "pratyush",
     href: "/pratyush",
-    accent: "emerald",
+    accent: "sky",
     emoji: "📗",
     playlistUrl: "https://www.youtube.com/playlist?list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
   },
