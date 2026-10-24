@@ -44,8 +44,8 @@
   --color-warning: var(--warning);
   --color-danger: var(--danger);
 
-  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-plex-mono), ui-monospace, "SF Mono", Menlo, monospace;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: Arial, Helvetica, sans-serif;
 }
 
 @layer base {

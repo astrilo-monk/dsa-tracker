@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Check, Flame, Maximize2, MessageSquare, Play, RotateCw, X } from "lucide-react";
+import { Check, ChevronDown, Flame, Maximize2, MessageSquare, Play, RotateCw, X } from "lucide-react";
 import { useTrackerStore, type ProblemState } from "@/store/useTrackerStore";
 import { cn } from "@/lib/cn";
 import type { SheetQuestion, SheetLink } from "@/lib/sheets/types";
@@ -71,26 +71,41 @@ export function ProblemRow({ problem, isResourceOnly = false, context }: Problem
     return () => window.removeEventListener("keydown", onKey);
   }, [expanded]);
 
+  const duplicateLabels = new Set(
+    links
+      .map((link) => link.label)
+      .filter((label, index, labels) => labels.indexOf(label) !== index)
+  );
+  const labelCounts = new Map<string, number>();
   const platformLinks =
     links.length > 1 ? (
-      links.map((link: SheetLink) => (
-        <a
-          key={`${problem.id}-${link.url}`}
-          href={link.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="transition-colors hover:text-foreground"
+      <span className="relative inline-flex items-center">
+        <select
+          defaultValue={links[0].url}
+          aria-label="Choose a link"
+          onChange={(event) => window.open(event.currentTarget.value, "_blank", "noopener,noreferrer")}
+          className="min-w-28 cursor-pointer appearance-none rounded border border-border-strong bg-surface px-2 py-1 pr-7 text-inherit outline-none"
         >
-          {link.label}
-        </a>
-      ))
+          {links.map((link: SheetLink) => {
+            const count = (labelCounts.get(link.label) ?? 0) + 1;
+            labelCounts.set(link.label, count);
+            const label = duplicateLabels.has(link.label) ? `${link.label} ${count}` : link.label;
+            return (
+              <option key={`${problem.id}-${link.url}`} value={link.url}>
+                {label}
+              </option>
+            );
+          })}
+        </select>
+        <ChevronDown className="pointer-events-none absolute right-2 size-3.5 text-muted-foreground" />
+      </span>
     ) : showPlatform ? (
       <span>{problem.platform}</span>
     ) : null;
 
   return (
-    <li className="border-b border-border last:border-b-0">
-      <div className="grid grid-cols-[18px_minmax(0,1fr)_auto] items-start gap-x-3 py-2.5 sm:grid-cols-[18px_minmax(0,1fr)_4.25rem_7rem_auto] sm:items-center">
+    <li className="mb-2 rounded border border-border last:mb-0">
+      <div className="grid grid-cols-[22px_minmax(0,1fr)_auto] items-start gap-x-4 px-4 py-5 sm:grid-cols-[22px_minmax(0,1fr)_5rem_9rem_auto] sm:items-center">
         <button
           type="button"
           onClick={() => markStatus(problem.id, nextStatus[state.status])}

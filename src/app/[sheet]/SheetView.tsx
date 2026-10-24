@@ -144,7 +144,7 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
         <ProgressBar value={stats.solved} total={stats.total} className="mt-3" />
       </div>
 
-      <div className="-mx-4 mt-8 flex flex-col gap-3 bg-background px-4 py-3 sm:sticky sm:top-12 sm:z-20 sm:flex-row sm:items-center md:-mx-6 md:px-6">
+      <div className="-mx-4 mt-10 flex flex-col gap-4 bg-background px-4 py-5 sm:sticky sm:top-12 sm:z-20 sm:flex-row sm:items-center md:-mx-6 md:px-6">
         <div className="relative flex-1">
           <Search className="absolute left-3 top-1/2 size-3.5 -translate-y-1/2 text-faint" />
           <input
@@ -154,20 +154,20 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search problems"
             aria-label="Search problems"
-            className="h-9 w-full rounded-md border border-border bg-surface pl-9 pr-9 text-sm focus:border-border-strong focus:outline-none"
+            className="h-11 w-full rounded-md border border-border bg-surface pl-10 pr-10 text-sm focus:border-border-strong focus:outline-none"
           />
           <kbd className="pointer-events-none absolute right-2.5 top-1/2 hidden -translate-y-1/2 rounded border border-border-strong px-1.5 font-mono text-[10px] text-faint sm:block">
             /
           </kbd>
         </div>
-        <div className="flex rounded-md border border-border p-0.5" role="group" aria-label="Filter by status">
+        <div className="flex w-full gap-1 rounded-md border border-border p-1 sm:w-auto" role="group" aria-label="Filter by status">
           {filters.map((f) => (
             <button
               key={f.id}
               onClick={() => setFilter(f.id)}
               aria-pressed={filter === f.id}
               className={cn(
-                "h-8 flex-1 rounded px-3 text-xs transition-colors sm:flex-none",
+                "h-10 min-w-20 flex-1 rounded px-5 text-sm transition-colors sm:flex-none",
                 filter === f.id ? "bg-border-strong text-foreground" : "text-muted-foreground hover:text-foreground"
               )}
             >
@@ -177,7 +177,7 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
         </div>
       </div>
 
-      <div className="border-t border-border">
+      <div className="border-t border-border pt-3">
         {visible.map((r) => (
           <TopicCard
             key={r.pattern.id}
@@ -185,7 +185,9 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
             index={r.index}
             solved={r.solved}
             total={r.total}
-            defaultOpen={r.index === firstIncomplete}
+            defaultOpen={
+              !(sheetId === "pratyush" && r.pattern.slug === "pattern-two-pointers") && r.index === firstIncomplete
+            }
             forceOpen={isFiltering}
           />
         ))}

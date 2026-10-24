@@ -35,12 +35,12 @@ export function TopicCard({ pattern, index, solved, total, defaultOpen = false, 
   const done = total > 0 && solved === total;
 
   return (
-    <section id={pattern.slug} className="border-b border-border">
+    <section id={pattern.slug} className="mb-5 rounded-lg border border-border">
       <button
         type="button"
         onClick={() => setOpen(!isOpen)}
         aria-expanded={isOpen}
-        className="group flex w-full items-center gap-4 py-3.5 text-left"
+        className="group flex min-h-20 w-full items-center gap-5 px-5 py-5 text-left"
       >
         <span className="w-5 font-mono text-xs tabular-nums text-faint">{String(index).padStart(2, "0")}</span>
         <span
@@ -66,7 +66,7 @@ export function TopicCard({ pattern, index, solved, total, defaultOpen = false, 
       </button>
 
       {isOpen && (
-        <div className="pb-5 sm:pl-9">
+        <div className="border-t border-border px-5 pb-7 pt-3 sm:pl-14">
           {pattern.resources.length > 0 && (
             <div className="mb-4">
               <GroupLabel dot="bg-faint" label="Watch" />
@@ -96,27 +96,41 @@ export function TopicCard({ pattern, index, solved, total, defaultOpen = false, 
 
 function Group({ group }: { group: SheetDifficultyGroup }) {
   const problemStates = useTrackerStore((s) => s.problemStates);
+  const [open, setOpen] = useState(true);
   const solved = group.questions.filter((q) => problemStates[q.id]?.status === "solved").length;
   const label = group.difficulty === "Uncategorized" ? "Other" : group.difficulty;
 
   return (
-    <div className="mb-4 last:mb-0">
-      <GroupLabel dot={dotColor[group.difficulty]} label={label} count={`${solved}/${group.questions.length}`} />
-      <ul>
-        {group.questions.map((q) => (
-          <ProblemRow key={q.id} problem={q} />
-        ))}
-      </ul>
+    <div className="mb-6 last:mb-0">
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        aria-expanded={open}
+        className="group flex w-full items-center border-b border-border pb-2 pt-1 text-left font-mono text-[11px] uppercase tracking-wider text-faint"
+      >
+        <ChevronRight className={cn("mr-1.5 size-3.5 transition-transform", open && "rotate-90")} />
+        <span className={cn("mr-2 size-1.5 rounded-full", dotColor[group.difficulty])} />
+        {label}
+        <span className="ml-2 tabular-nums text-muted-foreground">
+          {solved}/{group.questions.length}
+        </span>
+      </button>
+      {open && (
+        <ul className="space-y-3 pt-3">
+          {group.questions.map((q) => (
+            <ProblemRow key={q.id} problem={q} />
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
 
-function GroupLabel({ dot, label, count }: { dot: string; label: string; count?: string }) {
+function GroupLabel({ dot, label }: { dot: string; label: string }) {
   return (
     <div className="flex items-center gap-2 border-b border-border pb-2 pt-1 font-mono text-[11px] uppercase tracking-wider text-faint">
       <span className={cn("size-1.5 rounded-full", dot)} />
       {label}
-      {count && <span className="tabular-nums text-muted-foreground">{count}</span>}
     </div>
   );
 }
