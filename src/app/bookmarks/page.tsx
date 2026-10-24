@@ -1,93 +1,61 @@
 "use client";
 
+import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { useTrackerStore } from "@/store/useTrackerStore";
 import { ProblemRow } from "@/components/ProblemRow";
-import { Flame, Loader2 } from "lucide-react";
-import { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
 import { SheetTabs } from "@/components/sheets/SheetTabs";
-import { resolveSheetSlug, loadSheetDataset } from "@/lib/sheets/catalog";
-import type { SheetDataset } from "@/lib/sheets/types";
+import { EmptyState, ListSkeleton, PageHeader } from "@/components/ui";
+import { useSheetData } from "@/hooks/useSheetData";
+import { resolveSheetSlug } from "@/lib/sheets/catalog";
+import { formatPatternTitle } from "@/lib/sheets/utils";
 
-function BookmarksContent() {
+function ImportantContent() {
   const searchParams = useSearchParams();
   const activeSheetId = resolveSheetSlug("/bookmarks", searchParams);
-  
-  const { problemStates } = useTrackerStore();
-  const [dataset, setDataset] = useState<SheetDataset | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const problemStates = useTrackerStore((s) => s.problemStates);
+  const { data, isLoading } = useSheetData(activeSheetId);
 
-  useEffect(() => {
-    let active = true;
-    setIsLoading(true);
-    
-    loadSheetDataset(activeSheetId)
-      .then((data) => {
-        if (active) {
-          setDataset(data);
-          setIsLoading(false);
-        }
-      })
-      .catch(console.error);
+  const important =
+    data?.patterns.flatMap((p) =>
+      p.groups.flatMap((g) =>
+        g.questions
+          .filter((q) => problemStates[q.id]?.important)
+          .map((q) => ({ q, context: formatPatternTitle(p.title) }))
+      )
+    ) ?? [];
 
-    return () => { active = false; };
-  }, [activeSheetId]);
-
-  if (isLoading || !dataset) {
-    return (
-      <div className="flex justify-center py-20 text-muted-foreground">
-         <Loader2 className="w-8 h-8 animate-spin" />
-      </div>
-    );
-  }
-
-  const allProblems = dataset.patterns.flatMap(p => p.groups.flatMap(g => g.questions));
-  
-  const importantProblems = allProblems.filter(p => problemStates[p.id]?.important);
-  
   return (
-    <div className="space-y-6">
+    <div>
       <SheetTabs activeSheetId={activeSheetId} hrefBase="/bookmarks" />
-      
-      <div className="space-y-8 mt-6">
-        <section>
-          <div className="flex items-center space-x-2 mb-4">
-            <Flame className="w-5 h-5 text-orange-500" />
-            <h2 className="text-xl font-semibold">Important Problems</h2>
-          </div>
-          {importantProblems.length === 0 ? (
-            <div className="p-8 text-center bg-card border border-border rounded-xl">
-              <p className="text-muted-foreground">No important problems marked in this sheet yet.</p>
-            </div>
+      {isLoading || !data ? (
+        <div className="mt-6">
+          <ListSkeleton rows={4} />
+        </div>
+      ) : (
+        <div className="mt-6">
+          <p className="mb-4 font-mono text-[11px] tabular-nums text-faint">{important.length} flagged</p>
+          {important.length === 0 ? (
+            <EmptyState>No important problems in this sheet yet. Tap the flame on a problem.</EmptyState>
           ) : (
-            <div className="space-y-2">
-              {importantProblems.map(p => <ProblemRow key={p.id} problem={p} />)}
-            </div>
+            <ul className="border-t border-border">
+              {important.map(({ q, context }) => (
+                <ProblemRow key={q.id} problem={q} context={context} />
+              ))}
+            </ul>
           )}
-        </section>
-      </div>
+        </div>
+      )}
     </div>
   );
 }
 
-export default function BookmarksPage() {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
-
+export default function ImportantPage() {
   return (
-    <div className="space-y-8 mt-12 lg:mt-0 pb-20 max-w-4xl mx-auto">
-      <div>
-        <h1 className="text-3xl font-semibold tracking-tight">Important Problems</h1>
-        <p className="text-muted-foreground mt-1">Keep the problems that deserve another look close at hand.</p>
-      </div>
-      
-      <Suspense fallback={<div className="flex justify-center py-20"><Loader2 className="w-8 h-8 animate-spin text-muted-foreground" /></div>}>
-        <BookmarksContent />
+    <div className="space-y-8">
+      <PageHeader title="Important" description="Keep the problems that deserve another look close at hand." />
+      <Suspense fallback={<ListSkeleton rows={4} />}>
+        <ImportantContent />
       </Suspense>
     </div>
   );

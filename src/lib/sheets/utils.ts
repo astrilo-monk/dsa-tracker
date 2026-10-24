@@ -41,3 +41,15 @@ export function createLink(url: string, kind: "question" | "resource" = "questio
     kind,
   };
 }
+
+/**
+ * Pattern titles in the sheets are inconsistent ("Pattern: Two Pointers",
+ * "PATTERN: PREFIX SUM", "HEAP PATTERN", "GRAPHS"). Normalise for display only.
+ */
+export function formatPatternTitle(title: string) {
+  let t = title.trim().replace(/^pattern\s*:\s*/i, "").replace(/\s+pattern$/i, "").trim();
+  if (t && t === t.toUpperCase() && /[A-Z]/.test(t)) {
+    t = t.toLowerCase().replace(/(^|\s|\()([a-z])/g, (_, a: string, b: string) => a + b.toUpperCase());
+  }
+  return t || title;
+}

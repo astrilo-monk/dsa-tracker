@@ -1,103 +1,200 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { ArrowUpRight, Search } from "lucide-react";
 import { useSheetData } from "@/hooks/useSheetData";
+import { useTrackerStore } from "@/store/useTrackerStore";
 import { TopicCard } from "@/components/TopicCard";
-import { Search, Loader2 } from "lucide-react";
-import type { SheetId, SheetPattern } from "@/lib/sheets/types";
+import { EmptyState, ListSkeleton, PageHeader, ProgressBar } from "@/components/ui";
+import { cn } from "@/lib/cn";
 import { getSheetMeta } from "@/lib/sheets/catalog";
+import { summarize } from "@/lib/sheets/stats";
+import type { SheetId, SheetQuestion } from "@/lib/sheets/types";
+
+type Filter = "all" | "todo" | "revising" | "done";
+
+const filters: { id: Filter; label: string }[] = [
+  { id: "all", label: "All" },
+  { id: "todo", label: "To do" },
+  { id: "revising", label: "Revising" },
+  { id: "done", label: "Done" },
+];
 
 export function SheetView({ sheetId }: { sheetId: SheetId }) {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [query, setQuery] = useState("");
+  const [filter, setFilter] = useState<Filter>("all");
+  const searchRef = useRef<HTMLInputElement>(null);
   const { data, isLoading, error } = useSheetData(sheetId);
+  const problemStates = useTrackerStore((s) => s.problemStates);
   const sheetMeta = getSheetMeta(sheetId);
+
+  // "/" focuses search, like most dev tools
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      const el = e.target as HTMLElement | null;
+      if (e.key !== "/" || el?.matches("input, textarea, [contenteditable]")) return;
+      e.preventDefault();
+      searchRef.current?.focus();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
+  const stats = useMemo(() => (data ? summarize(data, problemStates) : null), [data, problemStates]);
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center min-h-[50vh]">
-        <div className="flex flex-col items-center gap-4 text-muted-foreground">
-          <Loader2 className="w-8 h-8 animate-spin text-primary" />
-          <p>Loading {sheetId} sheet...</p>
-        </div>
+      <div>
+        <div className="mb-8 h-14" />
+        <ListSkeleton rows={8} />
       </div>
     );
   }
 
-  if (error || !data) {
+  if (error || !data || !stats) {
     return (
-      <div className="flex items-center justify-center min-h-[50vh]">
-        <div className="p-8 text-center bg-card border border-border rounded-xl">
-          <p className="text-danger font-medium">Failed to load sheet data</p>
-          <p className="text-sm text-muted-foreground mt-2">{error || "Unknown error"}</p>
-        </div>
-      </div>
+      <EmptyState>
+        <p className="font-medium text-danger">Failed to load sheet data</p>
+        <p className="mt-1">{error || "Unknown error"}</p>
+      </EmptyState>
     );
   }
 
-  // Filter patterns based on search query
-  const filteredPatterns = data.patterns.map(pattern => {
-    // Filter questions inside each group
-    const newGroups = pattern.groups.map(group => {
-      const newQuestions = group.questions.filter(q => 
-        q.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-        q.difficulty.toLowerCase().includes(searchQuery.toLowerCase())
-      );
-      return { ...group, questions: newQuestions };
-    }).filter(group => group.questions.length > 0);
+  const q = query.trim().toLowerCase();
+  const isFiltering = q !== "" || filter !== "all";
 
-    // Filter resources
-    const newResources = pattern.resources.filter(r => 
-      r.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+  const matches = (question: SheetQuestion) => {
+    const status = problemStates[question.id]?.status ?? "unsolved";
+    const statusOk =
+      filter === "all" ||
+      (filter === "todo" && status === "unsolved") ||
+      (filter === "revising" && status === "revising") ||
+      (filter === "done" && status === "solved");
+    const textOk =
+      !q ||
+      question.title.toLowerCase().includes(q) ||
+      question.difficulty.toLowerCase().includes(q) ||
+      question.platform.toLowerCase().includes(q);
+    return statusOk && textOk;
+  };
 
-    return { ...pattern, groups: newGroups, resources: newResources };
-  }).filter(pattern => pattern.groups.length > 0 || pattern.resources.length > 0);
+  const rows = data.patterns.map((pattern, i) => {
+    const all = pattern.groups.flatMap((g) => g.questions);
+    const solved = all.filter((x) => problemStates[x.id]?.status === "solved").length;
+    return {
+      index: i + 1,
+      solved,
+      total: all.length,
+      pattern: {
+        ...pattern,
+        groups: pattern.groups
+          .map((g) => ({ ...g, questions: g.questions.filter(matches) }))
+          .filter((g) => g.questions.length > 0),
+        resources:
+          filter === "all" ? pattern.resources.filter((r) => !q || r.title.toLowerCase().includes(q)) : [],
+      },
+    };
+  });
+
+  const visible = rows.filter((r) => r.pattern.groups.length > 0 || r.pattern.resources.length > 0);
+  const firstIncomplete = rows.find((r) => r.total > 0 && r.solved < r.total)?.index;
+  const tiers = [
+    { key: "Easy", color: "text-easy" },
+    { key: "Medium", color: "text-medium" },
+    { key: "Hard", color: "text-hard" },
+  ] as const;
 
   return (
-    <div className="space-y-6 mt-12 lg:mt-0 pb-20">
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
-        <div>
-          <h1 className="text-3xl md:text-4xl font-bold tracking-tight flex flex-wrap items-center gap-2">
-            <span className="text-gradient">{data.title}</span>
-            {sheetMeta.playlistUrl && (
-              <>
-                <span className="text-muted-foreground">-</span>
-                <a 
-                  href={sheetMeta.playlistUrl} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:underline hover:text-primary/80 transition-colors text-xl md:text-2xl mt-1"
-                >
-                  Playlist
-                </a>
-              </>
-            )}
-          </h1>
-          <p className="text-muted-foreground mt-2 text-sm md:text-base">{data.description || "Master Data Structures and Algorithms topic by topic."}</p>
+    <div>
+      <PageHeader
+        title={sheetMeta.title}
+        description={data.description || undefined}
+        action={
+          sheetMeta.playlistUrl && (
+            <a
+              href={sheetMeta.playlistUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center gap-1 text-[13px] text-muted-foreground transition-colors hover:text-foreground"
+            >
+              Playlist <ArrowUpRight className="size-3.5" />
+            </a>
+          )
+        }
+      />
+
+      <div className="mt-8">
+        <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-3">
+          <p className="font-mono tabular-nums">
+            <span className="text-3xl">{stats.solved}</span>
+            <span className="text-lg text-faint">/{stats.total}</span>
+            <span className="ml-3 text-xs text-muted-foreground">
+              {stats.total === 0 ? 0 : Math.round((stats.solved / stats.total) * 100)}%
+            </span>
+          </p>
+          <p className="flex gap-4 font-mono text-xs tabular-nums">
+            {tiers.map((t) => (
+              <span key={t.key} className="text-muted-foreground">
+                <span className={t.color}>{t.key[0]}</span> {stats.byDifficulty[t.key].solved}/
+                {stats.byDifficulty[t.key].total}
+              </span>
+            ))}
+          </p>
         </div>
-        
-        <div className="relative w-full md:w-72">
-          <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-          <input 
-            type="text" 
-            placeholder="Search problems..."
-            className="w-full pl-10 pr-4 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-1 focus:ring-primary text-sm shadow-sm transition-all duration-200"
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+        <ProgressBar value={stats.solved} total={stats.total} className="mt-3" />
+      </div>
+
+      <div className="-mx-4 mt-8 flex flex-col gap-3 bg-background px-4 py-3 sm:sticky sm:top-12 sm:z-20 sm:flex-row sm:items-center md:-mx-6 md:px-6">
+        <div className="relative flex-1">
+          <Search className="absolute left-3 top-1/2 size-3.5 -translate-y-1/2 text-faint" />
+          <input
+            ref={searchRef}
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search problems"
+            aria-label="Search problems"
+            className="h-9 w-full rounded-md border border-border bg-surface pl-9 pr-9 text-sm focus:border-border-strong focus:outline-none"
           />
+          <kbd className="pointer-events-none absolute right-2.5 top-1/2 hidden -translate-y-1/2 rounded border border-border-strong px-1.5 font-mono text-[10px] text-faint sm:block">
+            /
+          </kbd>
+        </div>
+        <div className="flex rounded-md border border-border p-0.5" role="group" aria-label="Filter by status">
+          {filters.map((f) => (
+            <button
+              key={f.id}
+              onClick={() => setFilter(f.id)}
+              aria-pressed={filter === f.id}
+              className={cn(
+                "h-8 flex-1 rounded px-3 text-xs transition-colors sm:flex-none",
+                filter === f.id ? "bg-border-strong text-foreground" : "text-muted-foreground hover:text-foreground"
+              )}
+            >
+              {f.label}
+            </button>
+          ))}
         </div>
       </div>
 
-      <div className="space-y-4">
-        {filteredPatterns.map((pattern, index) => (
-          <TopicCard key={pattern.id} pattern={pattern} index={index + 1} />
+      <div className="border-t border-border">
+        {visible.map((r) => (
+          <TopicCard
+            key={r.pattern.id}
+            pattern={r.pattern}
+            index={r.index}
+            solved={r.solved}
+            total={r.total}
+            defaultOpen={r.index === firstIncomplete}
+            forceOpen={isFiltering}
+          />
         ))}
-        {filteredPatterns.length === 0 && (
-          <div className="text-center py-12 bg-card border border-border rounded-xl">
-            <p className="text-muted-foreground">No problems found matching your search.</p>
-          </div>
-        )}
       </div>
+      {visible.length === 0 && (
+        <div className="mt-6">
+          <EmptyState>Nothing matches.</EmptyState>
+        </div>
+      )}
     </div>
   );
 }

@@ -18,6 +18,8 @@ export interface SheetQuestion {
   difficulty: Difficulty;
   links: SheetLink[];
   platform: string;
+  subcategory?: string;
+  note?: string;
 }
 
 export interface SheetResource {
