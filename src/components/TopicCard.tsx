@@ -10,9 +10,11 @@ import type { SheetPattern, SheetQuestion } from "@/lib/sheets/types";
 interface TopicCardProps {
   pattern: SheetPattern;
   index: number;
+  /** Word for completed items, e.g. "Solved" (DSA) or "Done" (GATE). */
+  doneLabel?: string;
 }
 
-export function TopicCard({ pattern, index }: TopicCardProps) {
+export function TopicCard({ pattern, index, doneLabel = "Solved" }: TopicCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const { problemStates } = useTrackerStore();
 
@@ -26,6 +28,22 @@ export function TopicCard({ pattern, index }: TopicCardProps) {
     return <ProblemGroup key={title} title={title} problems={questions} colorClass={colorClass} />;
   };
 
+  // Uncategorized questions are normally one "Other Practices" block. When every one of them
+  // carries a subcategory (GATE topics), show one block per subcategory instead.
+  const uncategorized = pattern.groups.find(g => g.difficulty === "Uncategorized");
+  const uncategorizedSections: { title: string; questions: SheetQuestion[]; colorClass: string }[] = [];
+  if (uncategorized && uncategorized.questions.length > 0) {
+    if (uncategorized.questions.every(q => q.subcategory)) {
+      for (const q of uncategorized.questions) {
+        const existing = uncategorizedSections.find(s => s.title === q.subcategory);
+        if (existing) existing.questions.push(q);
+        else uncategorizedSections.push({ title: q.subcategory!, questions: [q], colorClass: "text-primary" });
+      }
+    } else {
+      uncategorizedSections.push({ title: "Other Practices", questions: uncategorized.questions, colorClass: "text-muted-foreground" });
+    }
+  }
+
   return (
     <div className="bg-card/90 border border-border rounded-2xl overflow-hidden transition-all duration-200 hover:border-primary/40 hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)] group/card">
       <button 
@@ -38,7 +56,10 @@ export function TopicCard({ pattern, index }: TopicCardProps) {
           </div>
           <div className="text-left">
             <h2 className="text-base font-semibold tracking-tight">{pattern.title}</h2>
-            <p className="text-xs text-muted-foreground mt-0.5">{solvedCount} / {totalProblems} Solved</p>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              {solvedCount} / {totalProblems} {doneLabel}
+              {pattern.weightage && <span className="text-muted-foreground/70"> · {pattern.weightage}</span>}
+            </p>
           </div>
         </div>
 
@@ -88,7 +109,7 @@ export function TopicCard({ pattern, index }: TopicCardProps) {
               {pattern.groups.find(g => g.difficulty === "Easy") && renderGroup("Easy", pattern.groups.find(g => g.difficulty === "Easy")!.questions, "text-sky-500")}
               {pattern.groups.find(g => g.difficulty === "Medium") && renderGroup("Medium", pattern.groups.find(g => g.difficulty === "Medium")!.questions, "text-amber-500")}
               {pattern.groups.find(g => g.difficulty === "Hard") && renderGroup("Hard", pattern.groups.find(g => g.difficulty === "Hard")!.questions, "text-rose-500")}
-              {pattern.groups.find(g => g.difficulty === "Uncategorized") && renderGroup("Other Practices", pattern.groups.find(g => g.difficulty === "Uncategorized")!.questions, "text-muted-foreground")}
+              {uncategorized && uncategorizedSections.map(section => renderGroup(section.title, section.questions, section.colorClass))}
             </div>
           </motion.div>
         )}
@@ -99,11 +120,27 @@ export function TopicCard({ pattern, index }: TopicCardProps) {
 
 function ProblemGroup({ title, problems, colorClass }: { title: string, problems: SheetQuestion[], colorClass: string }) {
   const [isExpanded, setIsExpanded] = useState(true);
+  const playlistLinks = Array.from(
+    new Map(
+      problems
+        .flatMap((problem) => problem.resourceLinks ?? [])
+        .filter((link) => link.platform === "YouTube")
+        .map((link) => [link.url, link])
+    ).values()
+  );
 
   return (
     <div className="bg-background/70 rounded-xl border border-border/80 overflow-hidden">
-      <button 
+      <div
+        role="button"
+        tabIndex={0}
         onClick={() => setIsExpanded(!isExpanded)}
+        onKeyDown={(event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            setIsExpanded(!isExpanded);
+          }
+        }}
         className="w-full px-4 py-2.5 flex items-center justify-between hover:bg-muted/50 transition-colors"
       >
         <div className="flex items-center gap-3">
@@ -112,10 +149,28 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
             {problems.length} items
           </span>
         </div>
-        <div className="text-muted-foreground">
+        <div className="flex items-center gap-2">
+          {playlistLinks.length > 0 && (
+            <div className="flex items-center gap-1.5">
+              {playlistLinks.map((link) => (
+                <a
+                  key={link.url}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(event) => event.stopPropagation()}
+                  className="inline-flex items-center rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
+                >
+                  YouTube
+                </a>
+              ))}
+            </div>
+          )}
+          <div className="text-muted-foreground">
           {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+          </div>
         </div>
-      </button>
+      </div>
 
       <AnimatePresence>
         {isExpanded && (

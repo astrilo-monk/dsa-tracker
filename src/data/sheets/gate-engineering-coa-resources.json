@@ -1,0 +1,253 @@
+{
+  "id": "gate::computer-organization-and-architecture",
+  "title": "Computer Organization and Architecture",
+  "slug": "computer-organization-and-architecture",
+  "weightage": "~8-10 marks",
+  "groups": [
+    {
+      "difficulty": "Uncategorized",
+      "questions": [
+        {
+          "id": "gate::computer-organization-and-architecture::instruction-set",
+          "title": "Instruction set",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Instruction and Control",
+          "links": [
+            { "label": "Instruction sets: addressing modes and formats (Stallings Ch. 13 slides)", "url": "https://www.scribd.com/presentation/535884215/CH13-COA9e", "platform": "Notes", "kind": "resource" },
+            { "label": "Introduction to addressing modes and instruction size", "url": "https://allrounder.ai/computer-organisation-and-architecture-vol-1/introduction-to-addressing-modes-chapter-687aac", "platform": "Notes", "kind": "resource" },
+            { "label": "Addressing modes lecture (Computer Organization slides)", "url": "https://www.slideshare.net/slideshow/lect14-organization/73473557", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: COA complete course in Hindi (5 Minutes Engineering, via Class Central)", "url": "https://classcentral.com/course/youtube-complete-coa-computer-organization-and-architecture-in-one-shot-6-hours-in-hindi-287694", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "Aspirant Mitraa: Machine instructions and addressing modes PYQs", "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-machine-instructions-and-addressing-modes-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::addressing-modes",
+          "title": "Addressing modes",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Instruction and Control",
+          "links": [
+            { "label": "Addressing modes (Computer Organization slides)", "url": "https://www.slideshare.net/slideshow/lect14-organization/73473557", "platform": "Notes", "kind": "resource" },
+            { "label": "Addressing modes and formats (Stallings Ch. 13 slides)", "url": "https://www.scribd.com/presentation/535884215/CH13-COA9e", "platform": "Notes", "kind": "resource" },
+            { "label": "Introduction to addressing modes with examples", "url": "https://allrounder.ai/computer-organisation-and-architecture-vol-1/introduction-to-addressing-modes-chapter-687aac", "platform": "Notes", "kind": "resource" },
+            { "label": "Addressing modes and encoding", "url": "https://dcmpx.remotevs.com/com/mcatutorials/PL/mca-tutorials-microprocessor-addressing-modes.php", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: COA complete course in Hindi (5 Minutes Engineering, via Class Central)", "url": "https://classcentral.com/course/youtube-complete-coa-computer-organization-and-architecture-in-one-shot-6-hours-in-hindi-287694", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "Aspirant Mitraa: Machine instructions and addressing modes PYQs", "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-machine-instructions-and-addressing-modes-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::design-of-arithmetic-and-logic-unit-alu",
+          "title": "Design of Arithmetic and Logic Unit (ALU)",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Instruction and Control",
+          "links": [
+            { "label": "Datapaths and ALU design (Lec 7)", "url": "https://www.scribd.com/document/609139956/Lec-7", "platform": "Notes", "kind": "resource" },
+            { "label": "Processor design basics: datapath, register file, ALU (Leiden PDF)", "url": "https://liacs.leidenuniv.nl/~stefanovtp/courses/DITE/lectures/FDSD14.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Register transfer and datapath design (COE608 PDF)", "url": "https://www.ee.torontomu.ca/~courses/coe608/lectures/RT-datapath.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Processor datapath and control unit (CSE378 PDF)", "url": "https://courses.cs.washington.edu/courses/cse378/02wi/Lectures/12datapath.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Combinational logic functions: adders (Lessons in Electric Circuits)", "url": "https://www.circuitbread.com/textbooks/lessons-in-electric-circuits-volume-iv-digital/combinational-logic-functions", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: ALU, data path and control unit PYQs", "url": "https://questions.examside.com/past-years/gate/gate-cse/computer-organization/alu-data-path-and-control-unit", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::hardwired-control",
+          "title": "Hardwired control",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Instruction and Control",
+          "links": [
+            { "label": "Hardwired and microprogrammed control (notes PDF)", "url": "https://gpwsirsa.edu.in/wp-content/uploads/2023/03/Comp_org.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Hardwired vs microprogrammed control unit", "url": "https://eguru.rrbdavc.org/module/data/151-The%20primary%20difference%20between%20hwire%20and%20mprogrm%20cu.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Control unit design: hardwired vs microprogrammed (slides)", "url": "https://www.scribd.com/presentation/820093486/Chapter-3-Microprogram-Control-Organisation", "platform": "Notes", "kind": "resource" },
+            { "label": "Processor design: single-cycle datapath and control (Inf2C PDF)", "url": "https://www.inf.ed.ac.uk/teaching/courses/inf2c-cs/13-14/lectures/lec08-slides.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: ALU, data path and control unit PYQs", "url": "https://questions.examside.com/past-years/gate/gate-cse/computer-organization/alu-data-path-and-control-unit", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::microprogrammed-control",
+          "title": "Microprogrammed control",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Instruction and Control",
+          "links": [
+            { "label": "Microprogrammed control: control memory, address sequencing (Unit III notes)", "url": "https://www.scribd.com/document/713619763/unit-iii-part-1-microprogramming-notes", "platform": "Notes", "kind": "resource" },
+            { "label": "Microprogrammed control basics (Unit 4 notes)", "url": "https://www.scribd.com/document/495450990/Unit-4-Microprogrammed-Control", "platform": "Notes", "kind": "resource" },
+            { "label": "Hardwired and microprogrammed control (notes PDF)", "url": "https://gpwsirsa.edu.in/wp-content/uploads/2023/03/Comp_org.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Horizontal vs vertical microprogramming (slides)", "url": "https://www.scribd.com/document/468765475/3c", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: ALU, data path and control unit PYQs", "url": "https://questions.examside.com/past-years/gate/gate-cse/computer-organization/alu-data-path-and-control-unit", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::memory-interfacing",
+          "title": "Memory interfacing",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Memory and I/O",
+          "links": [
+            { "label": "Address decoding: full and partial decoding (TAMU lecture PDF)", "url": "https://people.engr.tamu.edu/rgutier/lectures/mbsd/mbsd_l16.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Memory interfacing and memory map (lecture PDF)", "url": "https://www.uomus.edu.iq/uploads/lectures/35/1PbWWqgKDBDorh525uecKaGZD21FGSoCeR.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Memory and I/O interfacing: absolute and linear decoding (PDF)", "url": "https://uomus.edu.iq/img/lectures21/WameedMUCLecture_2021_91817804.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Memory interfacing: chip select and decoding (lecture PDF)", "url": "https://engineering.uodiyala.edu.iq/wp-content/uploads/2023/09/comp-dep-s3-c2-interfacing-5.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::memory-hierarchy",
+          "title": "Memory hierarchy",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Memory and I/O",
+          "links": [
+            { "label": "Memory hierarchy, locality and disk access (CSU lecture PDF)", "url": "https://cs.colostate.edu/~cs270/.Spring13/Notes/Lecture24b_MemoryHierarchy.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Memory hierarchy: locality, hit rate, AMAT (UWO notes PDF)", "url": "https://www.csd.uwo.ca/~mmorenom/cs3350_moreno.Winter-2015/notes/L3-mem-1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Large and fast: exploiting memory hierarchy (slides PDF)", "url": "https://www.csd.uoc.gr/~hy225/20a/ex11_slides.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "Aspirant Mitraa: Memory hierarchy PYQs", "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-memory-hierarchy-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::memory-performance",
+          "title": "Memory performance",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Memory and I/O",
+          "links": [
+            { "label": "Average memory access time (AMAT) with examples (UWO notes PDF)", "url": "https://www.csd.uwo.ca/~mmorenom/cs3350_moreno.Winter-2015/notes/L3-mem-1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Caches: AMAT and cache performance (ShanghaiTech lecture PDF)", "url": "https://robotics.shanghaitech.edu.cn/courses/ca/16s/lectures/2016-CA-L15_Caches2.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Multi-level AMAT (Berkeley CS162 lecture PDF)", "url": "https://inst.eecs.berkeley.edu/~cs162/sp23/static/lectures/16.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Caches I: AMAT practice (UW CSE351 PDF)", "url": "https://courses.cs.washington.edu/courses/cse351/24su/lectures/14/CSE351-14-cachesI_24su_ink.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "Aspirant Mitraa: Memory hierarchy PYQs", "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-memory-hierarchy-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::cache-memory-mapping",
+          "title": "Cache memory mapping",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Memory and I/O",
+          "links": [
+            { "label": "Direct, associative and set-associative mapping (Middlebury lecture)", "url": "https://www.cs.middlebury.edu/~candrews/classes/cs202-s26/lectures/lecture35-cache2/index.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Cache tag, index and offset bit calculations (Baeldung)", "url": "https://www.baeldung.com/cs/cache-calculations", "platform": "Notes", "kind": "resource" },
+            { "label": "Cache mapping functions with address field example (lecture notes)", "url": "https://www.uomustansiriyah.edu.iq/media/lectures/9/9_2019_10_26!07_14_06_PM.docx", "platform": "Notes", "kind": "resource" },
+            { "label": "Cache memory variants and trade-offs (Liege tutorial slides)", "url": "https://people.montefiore.uliege.be/rmormont/files/info0012/1718/tp9-slides.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Practice: set-associative cache problems (McGill tutorial)", "url": "https://ecse324.ece.mcgill.ca/fall2021/tutorials/tutorial8.html", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "Aspirant Mitraa: Memory hierarchy PYQs", "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-memory-hierarchy-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::i-o-interface",
+          "title": "I/O interface",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Memory and I/O",
+          "links": [
+            { "label": "Input/output organization: memory-mapped vs isolated I/O (lecture PDF)", "url": "https://mis.piass.ac.rw/applctDoc/7302_Lecture%206-InputOutput%20Organization1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Methods for I/O operations (lecture PDF)", "url": "https://users.utcluj.ro/~baruch/en/media/siee/lecture/IOS-Methods-IO-1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "I/O systems: programmed I/O, interrupts, DMA (GATE CS notes)", "url": "https://engineeringhulk.com/cs-it/computer-organisation/io-systems/", "platform": "Notes", "kind": "resource" },
+            { "label": "Modes of data transfer (Unit 4 lecture 3 PDF)", "url": "https://www.gchamirpur.org/wp-content/uploads/2023/09/Unit-4-Lecture-3-Modes-of-Data-Transfer.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "Aspirant Mitraa: I/O interface, interrupt and DMA PYQs", "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-io-interface-interrupt-and-dma-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::interrupt",
+          "title": "Interrupt",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Memory and I/O",
+          "links": [
+            { "label": "Interrupt-driven I/O: vectored, non-vectored, priority (lecture PDF)", "url": "https://users.utcluj.ro/~baruch/en/media/siee/lecture/IOS-Methods-IO-1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Interrupt handling steps (GATE CS notes)", "url": "https://engineeringhulk.com/cs-it/computer-organisation/io-systems/", "platform": "Notes", "kind": "resource" },
+            { "label": "Vectored and non-vectored interrupts (Unit 4 PDF)", "url": "https://www.gchamirpur.org/wp-content/uploads/2023/09/Unit-4-Lecture-3-Modes-of-Data-Transfer.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Interrupt driven I/O vs programmed I/O (lecture PDF)", "url": "https://mis.piass.ac.rw/applctDoc/7302_Lecture%206-InputOutput%20Organization1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "Aspirant Mitraa: I/O interface, interrupt and DMA PYQs", "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-io-interface-interrupt-and-dma-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::dma",
+          "title": "DMA",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Memory and I/O",
+          "links": [
+            { "label": "DMA transfer, cycle stealing and time calculation (GATE CS notes)", "url": "https://engineeringhulk.com/cs-it/computer-organisation/io-systems/", "platform": "Notes", "kind": "resource" },
+            { "label": "Direct Memory Access (lecture PDF)", "url": "https://users.utcluj.ro/~baruch/en/media/siee/lecture/IOS-Methods-IO-1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "DMA controller and I/O module (Computer Architecture lecture 9)", "url": "https://www.slideshare.net/slideshow/lecture-9pptx/251769553", "platform": "Notes", "kind": "resource" },
+            { "label": "Input/output organization: DMA (lecture PDF)", "url": "https://mis.piass.ac.rw/applctDoc/7302_Lecture%206-InputOutput%20Organization1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "Aspirant Mitraa: I/O interface, interrupt and DMA PYQs", "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-io-interface-interrupt-and-dma-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::instruction-pipelining",
+          "title": "Instruction pipelining",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Instruction Pipelining",
+          "links": [
+            { "label": "Pipelining: hazards, performance, exceptions (HY425 lecture PDF)", "url": "https://www.csd.uoc.gr/~hy425/2012f/lectures/Lec3_Pipeline.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Pipelining chapter (NCU lecture PDF)", "url": "https://www.ee.ncu.edu.tw/jfli/public_html/computer/lecture/ch09.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Instruction pipelining (Datorarkitektur lecture 3 PDF)", "url": "https://www.ecs.csun.edu/~cputnam/Comp546/Adv%20Computer%20Systems%20-%20Sweden/lecture3.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Pipeline hazards and forwarding (lecture 12)", "url": "https://cepdnaclk.github.io/Computer-Architecture-Web/Lectures/html/lecture-12.html", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: Pipelining PYQs (1 mark)", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/computer-organization/pipelining/marks-1", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::computer-organization-and-architecture::pipeline-hazards",
+          "title": "Pipeline hazards",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Instruction Pipelining",
+          "links": [
+            { "label": "Structural, data and branch hazards (ECSE 425 lecture PDF)", "url": "https://www.info425.ece.mcgill.ca/lectures/L07-Hazards.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Control hazards and advanced pipelining (Stanford lecture PDF)", "url": "https://web.stanford.edu/class/archive/ee/ee108b/ee108b.1082/handouts/lect.10.PipelineHazards2.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Pipeline hazards and forwarding (CMPT 295 lecture PDF)", "url": "https://www2.cs.sfu.ca/~ashriram/Courses/CS295/assets/lectures/Part11/L29-Hazard.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Introduction to pipelining and hazards (Inf2C notes PDF)", "url": "https://www.inf.ed.ac.uk/teaching/courses/inf2c/lectures/CS08_10_notes.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Computer Organization and Architecture (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)", "url": "https://nptel.ac.in/courses/106103180", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions", "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: Pipelining PYQs (1 mark)", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/computer-organization/pipelining/marks-1", "platform": "PYQ", "kind": "resource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": []
+}

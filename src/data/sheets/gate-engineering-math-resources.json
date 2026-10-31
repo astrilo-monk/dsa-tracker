@@ -1,0 +1,302 @@
+{
+  "_meta": {
+    "exam": "GATE CSE 2028",
+    "subject": "Engineering Mathematics",
+    "checked_on": "2026-10-31",
+    "how_to_read": "Per topic: 'notes' = specific article links. Per group: 'playlists' = full YouTube/NPTEL courses that cover the whole group, 'pyq' = previous-year-question practice. Only links I actually opened or that came straight from the source's own page are included. Items marked verify:true are not fully confirmed (see note)."
+  },
+  "groups": [
+    {
+      "group": "Discrete Mathematics",
+      "playlists": [
+        {
+          "type": "playlist",
+          "title": "Discrete Mathematics - GO Classes for GATE CS (free)",
+          "channel": "GO Classes for GATE CS",
+          "url": "https://www.youtube.com/playlist?list=PLIPZ2_p3RNHgjPQN2GtCVOCgrkH2zCkSU",
+          "note": "Listed by GO Classes as free. Their page says it covers graph theory, combinatorics and logic; I could not confirm sets/relations/lattices/groups/recurrences are in it."
+        },
+        {
+          "type": "playlist",
+          "title": "Complete Discrete Mathematics - Zero to Hero | GATE 2026 (Sridhar Sir)",
+          "channel": "Unacademy GATE CSIT & DA",
+          "videos": 38,
+          "url": "https://www.youtube.com/playlist?list=PLOG_8OlGMp73__IUE4eSoLgaufkY7JWTO",
+          "note": "Full syllabus course. Check the video list yourself, I could only read the playlist header."
+        },
+        {
+          "type": "playlist",
+          "title": "Discrete Mathematics for Computer Science: IIT lectures for GATE",
+          "channel": "Xoviabcs",
+          "videos": 50,
+          "url": "https://www.youtube.com/playlist?list=PLEJxKK7AcSEGD7ty8DB1aU0xVG_P_hs_0",
+          "verify": true,
+          "note": "Re-upload style channel. Fine as a backup, but original source is better."
+        },
+        {
+          "type": "nptel_course",
+          "title": "Discrete Mathematical Structures - Prof. Kamala Krithivasan, IIT Madras",
+          "url": "https://nptel.ac.in/courses/106106094",
+          "note": "Slower and more theoretical. Good for groups, lattices, graph theory depth."
+        }
+      ],
+      "pyq": [
+        { "type": "pyq", "title": "GFG: Engineering Mathematics GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/engineering-mathematics/engineering-mathematics-gate-questions/" },
+        { "type": "pyq", "title": "GFG: Last Minute Notes - Engineering Mathematics (revision)", "url": "https://www.geeksforgeeks.org/engineering-mathematics/last-minute-notes-engineering-mathematics/" }
+      ],
+      "topics": [
+        {
+          "topic": "Propositional and first-order logic",
+          "notes": [
+            { "title": "Propositional logic", "url": "https://www.geeksforgeeks.org/engineering-mathematics/proposition-logic/" },
+            { "title": "Propositional equivalences", "url": "https://www.geeksforgeeks.org/engineering-mathematics/mathematical-logic-propositional-equivalences/" },
+            { "title": "Predicates and quantifiers", "url": "https://www.geeksforgeeks.org/engineering-mathematics/mathematic-logic-predicates-quantifiers/" },
+            { "title": "Rules of inference", "url": "https://www.geeksforgeeks.org/engineering-mathematics/rules-of-inference/" }
+          ]
+        },
+        {
+          "topic": "Sets, relations and functions",
+          "notes": [
+            { "title": "Set theory", "url": "https://www.geeksforgeeks.org/maths/set-theory/" },
+            { "title": "Relations and functions", "url": "https://www.geeksforgeeks.org/maths/relations-and-functions/" },
+            { "title": "Closure of relations", "url": "https://www.geeksforgeeks.org/engineering-mathematics/closure-relations/" },
+            { "title": "Relations and their representations", "url": "https://www.geeksforgeeks.org/engineering-mathematics/relation-and-their-representations/" }
+          ]
+        },
+        {
+          "topic": "Partial orders and lattices",
+          "notes": [
+            { "title": "Partial orders and lattices (part 1)", "url": "https://www.geeksforgeeks.org/engineering-mathematics/partial-orders-lattices/" },
+            { "title": "Partial orders and lattices (part 2)", "url": "https://www.geeksforgeeks.org/engineering-mathematics/partial-orders-and-lattices-set-2-mathematics/" },
+            { "title": "Elements of a poset", "url": "https://www.geeksforgeeks.org/engineering-mathematics/elements-of-poset/" },
+            { "title": "Hasse diagrams", "url": "https://www.geeksforgeeks.org/engineering-mathematics/discrete-mathematics-hasse-diagrams/" }
+          ]
+        },
+        {
+          "topic": "Monoids and groups",
+          "notes": [
+            { "title": "Groups", "url": "https://www.geeksforgeeks.org/engineering-mathematics/groups-discrete-mathematics/" }
+          ]
+        },
+        {
+          "topic": "Graphs: connectivity, matching and colouring",
+          "notes": [
+            { "title": "Fundamentals of graph theory", "url": "https://www.geeksforgeeks.org/maths/fundamentals-of-graph-theory/" },
+            { "title": "Matching", "url": "https://www.geeksforgeeks.org/engineering-mathematics/matching-graph-theory/" },
+            { "title": "Graph colouring", "url": "https://www.geeksforgeeks.org/dsa/graph-coloring-applications/" },
+            { "title": "k-connected graph", "url": "https://www.geeksforgeeks.org/dsa/what-is-k-connected-graph/" },
+            { "title": "Biconnectivity", "url": "https://www.geeksforgeeks.org/dsa/biconnectivity-in-a-graph/" }
+          ]
+        },
+        {
+          "topic": "Combinatorics: counting",
+          "notes": [
+            { "title": "Fundamental principle of counting", "url": "https://www.geeksforgeeks.org/maths/fundamental-principle-of-counting/" },
+            { "title": "Inclusion-exclusion", "url": "https://www.geeksforgeeks.org/maths/principle-of-inclusion-and-exclusion/" },
+            { "title": "Pigeonhole principle", "url": "https://www.geeksforgeeks.org/engineering-mathematics/discrete-mathematics-the-pigeonhole-principle/" },
+            { "title": "Permutations", "url": "https://www.geeksforgeeks.org/maths/permutation/" },
+            { "title": "Combinations", "url": "https://www.geeksforgeeks.org/maths/combinations/" }
+          ]
+        },
+        {
+          "topic": "Recurrence relations",
+          "notes": [
+            { "title": "Recurrence relations: a complete guide", "url": "https://www.geeksforgeeks.org/dsa/recurrence-relations-a-complete-guide/" }
+          ]
+        },
+        {
+          "topic": "Generating functions",
+          "notes": [
+            { "title": "Generating functions: introduction", "url": "https://www.geeksforgeeks.org/engineering-mathematics/discrete-maths-generating-functions-introduction-prerequisites/" }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Linear Algebra",
+      "playlists": [
+        {
+          "type": "playlist",
+          "title": "Linear Algebra | GATE CSE Complete Course (free)",
+          "channel": "GO Classes for GATE CS",
+          "videos": 45,
+          "url": "https://www.youtube.com/playlist?list=PLIPZ2_p3RNHhGLQ1ZT37KLpBMAD90CM4_",
+          "note": "Best pick for GATE depth. GO Classes lists it as a free CSE playlist."
+        },
+        {
+          "type": "playlist",
+          "title": "Linear Algebra Engineering Mathematics for GATE | By GP Sir",
+          "channel": "Dr. Gajendra Purohit",
+          "videos": 17,
+          "url": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfKV1QmzQNtzMuIH7mq5qb62",
+          "note": "Shorter, Hindi-medium, quick revision after the GO Classes course."
+        },
+        {
+          "type": "playlist",
+          "title": "Essence of linear algebra",
+          "channel": "3Blue1Brown",
+          "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+          "note": "Intuition only (matrices, determinants, eigenvectors). Not exam-oriented, watch before the GATE course."
+        }
+      ],
+      "pyq": [
+        { "type": "pyq", "title": "GATE Overflow: Linear Algebra questions", "url": "https://gateoverflow.in/subject/mathematics/linear-algebra" }
+      ],
+      "topics": [
+        {
+          "topic": "Matrices",
+          "notes": [{ "title": "Types of matrices", "url": "https://www.geeksforgeeks.org/maths/types-of-matrices/" }]
+        },
+        {
+          "topic": "Determinants",
+          "notes": [
+            { "title": "Determinant of a matrix", "url": "https://www.geeksforgeeks.org/dsa/determinant-of-a-matrix/" },
+            { "title": "Properties of determinants", "url": "https://www.geeksforgeeks.org/engineering-mathematics/properties-of-determinants-of-matrices/" }
+          ]
+        },
+        {
+          "topic": "Systems of linear equations",
+          "notes": [{ "title": "System of linear equations", "url": "https://www.geeksforgeeks.org/engineering-mathematics/system-linear-equations/" }]
+        },
+        {
+          "topic": "Eigenvalues and eigenvectors",
+          "notes": [{ "title": "Eigenvalues", "url": "https://www.geeksforgeeks.org/engineering-mathematics/eigen-values/" }]
+        },
+        {
+          "topic": "LU decomposition",
+          "notes": [{ "title": "LU decomposition", "url": "https://www.geeksforgeeks.org/engineering-mathematics/l-u-decomposition-system-linear-equations/" }]
+        }
+      ]
+    },
+    {
+      "group": "Calculus",
+      "playlists": [
+        {
+          "type": "playlist",
+          "title": "MIT 18.01 Single Variable Calculus, Fall 2006",
+          "channel": "MIT OpenCourseWare",
+          "url": "https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1",
+          "note": "Full course, longer than GATE needs. Watch only limits, derivatives, max/min, MVT and integration lectures."
+        },
+        {
+          "type": "video",
+          "title": "Complete Calculus in 6 hours for GATE",
+          "url": "https://www.youtube.com/watch?v=XM_V2qYOmtc",
+          "verify": true,
+          "note": "Appeared in search results but YouTube blocked my page fetch, so I could not confirm the channel or content. Open it and check before relying on it."
+        }
+      ],
+      "pyq": [
+        { "type": "pyq", "title": "GATE Overflow: Calculus questions (limits, continuity, max/min, MVT, integration)", "url": "https://gateoverflow.in/subject/mathematics/calculus" },
+        { "type": "pyq", "title": "GFG quiz: Calculus PYQs 2010 to 2025", "url": "https://www.geeksforgeeks.org/quizzes/gate-engineering-mathematics-calculus-pyqs-2010-to-2025/" }
+      ],
+      "topics": [
+        {
+          "topic": "Limits",
+          "notes": [
+            { "title": "Limits", "url": "https://www.geeksforgeeks.org/maths/limits/" },
+            { "title": "Strategy in finding limits", "url": "https://www.geeksforgeeks.org/maths/strategy-in-finding-limits/" },
+            { "title": "Indeterminate forms", "url": "https://www.geeksforgeeks.org/engineering-mathematics/indeterminate-forms/" },
+            { "title": "L'Hopital's rule", "url": "https://www.geeksforgeeks.org/maths/l-hopital-rule/" }
+          ]
+        },
+        {
+          "topic": "Continuity and differentiability",
+          "notes": [
+            { "title": "Continuity of functions", "url": "https://www.geeksforgeeks.org/maths/continuity-of-functions/" },
+            { "title": "Differentiability of a function", "url": "https://www.geeksforgeeks.org/maths/differentiability-of-a-function-class-12-maths/" },
+            { "title": "Differentiation", "url": "https://www.geeksforgeeks.org/maths/differentiation/" }
+          ]
+        },
+        {
+          "topic": "Maxima and minima",
+          "notes": [
+            { "title": "Maxima and minima", "url": "https://www.geeksforgeeks.org/maths/maxima-and-minima/" },
+            { "title": "Absolute maxima and minima", "url": "https://www.geeksforgeeks.org/maths/absolute-minima-and-maxima/" },
+            { "title": "Relative maxima and minima", "url": "https://www.geeksforgeeks.org/maths/relative-minima-and-maxima/" }
+          ]
+        },
+        {
+          "topic": "Mean value theorem",
+          "notes": [
+            { "title": "Lagrange's mean value theorem", "url": "https://www.geeksforgeeks.org/engineering-mathematics/lagranges-mean-value-theorem/" },
+            { "title": "Rolle's theorem", "url": "https://www.geeksforgeeks.org/engineering-mathematics/rolles-theorem/" },
+            { "title": "Cauchy's mean value theorem", "url": "https://www.geeksforgeeks.org/engineering-mathematics/cauchys-mean-value-theorem/" }
+          ]
+        },
+        {
+          "topic": "Integration",
+          "notes": [
+            { "title": "Integration", "url": "https://www.geeksforgeeks.org/maths/integration-maths/" },
+            { "title": "Integration formulas", "url": "https://www.geeksforgeeks.org/maths/integration-formulas/" },
+            { "title": "Methods of integration", "url": "https://www.geeksforgeeks.org/maths/methods-of-integration/" }
+          ]
+        }
+      ]
+    },
+    {
+      "group": "Probability and Statistics",
+      "playlists": [
+        {
+          "type": "playlist",
+          "title": "Statistics 110 (Probability) - Joe Blitzstein, Harvard",
+          "url": "https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo",
+          "note": "A GATE Overflow answer says lectures 1 to 16 cover most of the GATE probability syllabus. Best conceptual source."
+        },
+        {
+          "type": "playlist",
+          "title": "Probability and Statistics",
+          "channel": "Unlock Mathematics",
+          "videos": 41,
+          "url": "https://www.youtube.com/playlist?list=PLhghlsQ_Ocy5anAe5gnpHxkISWsHObECB",
+          "verify": true,
+          "note": "Not GATE-specific. Use if Stat 110 feels too heavy."
+        },
+        {
+          "type": "nptel_course",
+          "title": "Probability and Statistics - Prof. Somesh Kumar, IIT Kharagpur",
+          "url": "https://nptel.ac.in/courses/111105041",
+          "note": "Full university course, more depth than GATE needs."
+        }
+      ],
+      "pyq": [
+        { "type": "pyq", "title": "GATE Overflow: Probability questions", "url": "https://gateoverflow.in/subject/mathematics/probability" },
+        { "type": "pyq", "title": "GFG: Probability and Statistics GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/maths/probability-and-statistics-gate-cse-previous-year-questions/" }
+      ],
+      "topics": [
+        {
+          "topic": "Random variables",
+          "notes": [
+            { "title": "Discrete random variable", "url": "https://www.geeksforgeeks.org/maths/discrete-random-variable/" },
+            { "title": "Continuous random variables", "url": "https://www.geeksforgeeks.org/engineering-mathematics/continuous-random-variables/" }
+          ]
+        },
+        {
+          "topic": "Uniform, normal, exponential, Poisson and binomial distributions",
+          "notes": [
+            { "title": "Uniform", "url": "https://www.geeksforgeeks.org/maths/uniform-distribution-formula/" },
+            { "title": "Normal", "url": "https://www.geeksforgeeks.org/maths/normal-distribution/" },
+            { "title": "Exponential", "url": "https://www.geeksforgeeks.org/engineering-mathematics/probability-distributions-exponential-distribution/" },
+            { "title": "Poisson", "url": "https://www.geeksforgeeks.org/maths/poisson-distribution/" },
+            { "title": "Binomial", "url": "https://www.geeksforgeeks.org/maths/binomial-distribution/" }
+          ]
+        },
+        {
+          "topic": "Mean, median, mode and standard deviation",
+          "notes": [
+            { "title": "Mean, median, mode", "url": "https://www.geeksforgeeks.org/maths/mean-median-mode/" },
+            { "title": "Standard deviation", "url": "https://www.geeksforgeeks.org/maths/standard-deviation-formula/" }
+          ]
+        },
+        {
+          "topic": "Conditional probability",
+          "notes": [{ "title": "Conditional probability", "url": "https://www.geeksforgeeks.org/maths/conditional-probability/" }]
+        },
+        {
+          "topic": "Bayes' theorem",
+          "notes": [{ "title": "Bayes theorem", "url": "https://www.geeksforgeeks.org/maths/bayes-theorem/" }]
+        }
+      ]
+    }
+  ]
+}
