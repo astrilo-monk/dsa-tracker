@@ -9,6 +9,8 @@ export type SheetMeta = {
   accent: string;
   emoji: string;
   playlistUrl?: string;
+  /** Word used for completed items. Defaults to "Solved". */
+  doneLabel?: string;
 };
 
 export const sheetCatalog: SheetMeta[] = [
@@ -32,6 +34,17 @@ export const sheetCatalog: SheetMeta[] = [
     emoji: "📗",
     playlistUrl: "https://www.youtube.com/playlist?list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
   },
+  {
+    id: "gate",
+    title: "GATE CSE 2028",
+    shortTitle: "GATE",
+    slug: "gate",
+    href: "/gate",
+    accent: "sky",
+    emoji: "🎓",
+    playlistUrl: "https://drive.google.com/drive/folders/1PoUJaFlgRQnJzKNhkr5jTfh8tM60zq1I?usp=sharing",
+    doneLabel: "Done",
+  },
 ];
 
 export const defaultSheetId: SheetId = "kunal";
@@ -39,6 +52,7 @@ export const defaultSheetId: SheetId = "kunal";
 const loaders: Record<string, () => Promise<{ default: SheetDataset }>> = {
   kunal: () => import("@/data/sheets/kunal.json") as unknown as Promise<{ default: SheetDataset }>,
   pratyush: () => import("@/data/sheets/pratyush.json") as unknown as Promise<{ default: SheetDataset }>,
+  gate: () => import("@/data/sheets/gate.json") as unknown as Promise<{ default: SheetDataset }>,
 };
 
 export function getSheetMeta(sheetId: SheetId) {
@@ -51,14 +65,14 @@ export async function loadSheetDataset(sheetId: SheetId): Promise<SheetDataset> 
   return dataset.default;
 }
 
-export function resolveSheetSlug(pathname: string, searchParams?: URLSearchParams) {
-  if (pathname === "/pratyush") return "pratyush";
-  if (pathname === "/kunal") return "kunal";
+export function resolveSheetSlug(pathname: string, searchParams?: URLSearchParams): SheetId {
+  const byPath = sheetCatalog.find((sheet) => sheet.href === pathname);
+  if (byPath) return byPath.id;
   if (pathname === "/sheet") return "kunal";
 
-  const sheet = searchParams?.get("sheet");
-  if (sheet === "pratyush") return "pratyush";
-  if (sheet === "kunal") return "kunal";
+  const slug = searchParams?.get("sheet");
+  const bySlug = sheetCatalog.find((sheet) => sheet.slug === slug);
+  if (bySlug) return bySlug.id;
 
   return defaultSheetId;
 }

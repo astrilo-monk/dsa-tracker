@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home, Flame, RotateCcw, Settings, Menu, X, Code2, CloudOff, CheckCircle2, Loader2, BookOpen, BookCopy } from "lucide-react";
+import { Home, Flame, RotateCcw, Settings, Menu, X, Code2, CloudOff, CheckCircle2, Loader2, BookOpen, BookCopy, GraduationCap } from "lucide-react";
 import { useState } from "react";
 import { useSession, signIn } from "next-auth/react";
 import { useTrackerStore } from "@/store/useTrackerStore";
@@ -17,6 +17,7 @@ const navItems = [
   { name: "Dashboard", href: "/", icon: Home },
   { name: "Kunal DSA", href: "/kunal", icon: BookOpen },
   { name: "Pratyush DSA", href: "/pratyush", icon: BookCopy },
+  { name: "GATE CSE 2028", href: "/gate", icon: GraduationCap },
   { name: "Important", href: "/bookmarks", icon: Flame },
   { name: "Revision", href: "/revision", icon: RotateCcw },
   { name: "Settings", href: "/settings", icon: Settings },

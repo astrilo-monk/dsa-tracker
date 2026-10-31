@@ -118,7 +118,7 @@ export default function Dashboard() {
                           <span className="text-lg">{meta?.emoji}</span>
                           <span className="font-medium">{sheet.title}</span>
                         </div>
-                        <span className="text-xs font-medium text-muted-foreground">{sheetSolved}/{sheetTotal} Solved</span>
+                        <span className="text-xs font-medium text-muted-foreground">{sheetSolved}/{sheetTotal} {meta?.doneLabel ?? "Solved"}</span>
                       </div>
                       <div className="h-1.5 w-full bg-muted rounded-full overflow-hidden">
                         <div 

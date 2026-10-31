@@ -60,18 +60,30 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
           </button>
           
           <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3">
-            <a 
-              href={links[0]?.url ?? '#'} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className={cn(
-                "font-medium text-sm leading-snug hover:text-primary transition-colors inline-flex items-center gap-1.5 w-fit",
-                state.status === 'solved' && "text-muted-foreground line-through opacity-70"
-              )}
-            >
-              {isResourceOnly && <BookOpen className="w-3.5 h-3.5 text-muted-foreground" />}
-              <span className="hover:underline line-clamp-1">{problem.title}</span>
-            </a>
+            {links[0]?.url ? (
+              <a
+                href={links[0].url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "font-medium text-sm leading-snug hover:text-primary transition-colors inline-flex items-center gap-1.5 w-fit",
+                  state.status === 'solved' && "text-muted-foreground line-through opacity-70"
+                )}
+              >
+                {isResourceOnly && <BookOpen className="w-3.5 h-3.5 text-muted-foreground" />}
+                <span className="hover:underline line-clamp-1">{problem.title}</span>
+              </a>
+            ) : (
+              // Syllabus topics (GATE) have no link, so don't render a dead "#" anchor.
+              <span
+                className={cn(
+                  "font-medium text-sm leading-snug inline-flex items-center gap-1.5 w-fit",
+                  state.status === 'solved' && "text-muted-foreground line-through opacity-70"
+                )}
+              >
+                {problem.title}
+              </span>
+            )}
             
             <div className="flex flex-wrap items-center gap-1.5">
               {!isResourceOnly && problem.difficulty !== "Uncategorized" && (

@@ -40,7 +40,8 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
     const newGroups = pattern.groups.map(group => {
       const newQuestions = group.questions.filter(q => 
         q.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-        q.difficulty.toLowerCase().includes(searchQuery.toLowerCase())
+        q.difficulty.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        (q.subcategory ?? "").toLowerCase().includes(searchQuery.toLowerCase())
       );
       return { ...group, questions: newQuestions };
     }).filter(group => group.questions.length > 0);
@@ -76,7 +77,7 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
           <p className="text-muted-foreground mt-2 text-sm md:text-base">{data.description || "Master Data Structures and Algorithms topic by topic."}</p>
         </div>
         
-        <div className="relative w-full md:w-72">
+        <div className="relative w-full md:w-72 md:shrink-0">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
           <input 
             type="text" 
@@ -90,7 +91,7 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
 
       <div className="space-y-4">
         {filteredPatterns.map((pattern, index) => (
-          <TopicCard key={pattern.id} pattern={pattern} index={index + 1} />
+          <TopicCard key={pattern.id} pattern={pattern} index={index + 1} doneLabel={sheetMeta.doneLabel} />
         ))}
         {filteredPatterns.length === 0 && (
           <div className="text-center py-12 bg-card border border-border rounded-xl">

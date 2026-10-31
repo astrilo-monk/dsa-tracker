@@ -1,0 +1,1314 @@
+{
+  "id": "gate",
+  "title": "GATE CSE 2028",
+  "slug": "gate",
+  "description": "Checklist from the official GATE CS syllabus (2027). The 2028 syllabus isn't out yet.",
+  "patterns": [
+    {
+      "id": "gate::general-aptitude",
+      "title": "General Aptitude",
+      "slug": "general-aptitude",
+      "weightage": "15 marks",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::general-aptitude::basic-english-grammar-tenses-articles-adjectives-prepositions-conjunctions-verb-noun-agreement",
+              "title": "Basic English grammar (tenses, articles, adjectives, prepositions, conjunctions, verb-noun agreement)",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Verbal Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::basic-vocabulary-words-idioms-and-phrases-in-context",
+              "title": "Basic vocabulary: words, idioms and phrases in context",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Verbal Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::reading-and-comprehension",
+              "title": "Reading and comprehension",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Verbal Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::narrative-sequencing",
+              "title": "Narrative sequencing",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Verbal Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::data-interpretation-graphs-2d-and-3d-plots-maps-and-tables",
+              "title": "Data interpretation: graphs, 2D and 3D plots, maps and tables",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Quantitative Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::ratios-and-percentages",
+              "title": "Ratios and percentages",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Quantitative Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::powers-exponents-and-logarithms",
+              "title": "Powers, exponents and logarithms",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Quantitative Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::permutations-and-combinations",
+              "title": "Permutations and combinations",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Quantitative Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::series",
+              "title": "Series",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Quantitative Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::mensuration-and-geometry",
+              "title": "Mensuration and geometry",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Quantitative Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::elementary-statistics-and-probability",
+              "title": "Elementary statistics and probability",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Quantitative Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::logic-deduction-and-induction",
+              "title": "Logic: deduction and induction",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Analytical Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::analogy",
+              "title": "Analogy",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Analytical Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::numerical-relations-and-reasoning",
+              "title": "Numerical relations and reasoning",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Analytical Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::transformation-of-shapes-translation-rotation-scaling-mirroring-assembling-grouping",
+              "title": "Transformation of shapes: translation, rotation, scaling, mirroring, assembling, grouping",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Spatial Aptitude",
+              "links": []
+            },
+            {
+              "id": "gate::general-aptitude::paper-folding-cutting-and-patterns-in-2d-and-3d",
+              "title": "Paper folding, cutting and patterns in 2D and 3D",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Spatial Aptitude",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::engineering-mathematics",
+      "title": "Engineering Mathematics",
+      "slug": "engineering-mathematics",
+      "weightage": "13 marks + ~8-10 discrete",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::engineering-mathematics::propositional-and-first-order-logic",
+              "title": "Propositional and first-order logic",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Discrete Mathematics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::sets-relations-and-functions",
+              "title": "Sets, relations and functions",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Discrete Mathematics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::partial-orders-and-lattices",
+              "title": "Partial orders and lattices",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Discrete Mathematics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::monoids-and-groups",
+              "title": "Monoids and groups",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Discrete Mathematics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::graphs-connectivity-matching-and-colouring",
+              "title": "Graphs: connectivity, matching and colouring",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Discrete Mathematics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::combinatorics-counting",
+              "title": "Combinatorics: counting",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Discrete Mathematics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::recurrence-relations",
+              "title": "Recurrence relations",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Discrete Mathematics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::generating-functions",
+              "title": "Generating functions",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Discrete Mathematics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::matrices",
+              "title": "Matrices",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Linear Algebra",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::determinants",
+              "title": "Determinants",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Linear Algebra",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::systems-of-linear-equations",
+              "title": "Systems of linear equations",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Linear Algebra",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::eigenvalues-and-eigenvectors",
+              "title": "Eigenvalues and eigenvectors",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Linear Algebra",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::lu-decomposition",
+              "title": "LU decomposition",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Linear Algebra",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::limits",
+              "title": "Limits",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Calculus",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::continuity-and-differentiability",
+              "title": "Continuity and differentiability",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Calculus",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::maxima-and-minima",
+              "title": "Maxima and minima",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Calculus",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::mean-value-theorem",
+              "title": "Mean value theorem",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Calculus",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::integration",
+              "title": "Integration",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Calculus",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::random-variables",
+              "title": "Random variables",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Probability and Statistics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::uniform-normal-exponential-poisson-and-binomial-distributions",
+              "title": "Uniform, normal, exponential, Poisson and binomial distributions",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Probability and Statistics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::mean-median-mode-and-standard-deviation",
+              "title": "Mean, median, mode and standard deviation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Probability and Statistics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::conditional-probability",
+              "title": "Conditional probability",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Probability and Statistics",
+              "links": []
+            },
+            {
+              "id": "gate::engineering-mathematics::bayes-theorem",
+              "title": "Bayes' theorem",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Probability and Statistics",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::digital-logic",
+      "title": "Digital Logic",
+      "slug": "digital-logic",
+      "weightage": "~4-6 marks",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::digital-logic::boolean-algebra",
+              "title": "Boolean algebra",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Boolean Algebra and Minimisation",
+              "links": []
+            },
+            {
+              "id": "gate::digital-logic::algebraic-technique",
+              "title": "Algebraic technique",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Boolean Algebra and Minimisation",
+              "links": []
+            },
+            {
+              "id": "gate::digital-logic::karnaugh-map",
+              "title": "Karnaugh map",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Boolean Algebra and Minimisation",
+              "links": []
+            },
+            {
+              "id": "gate::digital-logic::tabular-method",
+              "title": "Tabular method",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Boolean Algebra and Minimisation",
+              "links": []
+            },
+            {
+              "id": "gate::digital-logic::design-of-combinational-circuits",
+              "title": "Design of combinational circuits",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Circuit Design",
+              "links": []
+            },
+            {
+              "id": "gate::digital-logic::design-of-sequential-circuits",
+              "title": "Design of sequential circuits",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Circuit Design",
+              "links": []
+            },
+            {
+              "id": "gate::digital-logic::number-representation",
+              "title": "Number representation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Number Representation and Arithmetic",
+              "links": []
+            },
+            {
+              "id": "gate::digital-logic::fixed-point-arithmetic",
+              "title": "Fixed-point arithmetic",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Number Representation and Arithmetic",
+              "links": []
+            },
+            {
+              "id": "gate::digital-logic::floating-point-arithmetic",
+              "title": "Floating-point arithmetic",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Number Representation and Arithmetic",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::computer-organization-and-architecture",
+      "title": "Computer Organization and Architecture",
+      "slug": "computer-organization-and-architecture",
+      "weightage": "~8-10 marks",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::computer-organization-and-architecture::instruction-set",
+              "title": "Instruction set",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Instruction and Control",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::addressing-modes",
+              "title": "Addressing modes",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Instruction and Control",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::design-of-arithmetic-and-logic-unit-alu",
+              "title": "Design of Arithmetic and Logic Unit (ALU)",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Instruction and Control",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::hardwired-control",
+              "title": "Hardwired control",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Instruction and Control",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::microprogrammed-control",
+              "title": "Microprogrammed control",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Instruction and Control",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::memory-interfacing",
+              "title": "Memory interfacing",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Memory and I/O",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::memory-hierarchy",
+              "title": "Memory hierarchy",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Memory and I/O",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::memory-performance",
+              "title": "Memory performance",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Memory and I/O",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::cache-memory-mapping",
+              "title": "Cache memory mapping",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Memory and I/O",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::i-o-interface",
+              "title": "I/O interface",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Memory and I/O",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::interrupt",
+              "title": "Interrupt",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Memory and I/O",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::dma",
+              "title": "DMA",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Memory and I/O",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::instruction-pipelining",
+              "title": "Instruction pipelining",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Instruction Pipelining",
+              "links": []
+            },
+            {
+              "id": "gate::computer-organization-and-architecture::pipeline-hazards",
+              "title": "Pipeline hazards",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Instruction Pipelining",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::programming-and-data-structures",
+      "title": "Programming and Data Structures",
+      "slug": "programming-and-data-structures",
+      "weightage": "counted with Algorithms",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::programming-and-data-structures::programming-in-c",
+              "title": "Programming in C",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Programming",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::recursion",
+              "title": "Recursion",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Programming",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::arrays",
+              "title": "Arrays",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Structures",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::stacks",
+              "title": "Stacks",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Structures",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::queues",
+              "title": "Queues",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Structures",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::linked-lists",
+              "title": "Linked lists",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Structures",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::trees",
+              "title": "Trees",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Structures",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::binary-search-trees",
+              "title": "Binary search trees",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Structures",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::binary-heaps",
+              "title": "Binary heaps",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Structures",
+              "links": []
+            },
+            {
+              "id": "gate::programming-and-data-structures::graphs",
+              "title": "Graphs",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Structures",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::algorithms",
+      "title": "Algorithms",
+      "slug": "algorithms",
+      "weightage": "~12-16 marks (with PDS)",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::algorithms::searching",
+              "title": "Searching",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Basic Algorithms",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::sorting",
+              "title": "Sorting",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Basic Algorithms",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::hashing",
+              "title": "Hashing",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Basic Algorithms",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::asymptotic-worst-case-time-and-space-complexity",
+              "title": "Asymptotic worst-case time and space complexity",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Basic Algorithms",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::greedy",
+              "title": "Greedy",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Algorithm Design Techniques",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::dynamic-programming",
+              "title": "Dynamic programming",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Algorithm Design Techniques",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::divide-and-conquer",
+              "title": "Divide-and-conquer",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Algorithm Design Techniques",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::graph-traversals",
+              "title": "Graph traversals",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Graph Algorithms",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::minimum-spanning-trees",
+              "title": "Minimum spanning trees",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Graph Algorithms",
+              "links": []
+            },
+            {
+              "id": "gate::algorithms::shortest-paths",
+              "title": "Shortest paths",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Graph Algorithms",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::theory-of-computation",
+      "title": "Theory of Computation",
+      "slug": "theory-of-computation",
+      "weightage": "~7-9 marks",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::theory-of-computation::regular-expressions",
+              "title": "Regular expressions",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Automata and Languages",
+              "links": []
+            },
+            {
+              "id": "gate::theory-of-computation::finite-automata",
+              "title": "Finite automata",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Automata and Languages",
+              "links": []
+            },
+            {
+              "id": "gate::theory-of-computation::context-free-grammars",
+              "title": "Context-free grammars",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Automata and Languages",
+              "links": []
+            },
+            {
+              "id": "gate::theory-of-computation::push-down-automata",
+              "title": "Push-down automata",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Automata and Languages",
+              "links": []
+            },
+            {
+              "id": "gate::theory-of-computation::regular-languages",
+              "title": "Regular languages",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Automata and Languages",
+              "links": []
+            },
+            {
+              "id": "gate::theory-of-computation::context-free-languages",
+              "title": "Context-free languages",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Automata and Languages",
+              "links": []
+            },
+            {
+              "id": "gate::theory-of-computation::pumping-lemma",
+              "title": "Pumping lemma",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Automata and Languages",
+              "links": []
+            },
+            {
+              "id": "gate::theory-of-computation::turing-machines",
+              "title": "Turing machines",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Computability",
+              "links": []
+            },
+            {
+              "id": "gate::theory-of-computation::undecidability",
+              "title": "Undecidability",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Computability",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::compiler-design",
+      "title": "Compiler Design",
+      "slug": "compiler-design",
+      "weightage": "~4-6 marks",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::compiler-design::lexical-analysis",
+              "title": "Lexical analysis",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Compiler Phases",
+              "links": []
+            },
+            {
+              "id": "gate::compiler-design::parsing",
+              "title": "Parsing",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Compiler Phases",
+              "links": []
+            },
+            {
+              "id": "gate::compiler-design::syntax-directed-translation",
+              "title": "Syntax-directed translation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Compiler Phases",
+              "links": []
+            },
+            {
+              "id": "gate::compiler-design::runtime-environments",
+              "title": "Runtime environments",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Compiler Phases",
+              "links": []
+            },
+            {
+              "id": "gate::compiler-design::intermediate-code-generation",
+              "title": "Intermediate code generation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Compiler Phases",
+              "links": []
+            },
+            {
+              "id": "gate::compiler-design::local-optimisation",
+              "title": "Local optimisation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Optimisation and Data Flow Analysis",
+              "links": []
+            },
+            {
+              "id": "gate::compiler-design::constant-propagation",
+              "title": "Constant propagation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Optimisation and Data Flow Analysis",
+              "links": []
+            },
+            {
+              "id": "gate::compiler-design::liveness-analysis",
+              "title": "Liveness analysis",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Optimisation and Data Flow Analysis",
+              "links": []
+            },
+            {
+              "id": "gate::compiler-design::common-sub-expression-elimination",
+              "title": "Common sub-expression elimination",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Optimisation and Data Flow Analysis",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::operating-systems",
+      "title": "Operating Systems",
+      "slug": "operating-systems",
+      "weightage": "~8-10 marks",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::operating-systems::system-calls",
+              "title": "System calls",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Processes and Concurrency",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::processes",
+              "title": "Processes",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Processes and Concurrency",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::threads",
+              "title": "Threads",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Processes and Concurrency",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::inter-process-communication",
+              "title": "Inter-process communication",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Processes and Concurrency",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::concurrency-and-synchronisation",
+              "title": "Concurrency and synchronisation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Processes and Concurrency",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::deadlock",
+              "title": "Deadlock",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Processes and Concurrency",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::cpu-scheduling",
+              "title": "CPU scheduling",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Scheduling and Memory",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::i-o-scheduling",
+              "title": "I/O scheduling",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Scheduling and Memory",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::memory-management",
+              "title": "Memory management",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Scheduling and Memory",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::virtual-memory",
+              "title": "Virtual memory",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Scheduling and Memory",
+              "links": []
+            },
+            {
+              "id": "gate::operating-systems::file-systems",
+              "title": "File systems",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "File Systems",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::databases",
+      "title": "Databases",
+      "slug": "databases",
+      "weightage": "~7-9 marks",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::databases::er-model",
+              "title": "ER model",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Database Models and SQL",
+              "links": []
+            },
+            {
+              "id": "gate::databases::relational-model",
+              "title": "Relational model",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Database Models and SQL",
+              "links": []
+            },
+            {
+              "id": "gate::databases::relational-algebra",
+              "title": "Relational algebra",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Database Models and SQL",
+              "links": []
+            },
+            {
+              "id": "gate::databases::tuple-calculus",
+              "title": "Tuple calculus",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Database Models and SQL",
+              "links": []
+            },
+            {
+              "id": "gate::databases::sql",
+              "title": "SQL",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Database Models and SQL",
+              "links": []
+            },
+            {
+              "id": "gate::databases::integrity-constraints",
+              "title": "Integrity constraints",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Database Models and SQL",
+              "links": []
+            },
+            {
+              "id": "gate::databases::normal-forms",
+              "title": "Normal forms",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Database Models and SQL",
+              "links": []
+            },
+            {
+              "id": "gate::databases::file-organisation",
+              "title": "File organisation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "File Organisation and Transactions",
+              "links": []
+            },
+            {
+              "id": "gate::databases::indexing",
+              "title": "Indexing",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "File Organisation and Transactions",
+              "links": []
+            },
+            {
+              "id": "gate::databases::b-trees",
+              "title": "B trees",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "File Organisation and Transactions",
+              "links": []
+            },
+            {
+              "id": "gate::databases::bplus-trees",
+              "title": "B+ trees",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "File Organisation and Transactions",
+              "links": []
+            },
+            {
+              "id": "gate::databases::transactions",
+              "title": "Transactions",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "File Organisation and Transactions",
+              "links": []
+            },
+            {
+              "id": "gate::databases::concurrency-control",
+              "title": "Concurrency control",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "File Organisation and Transactions",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    },
+    {
+      "id": "gate::computer-networks",
+      "title": "Computer Networks",
+      "slug": "computer-networks",
+      "weightage": "~6-8 marks",
+      "groups": [
+        {
+          "difficulty": "Uncategorized",
+          "questions": [
+            {
+              "id": "gate::computer-networks::principles-of-layering",
+              "title": "Principles of layering",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Layering and Switching",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::circuit-switching",
+              "title": "Circuit switching",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Layering and Switching",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::packet-switching",
+              "title": "Packet switching",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Layering and Switching",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::virtual-circuit-switching",
+              "title": "Virtual circuit switching",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Layering and Switching",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::performance-metrics",
+              "title": "Performance metrics",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Layering and Switching",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::data-link-layer",
+              "title": "Data link layer",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Link Layer and Routing",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::error-detection",
+              "title": "Error detection",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Link Layer and Routing",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::medium-access-control",
+              "title": "Medium Access Control",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Link Layer and Routing",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::ethernet",
+              "title": "Ethernet",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Link Layer and Routing",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::distance-vector-routing",
+              "title": "Distance vector routing",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Link Layer and Routing",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::link-state-routing",
+              "title": "Link state routing",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "Data Link Layer and Routing",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::ipv4",
+              "title": "IPv4",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::fragmentation",
+              "title": "Fragmentation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::cidr-notation",
+              "title": "CIDR notation",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::network-address-translation-nat",
+              "title": "Network Address Translation (NAT)",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::tcp-flow-control",
+              "title": "TCP flow control",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::tcp-congestion-control",
+              "title": "TCP congestion control",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::socket-api",
+              "title": "Socket API",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::dns",
+              "title": "DNS",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            },
+            {
+              "id": "gate::computer-networks::http",
+              "title": "HTTP",
+              "difficulty": "Uncategorized",
+              "platform": "Other",
+              "subcategory": "IPv4, Transport and Application Layer",
+              "links": []
+            }
+          ]
+        }
+      ],
+      "resources": []
+    }
+  ]
+}
