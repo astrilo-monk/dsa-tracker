@@ -21,6 +21,7 @@ export interface SheetQuestion {
   /** Optional sub-heading, e.g. "Linear Algebra" under Engineering Mathematics. */
   subcategory?: string;
   note?: string;
+  resourceLinks?: SheetLink[];
 }
 
 export interface SheetResource {

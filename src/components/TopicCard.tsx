@@ -120,11 +120,27 @@ export function TopicCard({ pattern, index, doneLabel = "Solved" }: TopicCardPro
 
 function ProblemGroup({ title, problems, colorClass }: { title: string, problems: SheetQuestion[], colorClass: string }) {
   const [isExpanded, setIsExpanded] = useState(true);
+  const playlistLinks = Array.from(
+    new Map(
+      problems
+        .flatMap((problem) => problem.resourceLinks ?? [])
+        .filter((link) => link.platform === "YouTube")
+        .map((link) => [link.url, link])
+    ).values()
+  );
 
   return (
     <div className="bg-background/70 rounded-xl border border-border/80 overflow-hidden">
-      <button 
+      <div
+        role="button"
+        tabIndex={0}
         onClick={() => setIsExpanded(!isExpanded)}
+        onKeyDown={(event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            setIsExpanded(!isExpanded);
+          }
+        }}
         className="w-full px-4 py-2.5 flex items-center justify-between hover:bg-muted/50 transition-colors"
       >
         <div className="flex items-center gap-3">
@@ -133,10 +149,28 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
             {problems.length} items
           </span>
         </div>
-        <div className="text-muted-foreground">
+        <div className="flex items-center gap-2">
+          {playlistLinks.length > 0 && (
+            <div className="flex items-center gap-1.5">
+              {playlistLinks.map((link) => (
+                <a
+                  key={link.url}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(event) => event.stopPropagation()}
+                  className="inline-flex items-center rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
+                >
+                  YouTube
+                </a>
+              ))}
+            </div>
+          )}
+          <div className="text-muted-foreground">
           {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+          </div>
         </div>
-      </button>
+      </div>
 
       <AnimatePresence>
         {isExpanded && (

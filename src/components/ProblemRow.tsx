@@ -16,6 +16,7 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
   const { problemStates, markStatus, toggleImportant, updateNotes } = useTrackerStore();
   const state = problemStates[problem.id] || { status: 'unsolved', notes: '', bookmarked: false, important: false };
   const links = problem.links || [];
+  const additionalLinks = links.slice(1);
   
   const [showNotes, setShowNotes] = useState(false);
   const [isNotesExpanded, setIsNotesExpanded] = useState(false);
@@ -42,7 +43,8 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
 
   return (
     <div className="group rounded-xl border border-transparent bg-transparent hover:bg-[#151923] transition-all duration-200 hover:border-border/80 relative overflow-hidden">
-      <div className="px-3 py-2.5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 relative z-10">
+      <div className="px-3 py-2.5 relative z-10">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         
         {/* Left Side: Status & Title */}
         <div className="flex items-start sm:items-center space-x-3 flex-1 min-w-0">
@@ -100,30 +102,7 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
           </div>
         </div>
 
-        {/* Right Side: Links & Actions */}
-        <div className="flex flex-wrap items-center gap-2 pl-8 sm:pl-0">
-          {links.length > 1 && (
-            <div className="flex flex-wrap gap-1.5 mr-2">
-              {links.map((link: SheetLink) => (
-                <a
-                  key={`${problem.id}-${link.url}`}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
-                >
-                  {link.kind === 'resource' || link.label.toLowerCase().includes('video') || link.url.includes('youtu') ? (
-                    <BookOpen className="w-3 h-3" />
-                  ) : (
-                    <ExternalLink className="w-3 h-3" />
-                  )}
-                  <span>{link.label}</span>
-                </a>
-              ))}
-            </div>
-          )}
-
-          <div className="flex items-center space-x-0.5 flex-shrink-0">
+        <div className="flex items-center space-x-0.5 flex-shrink-0">
             <button 
               onClick={() => setShowNotes(!showNotes)}
               className={cn("p-1.5 rounded-lg transition-all duration-200", state.notes ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
@@ -138,8 +117,29 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
             >
               <Flame className="w-4 h-4" />
             </button>
-          </div>
         </div>
+        </div>
+
+        {additionalLinks.length > 0 && (
+          <div className="mt-2 ml-8 flex flex-wrap gap-1.5">
+            {additionalLinks.map((link: SheetLink) => (
+              <a
+                key={`${problem.id}-${link.url}`}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex max-w-full items-center gap-1 rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
+              >
+                {link.kind === 'resource' || link.label.toLowerCase().includes('video') || link.url.includes('youtu') ? (
+                  <BookOpen className="w-3 h-3 flex-shrink-0" />
+                ) : (
+                  <ExternalLink className="w-3 h-3 flex-shrink-0" />
+                )}
+                <span className="truncate">{link.label}</span>
+              </a>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* Notes Section */}

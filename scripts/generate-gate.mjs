@@ -19,6 +19,15 @@ import fs from "fs";
 import path from "path";
 
 const OUTPUT_FILE = path.join(process.cwd(), "src/data/sheets/gate.json");
+const RESOURCES_FILE = path.join(
+  process.cwd(),
+  "src/data/sheets/gate-engineering-math-resources.json"
+);
+const RESOURCE_DATASET_FILES = [
+  "gate-engineering-dsa-resources.json",
+  "gate-engineering-digitallogic-resources.json",
+  "gate-engineering-coa-resources.json",
+].map((file) => path.join(process.cwd(), "src/data/sheets", file));
 
 const syllabus = [
   {
@@ -297,15 +306,75 @@ function slugify(value) {
 }
 
 const seen = new Set();
+const resources = JSON.parse(fs.readFileSync(RESOURCES_FILE, "utf8"));
+const resourceGroups = new Map(resources.groups.map((group) => [group.group, group]));
+const resourceDatasets = new Map(
+  RESOURCE_DATASET_FILES.map((file) => {
+    const dataset = JSON.parse(fs.readFileSync(file, "utf8"));
+    return [dataset.title, dataset];
+  })
+);
+
+function topicLinks(group, topicTitle) {
+  const topic = group?.topics?.find((item) => item.topic === topicTitle);
+  return (topic?.notes ?? []).map((note) => ({
+    label: note.title,
+    url: note.url,
+    platform: "Notes",
+    kind: "resource",
+  }));
+}
+
+function groupLinks(group) {
+  const links = [];
+  for (const resource of group?.playlists ?? []) {
+    links.push({
+      label: resource.url.includes("youtube.com") ? "YouTube" : resource.type === "nptel_course" ? "NPTEL" : resource.title,
+      url: resource.url,
+      platform: resource.url.includes("youtube.com") ? "YouTube" : "Other",
+      kind: "resource",
+    });
+  }
+
+  for (const resource of group?.pyq ?? []) {
+    links.push({
+      label: resource.title,
+      url: resource.url,
+      platform: "PYQ",
+      kind: "resource",
+    });
+  }
+
+  return links;
+}
+
+function datasetTopicLinks(dataset, subcategory, title) {
+  const question = dataset?.groups
+    ?.flatMap((group) => group.questions ?? [])
+    .find((item) => item.title === title && item.subcategory === subcategory);
+  const links = question?.links ?? [];
+
+  return {
+    notes: links.filter((link) => link.platform !== "YouTube"),
+    youtube: links
+      .filter((link) => link.platform === "YouTube")
+      .map((link) => ({ ...link, label: "YouTube" })),
+  };
+}
 
 const patterns = syllabus.map((subject) => {
   const subjectSlug = slugify(subject.title);
+  const resourceDataset = resourceDatasets.get(subject.title);
 
   const questions = Object.entries(subject.sections).flatMap(([subcategory, topics]) =>
-    topics.map((title) => {
+    topics.map((title, topicIndex) => {
       const id = `gate::${subjectSlug}::${slugify(title)}`;
       if (seen.has(id)) throw new Error(`Duplicate topic id: ${id}`);
       seen.add(id);
+
+      const datasetLinks = datasetTopicLinks(resourceDataset, subcategory, title);
+      const mathNotes = topicLinks(resourceGroups.get(subcategory), title);
+      const mathGroupLinks = topicIndex === 0 ? groupLinks(resourceGroups.get(subcategory)) : [];
 
       return {
         id,
@@ -313,7 +382,8 @@ const patterns = syllabus.map((subject) => {
         difficulty: "Uncategorized",
         platform: "Other",
         subcategory,
-        links: [],
+        links: resourceDataset ? datasetLinks.notes : mathNotes.slice(0, 1),
+        resourceLinks: resourceDataset ? datasetLinks.youtube : mathGroupLinks,
       };
     })
   );

@@ -1,0 +1,176 @@
+{
+  "id": "gate::programming-and-data-structures",
+  "title": "Programming and Data Structures",
+  "slug": "programming-and-data-structures",
+  "weightage": "counted with Algorithms",
+  "groups": [
+    {
+      "difficulty": "Uncategorized",
+      "questions": [
+        {
+          "id": "gate::programming-and-data-structures::programming-in-c",
+          "title": "Programming in C",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Programming",
+          "links": [
+            { "label": "C programming for GATE CS: complete study guide", "url": "https://engineeringhulk.com/cs-it/programming-c/", "platform": "Notes", "kind": "resource" },
+            { "label": "Pointers and arrays in C for GATE CS", "url": "https://engineeringhulk.com/cs-it/programming-c/pointers-arrays/", "platform": "Notes", "kind": "resource" },
+            { "label": "C programming tutorial: storage classes, pointers, functions (PDF)", "url": "https://www.scribd.com/document/589384921/C-Programming-Tutorial", "platform": "Notes", "kind": "resource" },
+            { "label": "C programming GATE-oriented notes (pointers, dynamic memory, common traps)", "url": "https://www.scribd.com/document/1027290171/C-Programming", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Programming in C (via Class Central)", "url": "https://classcentral.com/course/youtube-programming-in-c-95184", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Programming in C previous GATE questions", "url": "https://gateoverflow.in/questions/programming-in-c/programming/programming-in-c?sort=gate", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::recursion",
+          "title": "Recursion",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Programming",
+          "links": [
+            { "label": "GFG: Recursion notes for GATE exam", "url": "https://www.geeksforgeeks.org/recursion-notes-for-gate-exam", "platform": "Notes", "kind": "resource" },
+            { "label": "Recursion at the machine level: call stack and activation records (UMass)", "url": "https://people.cs.umass.edu/~liberato/courses/2015-spring-cmpsci187/lecture-notes-john/lecture10.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Activation records, tail calls and accumulators (UW CSE 341)", "url": "https://courses.cs.washington.edu/courses/cse341/07sp/slides/lec06.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Recursion and the call stack in C (GATE CS guide)", "url": "https://engineeringhulk.com/cs-it/programming-c/", "platform": "Notes", "kind": "resource" },
+            { "label": "Recurrence relations: a complete guide (GFG)", "url": "https://www.geeksforgeeks.org/dsa/recurrence-relations-a-complete-guide/", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Programming in C (via Class Central)", "url": "https://classcentral.com/course/youtube-programming-in-c-95184", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Programming in C and recursion previous GATE questions", "url": "https://gateoverflow.in/questions/programming-in-c/programming/programming-in-c?sort=gate", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::arrays",
+          "title": "Arrays",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Data Structures",
+          "links": [
+            { "label": "GFG: Array notes for GATE exam", "url": "https://www.geeksforgeeks.org/array-notes-for-gate-exam", "platform": "Notes", "kind": "resource" },
+            { "label": "Pointers and arrays in C for GATE CS", "url": "https://engineeringhulk.com/cs-it/programming-c/pointers-arrays/", "platform": "Notes", "kind": "resource" },
+            { "label": "Data structures: complete GATE CS study guide", "url": "https://engineeringhulk.com/cs-it/data-structures/", "platform": "Notes", "kind": "resource" },
+            { "label": "Data structure notes: arrays to graphs (BYJU'S)", "url": "https://byjus.com/gate/introduction-to-data-structure-notes", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Data Structures and Algorithms (Jenny's Lectures, via Class Central)", "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Data Structures and Algorithms lectures (via Class Central)", "url": "https://classcentral.com/classroom/youtube-computer-sc-data-structures-and-algorithms-47663", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Programming in C previous GATE questions (arrays, pointers)", "url": "https://gateoverflow.in/questions/programming-in-c/programming/programming-in-c?sort=gate", "platform": "PYQ", "kind": "resource" },
+            { "label": "GATE Overflow: Data structures previous GATE questions", "url": "https://gateoverflow.in/subject/programming-in-c/data-structures", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::stacks",
+          "title": "Stacks",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Data Structures",
+          "links": [
+            { "label": "GFG: Stack notes for GATE exam", "url": "https://www.geeksforgeeks.org/?p=1106024", "platform": "Notes", "kind": "resource" },
+            { "label": "Stack and its applications (BYJU'S)", "url": "https://byjus.com/gate/stack-and-its-applications", "platform": "Notes", "kind": "resource" },
+            { "label": "Stack gate notes (BYJU'S Exam Prep PDF)", "url": "https://byjusexamprep.com/liveData/f/2022/10/stack_gate_notes_81.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Stack, queue, graph and tree concepts and properties", "url": "https://the-cs-notes.pages.dev/dsa/dsa-important-topics/dsa_important-ds-stack-queue-graph-tree/", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Data Structures complete series", "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Data Structures and Algorithms (Jenny's Lectures, via Class Central)", "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Data structures previous GATE questions", "url": "https://gateoverflow.in/subject/programming-in-c/data-structures", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::queues",
+          "title": "Queues",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Data Structures",
+          "links": [
+            { "label": "GFG: Difference between stack and queue", "url": "https://www.geeksforgeeks.org/dsa/difference-between-stack-and-queue-data-structures", "platform": "Notes", "kind": "resource" },
+            { "label": "GFG: GATE CS notes index (circular queue, priority queue, deque)", "url": "https://www.geeksforgeeks.org/gate-cs-notes-gq", "platform": "Notes", "kind": "resource" },
+            { "label": "Stack, queue, graph and tree concepts and properties", "url": "https://the-cs-notes.pages.dev/dsa/dsa-important-topics/dsa_important-ds-stack-queue-graph-tree/", "platform": "Notes", "kind": "resource" },
+            { "label": "Data structure notes: queues (BYJU'S)", "url": "https://byjus.com/gate/introduction-to-data-structure-notes", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Data Structures complete series", "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Data Structures and Algorithms (Jenny's Lectures, via Class Central)", "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Data structures previous GATE questions", "url": "https://gateoverflow.in/subject/programming-in-c/data-structures", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::linked-lists",
+          "title": "Linked lists",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Data Structures",
+          "links": [
+            { "label": "GFG: Linked list notes for GATE exam", "url": "https://geeksforgeeks.org/linked-list-notes-for-gate-exam", "platform": "Notes", "kind": "resource" },
+            { "label": "Linked lists: reversal, cycle detection, GATE tips", "url": "https://engineeringhulk.com/cs-it/data-structures/linked-lists/", "platform": "Notes", "kind": "resource" },
+            { "label": "Linked lists: one-way, circular, doubly (GWU lecture)", "url": "https://www2.seas.gwu.edu/~bell/csci103/lectures/lists", "platform": "Notes", "kind": "resource" },
+            { "label": "Doubly linked lists (BBM201 lecture PDF)", "url": "https://web.cs.hacettepe.edu.tr/~bbm201/Fall2017/BBM201-Ders10.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Data Structures complete series", "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Data Structures and Algorithms (Jenny's Lectures, via Class Central)", "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Data structures previous GATE questions", "url": "https://gateoverflow.in/subject/programming-in-c/data-structures", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::trees",
+          "title": "Trees",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Data Structures",
+          "links": [
+            { "label": "GFG: Trees notes for GATE exam", "url": "https://www.geeksforgeeks.org/trees-notes-for-gate-exam", "platform": "Notes", "kind": "resource" },
+            { "label": "Binary trees, BSTs and tree traversals (Stanford CS106B)", "url": "https://web.stanford.edu/class/cs106b/lectures/21-trees/", "platform": "Notes", "kind": "resource" },
+            { "label": "Binary trees: terminology and traversals (UBC CPSC 259 PDF)", "url": "https://www.cs.ubc.ca/~hkhosrav/Courses/CPSC259/2015W1/lectures/8-binary%20trees.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Trees: traversals, expression trees, BST overview (Montana PDF)", "url": "https://www.cs.montana.edu/courses/spring2009/223/lectures/ch08.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Data structures: complete GATE CS study guide", "url": "https://engineeringhulk.com/cs-it/data-structures/", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Data Structures complete series", "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Data Structures and Algorithms (Jenny's Lectures, via Class Central)", "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Data structures previous GATE questions", "url": "https://gateoverflow.in/subject/programming-in-c/data-structures", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::binary-search-trees",
+          "title": "Binary search trees",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Data Structures",
+          "links": [
+            { "label": "Binary trees and binary search trees: operations and traversals (HKUST PDF)", "url": "https://cse.hkust.edu.hk/~dekai/2012H/lectures/l31_bst.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "BST insertion, search and tree traversals (Stanford CS106B)", "url": "https://web.stanford.edu/class/cs106b/lectures/21-trees/", "platform": "Notes", "kind": "resource" },
+            { "label": "BST search, insertion and removal (Montana PDF)", "url": "https://www.cs.montana.edu/courses/spring2009/223/lectures/ch08.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "GFG: GATE CS notes index (BST insertion, deletion, AVL)", "url": "https://www.geeksforgeeks.org/gate-cs-notes-gq", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Data Structures complete series", "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Data Structures and Algorithms (Jenny's Lectures, via Class Central)", "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Data structures previous GATE questions", "url": "https://gateoverflow.in/subject/programming-in-c/data-structures", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::binary-heaps",
+          "title": "Binary heaps",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Data Structures",
+          "links": [
+            { "label": "GFG: Binary heap notes for GATE exam", "url": "https://www.geeksforgeeks.org/binary-heap-notes-for-gate-exam", "platform": "Notes", "kind": "resource" },
+            { "label": "Priority queues and heaps: insert, delete-min, build-heap (Bowdoin PDF)", "url": "https://tildesites.bowdoin.edu/~ltoma/teaching/cs231/2017fall/Lectures/heaps.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Binary heaps, heapify and heapsort (Pomona lecture PDF)", "url": "https://drk04747.sites.pomona.edu/classes/s13/cs302-s13/lectures/lecture8-heaps.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Time complexity of building a heap", "url": "https://www.naukri.com/code360/library/time-complexity-of-building-a-heap", "platform": "Notes", "kind": "resource" },
+            { "label": "Heap operations and their time complexities", "url": "https://ajay-dhangar.github.io/algo/docs/extra/heap/Heap-Operations-Time-Complexity", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Data Structures and Algorithms (Jenny's Lectures, via Class Central)", "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Data structures previous GATE questions", "url": "https://gateoverflow.in/subject/programming-in-c/data-structures", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::programming-and-data-structures::graphs",
+          "title": "Graphs",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Data Structures",
+          "links": [
+            { "label": "GFG: Graph data structure notes for GATE exam", "url": "https://www.geeksforgeeks.org/graph-data-structure-notes-for-gate-exam", "platform": "Notes", "kind": "resource" },
+            { "label": "Graphs: representation, search and traversal (FSU notes PDF)", "url": "https://www.cs.fsu.edu/~lacher/courses/COP4531/fall14/notes/graphs1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Graph algorithms: adjacency list vs matrix, BFS, DFS (Stanford CS106B)", "url": "https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1244/lectures/24-graphs/", "platform": "Notes", "kind": "resource" },
+            { "label": "Graphs: representations, BFS and DFS (Otago lecture PDF)", "url": "https://www.cs.otago.ac.nz/cosc242/pdf/L19.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Graph representations and traversals (GATE online classes PDF)", "url": "https://www.jntua.ac.in/gate-online-classes/registration/downloads/material/a159143764882.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Graph algorithms: BFS, DFS, shortest paths, MST (GATE CS guide)", "url": "https://engineeringhulk.com/?p=5824", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Data Structures and Algorithms (Jenny's Lectures, via Class Central)", "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE Overflow: Data structures previous GATE questions", "url": "https://gateoverflow.in/subject/programming-in-c/data-structures", "platform": "PYQ", "kind": "resource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": []
+}

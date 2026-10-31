@@ -1,0 +1,166 @@
+{
+  "id": "gate::digital-logic",
+  "title": "Digital Logic",
+  "slug": "digital-logic",
+  "weightage": "~4-6 marks",
+  "groups": [
+    {
+      "difficulty": "Uncategorized",
+      "questions": [
+        {
+          "id": "gate::digital-logic::boolean-algebra",
+          "title": "Boolean algebra",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Boolean Algebra and Minimisation",
+          "links": [
+            { "label": "Laws of Boolean algebra (TutorialsPoint)", "url": "https://tutorialspoint.com/digital-electronics/laws-of-boolean-algebra.htm", "platform": "Notes", "kind": "resource" },
+            { "label": "Boolean algebra and theorems (TutorialsPoint PDF)", "url": "https://www.tutorialspoint.com/computer_logical_organization/pdf/boolean_algebra.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Boolean theorems with laws and proofs (Vedantu)", "url": "https://seo-fe.vedantu.com/maths/boolean-theorems", "platform": "Notes", "kind": "resource" },
+            { "label": "Fundamentals of Boolean algebra (Digital Circuit Design, Ch. 5)", "url": "https://www.globalspec.com/reference/58550/203279/chapter-5-fundamentals-of-boolean-algebra", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::digital-logic::algebraic-technique",
+          "title": "Algebraic technique",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Boolean Algebra and Minimisation",
+          "links": [
+            { "label": "Boolean algebra and logic simplification (Lecture 5 PDF)", "url": "https://uomosul.edu.iq/science/wp-content/uploads/sites/12/2025/04/Lecture-5.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Boolean algebra lecture notes (PDF)", "url": "https://uomus.edu.iq/img/lectures21/MUCLecture_2024_13056806.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Laws of Boolean algebra tutorial", "url": "https://www.next.gr/laws-of-boolean-algebra-tutorial", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "GATE Overflow: canonical normal form questions", "url": "https://db.gateoverflow.in/tag/canonical-normal-form", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::digital-logic::karnaugh-map",
+          "title": "Karnaugh map",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Boolean Algebra and Minimisation",
+          "links": [
+            { "label": "Karnaugh maps (ANU ENGN2211)", "url": "https://users.cecs.anu.edu.au/~Matthew.James/engn2211-2002/doc/kmap/kmap.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Karnaugh maps with don't cares (TutorChase)", "url": "https://tutorchase.com/notes/cie-a-level/computer-science/15-2-4-karnaugh-maps-(k-map)", "platform": "Notes", "kind": "resource" },
+            { "label": "K-map minimization lecture (PDF)", "url": "https://uomosul.edu.iq/computerscience/wp-content/uploads/sites/13/2025/05/logic_design_lecture-4-Dr.-FARIS-ADEL-LLWAAH.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Using Karnaugh maps (UNT transcript)", "url": "https://learningcenter.unt.edu/files/transcript_-_k-maps.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "GATE Overflow: canonical normal form questions", "url": "https://db.gateoverflow.in/tag/canonical-normal-form", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::digital-logic::tabular-method",
+          "title": "Tabular method",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Boolean Algebra and Minimisation",
+          "links": [
+            { "label": "Quine-McCluskey tabular method (TutorialsPoint)", "url": "https://tutorialspoint.com/digital_circuits/digital_circuits_quine_mccluskey_tabular_method.htm", "platform": "Notes", "kind": "resource" },
+            { "label": "Quine-McCluskey method (GeeksforGeeks)", "url": "https://www.geeksforgeeks.org/?p=792601", "platform": "Notes", "kind": "resource" },
+            { "label": "Quine-McCluskey and Petrick's method (ECE 275 PDF)", "url": "https://web.eece.maine.edu:443/~eason/ece275/classnotes200921b.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "L11: Quine-McCluskey tabular method (PDF)", "url": "https://gyansanchay.csjmu.ac.in/wp-content/uploads/2022/02/L11-Quine-Mccluskey-Method-Tabular-Method.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::digital-logic::design-of-combinational-circuits",
+          "title": "Design of combinational circuits",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Circuit Design",
+          "links": [
+            { "label": "Combinational circuits: adders, MUX, decoders (Lecture 8 PDF)", "url": "https://uomosul.edu.iq/computerscience/wp-content/uploads/sites/13/2025/05/Lec8.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Combinational logic functions (Lessons in Electric Circuits)", "url": "https://www.circuitbread.com/textbooks/lessons-in-electric-circuits-volume-iv-digital/combinational-logic-functions", "platform": "Notes", "kind": "resource" },
+            { "label": "Combinational logic circuits study notes (BYJU'S Exam Prep)", "url": "https://byjusexamprep.com/digital-electronics-combinational-logic-circuits-study-notes-i", "platform": "Notes", "kind": "resource" },
+            { "label": "Combinational logic design lecture (PDF)", "url": "https://feng.stafpu.bu.edu.eg/Electrical Engineering/2460/crs-13711/Files/EEDP_Lect 11_Combinational Circuits3.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::digital-logic::design-of-sequential-circuits",
+          "title": "Design of sequential circuits",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Circuit Design",
+          "links": [
+            { "label": "Sequential design procedure (University of Regina CS 201)", "url": "https://www.labs.cs.uregina.ca/201/sequential/lectureLS.php", "platform": "Notes", "kind": "resource" },
+            { "label": "Design of synchronous sequential circuits (KFUPM PDF)", "url": "https://faculty.kfupm.edu.sa/coe/abouh/Lesson4_3.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Designing a 3-bit synchronous counter", "url": "https://theaxiomacademy.org/learn/dm-designing-a-counter-example-build-3-bit-synchronous-counter", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::digital-logic::number-representation",
+          "title": "Number representation",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Number Representation and Arithmetic",
+          "links": [
+            { "label": "Sign-magnitude, 1's and 2's complement, overflow (SFU lecture PDF)", "url": "https://www2.cs.sfu.ca/CourseCentral/150/eyal/lectures/lecture11.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Number representations (UTK ECE 506 slides)", "url": "https://web.eecs.utk.edu/~mjr/ECE506/PresentationSlides/NumberRepresentations.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Negative number representation (Lecture 6 PDF)", "url": "https://uomosul.edu.iq/computerscience/wp-content/uploads/sites/13/2025/05/logic_design_lecture-6.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Signed binary numbers explained", "url": "https://www.next.gr/signed-binary-numbers-tutorial", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::digital-logic::fixed-point-arithmetic",
+          "title": "Fixed-point arithmetic",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Number Representation and Arithmetic",
+          "links": [
+            { "label": "Fixed point representation in computer architecture (TutorialsPoint)", "url": "https://www.tutorialspoint.com/what-is-fixed-point-representation-in-computer-architecture", "platform": "Notes", "kind": "resource" },
+            { "label": "Binary arithmetic: fixed and floating point (UC3M PDF)", "url": "https://ocw.uc3m.es/pluginfile.php/2316/mod_page/content/14/4a_Binary_Arithmetic_en.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Complement arithmetic and codes (PDF)", "url": "https://gyansanchay.csjmu.ac.in/wp-content/uploads/2022/02/L2-Compliment-Arithmetic-and-Codes.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::digital-logic::floating-point-arithmetic",
+          "title": "Floating-point arithmetic",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Number Representation and Arithmetic",
+          "links": [
+            { "label": "Floating point numbers (ChipVerify)", "url": "https://chipverify.com/digital-fundamentals/floating-point-numbers", "platform": "Notes", "kind": "resource" },
+            { "label": "IEEE 754 floating point arithmetic: algorithms and examples", "url": "https://www.rfwireless-world.com/Tutorials/floating-point-tutorial.html", "platform": "Notes", "kind": "resource" },
+            { "label": "IEEE Standard 754 floating point numbers (Steve Hollasch)", "url": "https://courses.cs.washington.edu/courses/cse401/97au/details/fp.html", "platform": "Notes", "kind": "resource" },
+            { "label": "IEEE 754 tutorial (PDF)", "url": "https://data.kemt.fei.tuke.sk/SignaloveProcesory/_materialy/IEEE754/HsiaoFenFu_Tutorial_IEEE%20754%20Floating%20Point.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Neso Academy Digital Electronics (via Class Central)", "url": "https://classcentral.com/course/youtube-digital-electronics-48205", "platform": "YouTube", "kind": "resource" },
+            { "label": "YouTube: Digital Electronics in Hindi (GATE/NET, via Class Central)", "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)", "url": "https://nptel.ac.in/courses/106105185", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Digital Logic and Design GATE CSE previous year questions", "url": "https://geeksforgeeks.org/digital-logic-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": []
+}

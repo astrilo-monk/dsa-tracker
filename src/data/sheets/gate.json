@@ -19,7 +19,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Verbal Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::basic-vocabulary-words-idioms-and-phrases-in-context",
@@ -27,7 +28,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Verbal Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::reading-and-comprehension",
@@ -35,7 +37,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Verbal Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::narrative-sequencing",
@@ -43,7 +46,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Verbal Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::data-interpretation-graphs-2d-and-3d-plots-maps-and-tables",
@@ -51,7 +55,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Quantitative Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::ratios-and-percentages",
@@ -59,7 +64,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Quantitative Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::powers-exponents-and-logarithms",
@@ -67,7 +73,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Quantitative Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::permutations-and-combinations",
@@ -75,7 +82,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Quantitative Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::series",
@@ -83,7 +91,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Quantitative Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::mensuration-and-geometry",
@@ -91,7 +100,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Quantitative Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::elementary-statistics-and-probability",
@@ -99,7 +109,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Quantitative Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::logic-deduction-and-induction",
@@ -107,7 +118,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Analytical Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::analogy",
@@ -115,7 +127,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Analytical Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::numerical-relations-and-reasoning",
@@ -123,7 +136,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Analytical Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::transformation-of-shapes-translation-rotation-scaling-mirroring-assembling-grouping",
@@ -131,7 +145,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Spatial Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::general-aptitude::paper-folding-cutting-and-patterns-in-2d-and-3d",
@@ -139,7 +154,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Spatial Aptitude",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             }
           ]
         }
@@ -161,7 +177,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Discrete Mathematics",
-              "links": []
+              "links": [
+                {
+                  "label": "Propositional logic",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/proposition-logic/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PLIPZ2_p3RNHgjPQN2GtCVOCgrkH2zCkSU",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PLOG_8OlGMp73__IUE4eSoLgaufkY7JWTO",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PLEJxKK7AcSEGD7ty8DB1aU0xVG_P_hs_0",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL",
+                  "url": "https://nptel.ac.in/courses/106106094",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Engineering Mathematics GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/engineering-mathematics-gate-questions/",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Last Minute Notes - Engineering Mathematics (revision)",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/last-minute-notes-engineering-mathematics/",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::engineering-mathematics::sets-relations-and-functions",
@@ -169,7 +230,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Discrete Mathematics",
-              "links": []
+              "links": [
+                {
+                  "label": "Set theory",
+                  "url": "https://www.geeksforgeeks.org/maths/set-theory/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::partial-orders-and-lattices",
@@ -177,7 +246,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Discrete Mathematics",
-              "links": []
+              "links": [
+                {
+                  "label": "Partial orders and lattices (part 1)",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/partial-orders-lattices/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::monoids-and-groups",
@@ -185,7 +262,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Discrete Mathematics",
-              "links": []
+              "links": [
+                {
+                  "label": "Groups",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/groups-discrete-mathematics/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::graphs-connectivity-matching-and-colouring",
@@ -193,7 +278,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Discrete Mathematics",
-              "links": []
+              "links": [
+                {
+                  "label": "Fundamentals of graph theory",
+                  "url": "https://www.geeksforgeeks.org/maths/fundamentals-of-graph-theory/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::combinatorics-counting",
@@ -201,7 +294,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Discrete Mathematics",
-              "links": []
+              "links": [
+                {
+                  "label": "Fundamental principle of counting",
+                  "url": "https://www.geeksforgeeks.org/maths/fundamental-principle-of-counting/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::recurrence-relations",
@@ -209,7 +310,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Discrete Mathematics",
-              "links": []
+              "links": [
+                {
+                  "label": "Recurrence relations: a complete guide",
+                  "url": "https://www.geeksforgeeks.org/dsa/recurrence-relations-a-complete-guide/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::generating-functions",
@@ -217,7 +326,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Discrete Mathematics",
-              "links": []
+              "links": [
+                {
+                  "label": "Generating functions: introduction",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/discrete-maths-generating-functions-introduction-prerequisites/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::matrices",
@@ -225,7 +342,40 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Linear Algebra",
-              "links": []
+              "links": [
+                {
+                  "label": "Types of matrices",
+                  "url": "https://www.geeksforgeeks.org/maths/types-of-matrices/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PLIPZ2_p3RNHhGLQ1ZT37KLpBMAD90CM4_",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PLU6SqdYcYsfKV1QmzQNtzMuIH7mq5qb62",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Linear Algebra questions",
+                  "url": "https://gateoverflow.in/subject/mathematics/linear-algebra",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::engineering-mathematics::determinants",
@@ -233,7 +383,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Linear Algebra",
-              "links": []
+              "links": [
+                {
+                  "label": "Determinant of a matrix",
+                  "url": "https://www.geeksforgeeks.org/dsa/determinant-of-a-matrix/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::systems-of-linear-equations",
@@ -241,7 +399,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Linear Algebra",
-              "links": []
+              "links": [
+                {
+                  "label": "System of linear equations",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/system-linear-equations/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::eigenvalues-and-eigenvectors",
@@ -249,7 +415,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Linear Algebra",
-              "links": []
+              "links": [
+                {
+                  "label": "Eigenvalues",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/eigen-values/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::lu-decomposition",
@@ -257,7 +431,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Linear Algebra",
-              "links": []
+              "links": [
+                {
+                  "label": "LU decomposition",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/l-u-decomposition-system-linear-equations/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::limits",
@@ -265,7 +447,40 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Calculus",
-              "links": []
+              "links": [
+                {
+                  "label": "Limits",
+                  "url": "https://www.geeksforgeeks.org/maths/limits/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PL590CCC2BC5AF3BC1",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/watch?v=XM_V2qYOmtc",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Calculus questions (limits, continuity, max/min, MVT, integration)",
+                  "url": "https://gateoverflow.in/subject/mathematics/calculus",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG quiz: Calculus PYQs 2010 to 2025",
+                  "url": "https://www.geeksforgeeks.org/quizzes/gate-engineering-mathematics-calculus-pyqs-2010-to-2025/",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::engineering-mathematics::continuity-and-differentiability",
@@ -273,7 +488,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Calculus",
-              "links": []
+              "links": [
+                {
+                  "label": "Continuity of functions",
+                  "url": "https://www.geeksforgeeks.org/maths/continuity-of-functions/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::maxima-and-minima",
@@ -281,7 +504,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Calculus",
-              "links": []
+              "links": [
+                {
+                  "label": "Maxima and minima",
+                  "url": "https://www.geeksforgeeks.org/maths/maxima-and-minima/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::mean-value-theorem",
@@ -289,7 +520,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Calculus",
-              "links": []
+              "links": [
+                {
+                  "label": "Lagrange's mean value theorem",
+                  "url": "https://www.geeksforgeeks.org/engineering-mathematics/lagranges-mean-value-theorem/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::integration",
@@ -297,7 +536,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Calculus",
-              "links": []
+              "links": [
+                {
+                  "label": "Integration",
+                  "url": "https://www.geeksforgeeks.org/maths/integration-maths/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::random-variables",
@@ -305,7 +552,46 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Probability and Statistics",
-              "links": []
+              "links": [
+                {
+                  "label": "Discrete random variable",
+                  "url": "https://www.geeksforgeeks.org/maths/discrete-random-variable/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PL2SOU6wwxB0uwwH80KTQ6ht66KWxbzTIo",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PLhghlsQ_Ocy5anAe5gnpHxkISWsHObECB",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL",
+                  "url": "https://nptel.ac.in/courses/111105041",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Probability questions",
+                  "url": "https://gateoverflow.in/subject/mathematics/probability",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Probability and Statistics GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/maths/probability-and-statistics-gate-cse-previous-year-questions/",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::engineering-mathematics::uniform-normal-exponential-poisson-and-binomial-distributions",
@@ -313,7 +599,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Probability and Statistics",
-              "links": []
+              "links": [
+                {
+                  "label": "Uniform",
+                  "url": "https://www.geeksforgeeks.org/maths/uniform-distribution-formula/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::mean-median-mode-and-standard-deviation",
@@ -321,7 +615,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Probability and Statistics",
-              "links": []
+              "links": [
+                {
+                  "label": "Mean, median, mode",
+                  "url": "https://www.geeksforgeeks.org/maths/mean-median-mode/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::conditional-probability",
@@ -329,7 +631,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Probability and Statistics",
-              "links": []
+              "links": [
+                {
+                  "label": "Conditional probability",
+                  "url": "https://www.geeksforgeeks.org/maths/conditional-probability/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             },
             {
               "id": "gate::engineering-mathematics::bayes-theorem",
@@ -337,7 +647,15 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Probability and Statistics",
-              "links": []
+              "links": [
+                {
+                  "label": "Bayes theorem",
+                  "url": "https://www.geeksforgeeks.org/maths/bayes-theorem/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": []
             }
           ]
         }
@@ -359,7 +677,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Boolean Algebra and Minimisation",
-              "links": []
+              "links": [
+                {
+                  "label": "Laws of Boolean algebra (TutorialsPoint)",
+                  "url": "https://tutorialspoint.com/digital-electronics/laws-of-boolean-algebra.htm",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Boolean algebra and theorems (TutorialsPoint PDF)",
+                  "url": "https://www.tutorialspoint.com/computer_logical_organization/pdf/boolean_algebra.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Boolean theorems with laws and proofs (Vedantu)",
+                  "url": "https://seo-fe.vedantu.com/maths/boolean-theorems",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Fundamentals of Boolean algebra (Digital Circuit Design, Ch. 5)",
+                  "url": "https://www.globalspec.com/reference/58550/203279/chapter-5-fundamentals-of-boolean-algebra",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::digital-logic::algebraic-technique",
@@ -367,7 +736,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Boolean Algebra and Minimisation",
-              "links": []
+              "links": [
+                {
+                  "label": "Boolean algebra and logic simplification (Lecture 5 PDF)",
+                  "url": "https://uomosul.edu.iq/science/wp-content/uploads/sites/12/2025/04/Lecture-5.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Boolean algebra lecture notes (PDF)",
+                  "url": "https://uomus.edu.iq/img/lectures21/MUCLecture_2024_13056806.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Laws of Boolean algebra tutorial",
+                  "url": "https://www.next.gr/laws-of-boolean-algebra-tutorial",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: canonical normal form questions",
+                  "url": "https://db.gateoverflow.in/tag/canonical-normal-form",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::digital-logic::karnaugh-map",
@@ -375,7 +795,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Boolean Algebra and Minimisation",
-              "links": []
+              "links": [
+                {
+                  "label": "Karnaugh maps (ANU ENGN2211)",
+                  "url": "https://users.cecs.anu.edu.au/~Matthew.James/engn2211-2002/doc/kmap/kmap.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Karnaugh maps with don't cares (TutorChase)",
+                  "url": "https://tutorchase.com/notes/cie-a-level/computer-science/15-2-4-karnaugh-maps-(k-map)",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "K-map minimization lecture (PDF)",
+                  "url": "https://uomosul.edu.iq/computerscience/wp-content/uploads/sites/13/2025/05/logic_design_lecture-4-Dr.-FARIS-ADEL-LLWAAH.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Using Karnaugh maps (UNT transcript)",
+                  "url": "https://learningcenter.unt.edu/files/transcript_-_k-maps.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: canonical normal form questions",
+                  "url": "https://db.gateoverflow.in/tag/canonical-normal-form",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::digital-logic::tabular-method",
@@ -383,7 +860,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Boolean Algebra and Minimisation",
-              "links": []
+              "links": [
+                {
+                  "label": "Quine-McCluskey tabular method (TutorialsPoint)",
+                  "url": "https://tutorialspoint.com/digital_circuits/digital_circuits_quine_mccluskey_tabular_method.htm",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Quine-McCluskey method (GeeksforGeeks)",
+                  "url": "https://www.geeksforgeeks.org/?p=792601",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Quine-McCluskey and Petrick's method (ECE 275 PDF)",
+                  "url": "https://web.eece.maine.edu:443/~eason/ece275/classnotes200921b.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "L11: Quine-McCluskey tabular method (PDF)",
+                  "url": "https://gyansanchay.csjmu.ac.in/wp-content/uploads/2022/02/L11-Quine-Mccluskey-Method-Tabular-Method.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::digital-logic::design-of-combinational-circuits",
@@ -391,7 +919,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Circuit Design",
-              "links": []
+              "links": [
+                {
+                  "label": "Combinational circuits: adders, MUX, decoders (Lecture 8 PDF)",
+                  "url": "https://uomosul.edu.iq/computerscience/wp-content/uploads/sites/13/2025/05/Lec8.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Combinational logic functions (Lessons in Electric Circuits)",
+                  "url": "https://www.circuitbread.com/textbooks/lessons-in-electric-circuits-volume-iv-digital/combinational-logic-functions",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Combinational logic circuits study notes (BYJU'S Exam Prep)",
+                  "url": "https://byjusexamprep.com/digital-electronics-combinational-logic-circuits-study-notes-i",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Combinational logic design lecture (PDF)",
+                  "url": "https://feng.stafpu.bu.edu.eg/Electrical Engineering/2460/crs-13711/Files/EEDP_Lect 11_Combinational Circuits3.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::digital-logic::design-of-sequential-circuits",
@@ -399,7 +978,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Circuit Design",
-              "links": []
+              "links": [
+                {
+                  "label": "Sequential design procedure (University of Regina CS 201)",
+                  "url": "https://www.labs.cs.uregina.ca/201/sequential/lectureLS.php",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Design of synchronous sequential circuits (KFUPM PDF)",
+                  "url": "https://faculty.kfupm.edu.sa/coe/abouh/Lesson4_3.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Designing a 3-bit synchronous counter",
+                  "url": "https://theaxiomacademy.org/learn/dm-designing-a-counter-example-build-3-bit-synchronous-counter",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::digital-logic::number-representation",
@@ -407,7 +1031,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Number Representation and Arithmetic",
-              "links": []
+              "links": [
+                {
+                  "label": "Sign-magnitude, 1's and 2's complement, overflow (SFU lecture PDF)",
+                  "url": "https://www2.cs.sfu.ca/CourseCentral/150/eyal/lectures/lecture11.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Number representations (UTK ECE 506 slides)",
+                  "url": "https://web.eecs.utk.edu/~mjr/ECE506/PresentationSlides/NumberRepresentations.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Negative number representation (Lecture 6 PDF)",
+                  "url": "https://uomosul.edu.iq/computerscience/wp-content/uploads/sites/13/2025/05/logic_design_lecture-6.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Signed binary numbers explained",
+                  "url": "https://www.next.gr/signed-binary-numbers-tutorial",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::digital-logic::fixed-point-arithmetic",
@@ -415,7 +1090,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Number Representation and Arithmetic",
-              "links": []
+              "links": [
+                {
+                  "label": "Fixed point representation in computer architecture (TutorialsPoint)",
+                  "url": "https://www.tutorialspoint.com/what-is-fixed-point-representation-in-computer-architecture",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Binary arithmetic: fixed and floating point (UC3M PDF)",
+                  "url": "https://ocw.uc3m.es/pluginfile.php/2316/mod_page/content/14/4a_Binary_Arithmetic_en.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Complement arithmetic and codes (PDF)",
+                  "url": "https://gyansanchay.csjmu.ac.in/wp-content/uploads/2022/02/L2-Compliment-Arithmetic-and-Codes.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::digital-logic::floating-point-arithmetic",
@@ -423,7 +1143,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Number Representation and Arithmetic",
-              "links": []
+              "links": [
+                {
+                  "label": "Floating point numbers (ChipVerify)",
+                  "url": "https://chipverify.com/digital-fundamentals/floating-point-numbers",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "IEEE 754 floating point arithmetic: algorithms and examples",
+                  "url": "https://www.rfwireless-world.com/Tutorials/floating-point-tutorial.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "IEEE Standard 754 floating point numbers (Steve Hollasch)",
+                  "url": "https://courses.cs.washington.edu/courses/cse401/97au/details/fp.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "IEEE 754 tutorial (PDF)",
+                  "url": "https://data.kemt.fei.tuke.sk/SignaloveProcesory/_materialy/IEEE754/HsiaoFenFu_Tutorial_IEEE%20754%20Floating%20Point.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Switching Circuits and Logic Design (IIT Kharagpur)",
+                  "url": "https://nptel.ac.in/courses/106105185",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Digital Logic and Design GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/digital-logic-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-digital-electronics-48205",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-3-digital-electronics-switching-theory-and-logic-design-hindi-gate-net-university-54068",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             }
           ]
         }
@@ -445,7 +1216,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Instruction and Control",
-              "links": []
+              "links": [
+                {
+                  "label": "Instruction sets: addressing modes and formats (Stallings Ch. 13 slides)",
+                  "url": "https://www.scribd.com/presentation/535884215/CH13-COA9e",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Introduction to addressing modes and instruction size",
+                  "url": "https://allrounder.ai/computer-organisation-and-architecture-vol-1/introduction-to-addressing-modes-chapter-687aac",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Addressing modes lecture (Computer Organization slides)",
+                  "url": "https://www.slideshare.net/slideshow/lect14-organization/73473557",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Aspirant Mitraa: Machine instructions and addressing modes PYQs",
+                  "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-machine-instructions-and-addressing-modes-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-complete-coa-computer-organization-and-architecture-in-one-shot-6-hours-in-hindi-287694",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::addressing-modes",
@@ -453,7 +1275,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Instruction and Control",
-              "links": []
+              "links": [
+                {
+                  "label": "Addressing modes (Computer Organization slides)",
+                  "url": "https://www.slideshare.net/slideshow/lect14-organization/73473557",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Addressing modes and formats (Stallings Ch. 13 slides)",
+                  "url": "https://www.scribd.com/presentation/535884215/CH13-COA9e",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Introduction to addressing modes with examples",
+                  "url": "https://allrounder.ai/computer-organisation-and-architecture-vol-1/introduction-to-addressing-modes-chapter-687aac",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Addressing modes and encoding",
+                  "url": "https://dcmpx.remotevs.com/com/mcatutorials/PL/mca-tutorials-microprocessor-addressing-modes.php",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Aspirant Mitraa: Machine instructions and addressing modes PYQs",
+                  "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-machine-instructions-and-addressing-modes-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-complete-coa-computer-organization-and-architecture-in-one-shot-6-hours-in-hindi-287694",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::design-of-arithmetic-and-logic-unit-alu",
@@ -461,7 +1340,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Instruction and Control",
-              "links": []
+              "links": [
+                {
+                  "label": "Datapaths and ALU design (Lec 7)",
+                  "url": "https://www.scribd.com/document/609139956/Lec-7",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Processor design basics: datapath, register file, ALU (Leiden PDF)",
+                  "url": "https://liacs.leidenuniv.nl/~stefanovtp/courses/DITE/lectures/FDSD14.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Register transfer and datapath design (COE608 PDF)",
+                  "url": "https://www.ee.torontomu.ca/~courses/coe608/lectures/RT-datapath.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Processor datapath and control unit (CSE378 PDF)",
+                  "url": "https://courses.cs.washington.edu/courses/cse378/02wi/Lectures/12datapath.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Combinational logic functions: adders (Lessons in Electric Circuits)",
+                  "url": "https://www.circuitbread.com/textbooks/lessons-in-electric-circuits-volume-iv-digital/combinational-logic-functions",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: ALU, data path and control unit PYQs",
+                  "url": "https://questions.examside.com/past-years/gate/gate-cse/computer-organization/alu-data-path-and-control-unit",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::hardwired-control",
@@ -469,7 +1405,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Instruction and Control",
-              "links": []
+              "links": [
+                {
+                  "label": "Hardwired and microprogrammed control (notes PDF)",
+                  "url": "https://gpwsirsa.edu.in/wp-content/uploads/2023/03/Comp_org.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Hardwired vs microprogrammed control unit",
+                  "url": "https://eguru.rrbdavc.org/module/data/151-The%20primary%20difference%20between%20hwire%20and%20mprogrm%20cu.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Control unit design: hardwired vs microprogrammed (slides)",
+                  "url": "https://www.scribd.com/presentation/820093486/Chapter-3-Microprogram-Control-Organisation",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Processor design: single-cycle datapath and control (Inf2C PDF)",
+                  "url": "https://www.inf.ed.ac.uk/teaching/courses/inf2c-cs/13-14/lectures/lec08-slides.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: ALU, data path and control unit PYQs",
+                  "url": "https://questions.examside.com/past-years/gate/gate-cse/computer-organization/alu-data-path-and-control-unit",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::microprogrammed-control",
@@ -477,7 +1464,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Instruction and Control",
-              "links": []
+              "links": [
+                {
+                  "label": "Microprogrammed control: control memory, address sequencing (Unit III notes)",
+                  "url": "https://www.scribd.com/document/713619763/unit-iii-part-1-microprogramming-notes",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Microprogrammed control basics (Unit 4 notes)",
+                  "url": "https://www.scribd.com/document/495450990/Unit-4-Microprogrammed-Control",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Hardwired and microprogrammed control (notes PDF)",
+                  "url": "https://gpwsirsa.edu.in/wp-content/uploads/2023/03/Comp_org.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Horizontal vs vertical microprogramming (slides)",
+                  "url": "https://www.scribd.com/document/468765475/3c",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: ALU, data path and control unit PYQs",
+                  "url": "https://questions.examside.com/past-years/gate/gate-cse/computer-organization/alu-data-path-and-control-unit",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::memory-interfacing",
@@ -485,7 +1523,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Memory and I/O",
-              "links": []
+              "links": [
+                {
+                  "label": "Address decoding: full and partial decoding (TAMU lecture PDF)",
+                  "url": "https://people.engr.tamu.edu/rgutier/lectures/mbsd/mbsd_l16.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Memory interfacing and memory map (lecture PDF)",
+                  "url": "https://www.uomus.edu.iq/uploads/lectures/35/1PbWWqgKDBDorh525uecKaGZD21FGSoCeR.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Memory and I/O interfacing: absolute and linear decoding (PDF)",
+                  "url": "https://uomus.edu.iq/img/lectures21/WameedMUCLecture_2021_91817804.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Memory interfacing: chip select and decoding (lecture PDF)",
+                  "url": "https://engineering.uodiyala.edu.iq/wp-content/uploads/2023/09/comp-dep-s3-c2-interfacing-5.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::memory-hierarchy",
@@ -493,7 +1576,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Memory and I/O",
-              "links": []
+              "links": [
+                {
+                  "label": "Memory hierarchy, locality and disk access (CSU lecture PDF)",
+                  "url": "https://cs.colostate.edu/~cs270/.Spring13/Notes/Lecture24b_MemoryHierarchy.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Memory hierarchy: locality, hit rate, AMAT (UWO notes PDF)",
+                  "url": "https://www.csd.uwo.ca/~mmorenom/cs3350_moreno.Winter-2015/notes/L3-mem-1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Large and fast: exploiting memory hierarchy (slides PDF)",
+                  "url": "https://www.csd.uoc.gr/~hy225/20a/ex11_slides.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Aspirant Mitraa: Memory hierarchy PYQs",
+                  "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-memory-hierarchy-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::memory-performance",
@@ -501,7 +1629,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Memory and I/O",
-              "links": []
+              "links": [
+                {
+                  "label": "Average memory access time (AMAT) with examples (UWO notes PDF)",
+                  "url": "https://www.csd.uwo.ca/~mmorenom/cs3350_moreno.Winter-2015/notes/L3-mem-1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Caches: AMAT and cache performance (ShanghaiTech lecture PDF)",
+                  "url": "https://robotics.shanghaitech.edu.cn/courses/ca/16s/lectures/2016-CA-L15_Caches2.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Multi-level AMAT (Berkeley CS162 lecture PDF)",
+                  "url": "https://inst.eecs.berkeley.edu/~cs162/sp23/static/lectures/16.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Caches I: AMAT practice (UW CSE351 PDF)",
+                  "url": "https://courses.cs.washington.edu/courses/cse351/24su/lectures/14/CSE351-14-cachesI_24su_ink.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Aspirant Mitraa: Memory hierarchy PYQs",
+                  "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-memory-hierarchy-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::cache-memory-mapping",
@@ -509,7 +1688,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Memory and I/O",
-              "links": []
+              "links": [
+                {
+                  "label": "Direct, associative and set-associative mapping (Middlebury lecture)",
+                  "url": "https://www.cs.middlebury.edu/~candrews/classes/cs202-s26/lectures/lecture35-cache2/index.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Cache tag, index and offset bit calculations (Baeldung)",
+                  "url": "https://www.baeldung.com/cs/cache-calculations",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Cache mapping functions with address field example (lecture notes)",
+                  "url": "https://www.uomustansiriyah.edu.iq/media/lectures/9/9_2019_10_26!07_14_06_PM.docx",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Cache memory variants and trade-offs (Liege tutorial slides)",
+                  "url": "https://people.montefiore.uliege.be/rmormont/files/info0012/1718/tp9-slides.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Practice: set-associative cache problems (McGill tutorial)",
+                  "url": "https://ecse324.ece.mcgill.ca/fall2021/tutorials/tutorial8.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Aspirant Mitraa: Memory hierarchy PYQs",
+                  "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-memory-hierarchy-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::i-o-interface",
@@ -517,7 +1753,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Memory and I/O",
-              "links": []
+              "links": [
+                {
+                  "label": "Input/output organization: memory-mapped vs isolated I/O (lecture PDF)",
+                  "url": "https://mis.piass.ac.rw/applctDoc/7302_Lecture%206-InputOutput%20Organization1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Methods for I/O operations (lecture PDF)",
+                  "url": "https://users.utcluj.ro/~baruch/en/media/siee/lecture/IOS-Methods-IO-1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "I/O systems: programmed I/O, interrupts, DMA (GATE CS notes)",
+                  "url": "https://engineeringhulk.com/cs-it/computer-organisation/io-systems/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Modes of data transfer (Unit 4 lecture 3 PDF)",
+                  "url": "https://www.gchamirpur.org/wp-content/uploads/2023/09/Unit-4-Lecture-3-Modes-of-Data-Transfer.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Aspirant Mitraa: I/O interface, interrupt and DMA PYQs",
+                  "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-io-interface-interrupt-and-dma-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::interrupt",
@@ -525,7 +1812,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Memory and I/O",
-              "links": []
+              "links": [
+                {
+                  "label": "Interrupt-driven I/O: vectored, non-vectored, priority (lecture PDF)",
+                  "url": "https://users.utcluj.ro/~baruch/en/media/siee/lecture/IOS-Methods-IO-1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Interrupt handling steps (GATE CS notes)",
+                  "url": "https://engineeringhulk.com/cs-it/computer-organisation/io-systems/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Vectored and non-vectored interrupts (Unit 4 PDF)",
+                  "url": "https://www.gchamirpur.org/wp-content/uploads/2023/09/Unit-4-Lecture-3-Modes-of-Data-Transfer.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Interrupt driven I/O vs programmed I/O (lecture PDF)",
+                  "url": "https://mis.piass.ac.rw/applctDoc/7302_Lecture%206-InputOutput%20Organization1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Aspirant Mitraa: I/O interface, interrupt and DMA PYQs",
+                  "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-io-interface-interrupt-and-dma-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::dma",
@@ -533,7 +1871,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Memory and I/O",
-              "links": []
+              "links": [
+                {
+                  "label": "DMA transfer, cycle stealing and time calculation (GATE CS notes)",
+                  "url": "https://engineeringhulk.com/cs-it/computer-organisation/io-systems/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Direct Memory Access (lecture PDF)",
+                  "url": "https://users.utcluj.ro/~baruch/en/media/siee/lecture/IOS-Methods-IO-1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "DMA controller and I/O module (Computer Architecture lecture 9)",
+                  "url": "https://www.slideshare.net/slideshow/lecture-9pptx/251769553",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Input/output organization: DMA (lecture PDF)",
+                  "url": "https://mis.piass.ac.rw/applctDoc/7302_Lecture%206-InputOutput%20Organization1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Aspirant Mitraa: I/O interface, interrupt and DMA PYQs",
+                  "url": "https://www.aspirantmitraa.com/pyq/gate-cs-computer-organization-and-architecture-io-interface-interrupt-and-dma-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::instruction-pipelining",
@@ -541,7 +1930,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Instruction Pipelining",
-              "links": []
+              "links": [
+                {
+                  "label": "Pipelining: hazards, performance, exceptions (HY425 lecture PDF)",
+                  "url": "https://www.csd.uoc.gr/~hy425/2012f/lectures/Lec3_Pipeline.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pipelining chapter (NCU lecture PDF)",
+                  "url": "https://www.ee.ncu.edu.tw/jfli/public_html/computer/lecture/ch09.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Instruction pipelining (Datorarkitektur lecture 3 PDF)",
+                  "url": "https://www.ecs.csun.edu/~cputnam/Comp546/Adv%20Computer%20Systems%20-%20Sweden/lecture3.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pipeline hazards and forwarding (lecture 12)",
+                  "url": "https://cepdnaclk.github.io/Computer-Architecture-Web/Lectures/html/lecture-12.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Pipelining PYQs (1 mark)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/computer-organization/pipelining/marks-1",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::computer-organization-and-architecture::pipeline-hazards",
@@ -549,7 +1989,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Instruction Pipelining",
-              "links": []
+              "links": [
+                {
+                  "label": "Structural, data and branch hazards (ECSE 425 lecture PDF)",
+                  "url": "https://www.info425.ece.mcgill.ca/lectures/L07-Hazards.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Control hazards and advanced pipelining (Stanford lecture PDF)",
+                  "url": "https://web.stanford.edu/class/archive/ee/ee108b/ee108b.1082/handouts/lect.10.PipelineHazards2.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pipeline hazards and forwarding (CMPT 295 lecture PDF)",
+                  "url": "https://www2.cs.sfu.ca/~ashriram/Courses/CS295/assets/lectures/Part11/L29-Hazard.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Introduction to pipelining and hazards (Inf2C notes PDF)",
+                  "url": "https://www.inf.ed.ac.uk/teaching/courses/inf2c/lectures/CS08_10_notes.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Computer Organization and Architecture (IIT Guwahati)",
+                  "url": "https://nptel.ac.in/courses/106103180",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Computer Organization & Architecture GATE CSE previous year questions",
+                  "url": "https://geeksforgeeks.org/computer-organization-architecture-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Pipelining PYQs (1 mark)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/computer-organization/pipelining/marks-1",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-computer-organization-and-architecture-complete-playlist-46809",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             }
           ]
         }
@@ -571,7 +2062,46 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Programming",
-              "links": []
+              "links": [
+                {
+                  "label": "C programming for GATE CS: complete study guide",
+                  "url": "https://engineeringhulk.com/cs-it/programming-c/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pointers and arrays in C for GATE CS",
+                  "url": "https://engineeringhulk.com/cs-it/programming-c/pointers-arrays/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "C programming tutorial: storage classes, pointers, functions (PDF)",
+                  "url": "https://www.scribd.com/document/589384921/C-Programming-Tutorial",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "C programming GATE-oriented notes (pointers, dynamic memory, common traps)",
+                  "url": "https://www.scribd.com/document/1027290171/C-Programming",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Programming in C previous GATE questions",
+                  "url": "https://gateoverflow.in/questions/programming-in-c/programming/programming-in-c?sort=gate",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-programming-in-c-95184",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::recursion",
@@ -579,7 +2109,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Programming",
-              "links": []
+              "links": [
+                {
+                  "label": "GFG: Recursion notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/recursion-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Recursion at the machine level: call stack and activation records (UMass)",
+                  "url": "https://people.cs.umass.edu/~liberato/courses/2015-spring-cmpsci187/lecture-notes-john/lecture10.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Activation records, tail calls and accumulators (UW CSE 341)",
+                  "url": "https://courses.cs.washington.edu/courses/cse341/07sp/slides/lec06.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Recursion and the call stack in C (GATE CS guide)",
+                  "url": "https://engineeringhulk.com/cs-it/programming-c/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Recurrence relations: a complete guide (GFG)",
+                  "url": "https://www.geeksforgeeks.org/dsa/recurrence-relations-a-complete-guide/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Programming in C and recursion previous GATE questions",
+                  "url": "https://gateoverflow.in/questions/programming-in-c/programming/programming-in-c?sort=gate",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-programming-in-c-95184",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::arrays",
@@ -587,7 +2162,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Structures",
-              "links": []
+              "links": [
+                {
+                  "label": "GFG: Array notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/array-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pointers and arrays in C for GATE CS",
+                  "url": "https://engineeringhulk.com/cs-it/programming-c/pointers-arrays/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Data structures: complete GATE CS study guide",
+                  "url": "https://engineeringhulk.com/cs-it/data-structures/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Data structure notes: arrays to graphs (BYJU'S)",
+                  "url": "https://byjus.com/gate/introduction-to-data-structure-notes",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Programming in C previous GATE questions (arrays, pointers)",
+                  "url": "https://gateoverflow.in/questions/programming-in-c/programming/programming-in-c?sort=gate",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/classroom/youtube-computer-sc-data-structures-and-algorithms-47663",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::stacks",
@@ -595,7 +2221,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Structures",
-              "links": []
+              "links": [
+                {
+                  "label": "GFG: Stack notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/?p=1106024",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Stack and its applications (BYJU'S)",
+                  "url": "https://byjus.com/gate/stack-and-its-applications",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Stack gate notes (BYJU'S Exam Prep PDF)",
+                  "url": "https://byjusexamprep.com/liveData/f/2022/10/stack_gate_notes_81.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Stack, queue, graph and tree concepts and properties",
+                  "url": "https://the-cs-notes.pages.dev/dsa/dsa-important-topics/dsa_important-ds-stack-queue-graph-tree/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::queues",
@@ -603,7 +2274,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Structures",
-              "links": []
+              "links": [
+                {
+                  "label": "GFG: Difference between stack and queue",
+                  "url": "https://www.geeksforgeeks.org/dsa/difference-between-stack-and-queue-data-structures",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: GATE CS notes index (circular queue, priority queue, deque)",
+                  "url": "https://www.geeksforgeeks.org/gate-cs-notes-gq",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Stack, queue, graph and tree concepts and properties",
+                  "url": "https://the-cs-notes.pages.dev/dsa/dsa-important-topics/dsa_important-ds-stack-queue-graph-tree/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Data structure notes: queues (BYJU'S)",
+                  "url": "https://byjus.com/gate/introduction-to-data-structure-notes",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::linked-lists",
@@ -611,7 +2327,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Structures",
-              "links": []
+              "links": [
+                {
+                  "label": "GFG: Linked list notes for GATE exam",
+                  "url": "https://geeksforgeeks.org/linked-list-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Linked lists: reversal, cycle detection, GATE tips",
+                  "url": "https://engineeringhulk.com/cs-it/data-structures/linked-lists/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Linked lists: one-way, circular, doubly (GWU lecture)",
+                  "url": "https://www2.seas.gwu.edu/~bell/csci103/lectures/lists",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Doubly linked lists (BBM201 lecture PDF)",
+                  "url": "https://web.cs.hacettepe.edu.tr/~bbm201/Fall2017/BBM201-Ders10.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::trees",
@@ -619,7 +2380,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Structures",
-              "links": []
+              "links": [
+                {
+                  "label": "GFG: Trees notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/trees-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Binary trees, BSTs and tree traversals (Stanford CS106B)",
+                  "url": "https://web.stanford.edu/class/cs106b/lectures/21-trees/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Binary trees: terminology and traversals (UBC CPSC 259 PDF)",
+                  "url": "https://www.cs.ubc.ca/~hkhosrav/Courses/CPSC259/2015W1/lectures/8-binary%20trees.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Trees: traversals, expression trees, BST overview (Montana PDF)",
+                  "url": "https://www.cs.montana.edu/courses/spring2009/223/lectures/ch08.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Data structures: complete GATE CS study guide",
+                  "url": "https://engineeringhulk.com/cs-it/data-structures/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::binary-search-trees",
@@ -627,7 +2439,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Structures",
-              "links": []
+              "links": [
+                {
+                  "label": "Binary trees and binary search trees: operations and traversals (HKUST PDF)",
+                  "url": "https://cse.hkust.edu.hk/~dekai/2012H/lectures/l31_bst.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "BST insertion, search and tree traversals (Stanford CS106B)",
+                  "url": "https://web.stanford.edu/class/cs106b/lectures/21-trees/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "BST search, insertion and removal (Montana PDF)",
+                  "url": "https://www.cs.montana.edu/courses/spring2009/223/lectures/ch08.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: GATE CS notes index (BST insertion, deletion, AVL)",
+                  "url": "https://www.geeksforgeeks.org/gate-cs-notes-gq",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://www.youtube.com/playlist?list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::binary-heaps",
@@ -635,7 +2492,52 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Structures",
-              "links": []
+              "links": [
+                {
+                  "label": "GFG: Binary heap notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/binary-heap-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Priority queues and heaps: insert, delete-min, build-heap (Bowdoin PDF)",
+                  "url": "https://tildesites.bowdoin.edu/~ltoma/teaching/cs231/2017fall/Lectures/heaps.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Binary heaps, heapify and heapsort (Pomona lecture PDF)",
+                  "url": "https://drk04747.sites.pomona.edu/classes/s13/cs302-s13/lectures/lecture8-heaps.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Time complexity of building a heap",
+                  "url": "https://www.naukri.com/code360/library/time-complexity-of-building-a-heap",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Heap operations and their time complexities",
+                  "url": "https://ajay-dhangar.github.io/algo/docs/extra/heap/Heap-Operations-Time-Complexity",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::programming-and-data-structures::graphs",
@@ -643,7 +2545,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Structures",
-              "links": []
+              "links": [
+                {
+                  "label": "GFG: Graph data structure notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/graph-data-structure-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graphs: representation, search and traversal (FSU notes PDF)",
+                  "url": "https://www.cs.fsu.edu/~lacher/courses/COP4531/fall14/notes/graphs1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graph algorithms: adjacency list vs matrix, BFS, DFS (Stanford CS106B)",
+                  "url": "https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1244/lectures/24-graphs/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graphs: representations, BFS and DFS (Otago lecture PDF)",
+                  "url": "https://www.cs.otago.ac.nz/cosc242/pdf/L19.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graph representations and traversals (GATE online classes PDF)",
+                  "url": "https://www.jntua.ac.in/gate-online-classes/registration/downloads/material/a159143764882.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graph algorithms: BFS, DFS, shortest paths, MST (GATE CS guide)",
+                  "url": "https://engineeringhulk.com/?p=5824",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-data-structures-and-algorithms-95182",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             }
           ]
         }
@@ -665,7 +2618,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Basic Algorithms",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::sorting",
@@ -673,7 +2627,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Basic Algorithms",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::hashing",
@@ -681,7 +2636,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Basic Algorithms",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::asymptotic-worst-case-time-and-space-complexity",
@@ -689,7 +2645,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Basic Algorithms",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::greedy",
@@ -697,7 +2654,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Algorithm Design Techniques",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::dynamic-programming",
@@ -705,7 +2663,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Algorithm Design Techniques",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::divide-and-conquer",
@@ -713,7 +2672,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Algorithm Design Techniques",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::graph-traversals",
@@ -721,7 +2681,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Graph Algorithms",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::minimum-spanning-trees",
@@ -729,7 +2690,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Graph Algorithms",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::algorithms::shortest-paths",
@@ -737,7 +2699,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Graph Algorithms",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             }
           ]
         }
@@ -759,7 +2722,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::theory-of-computation::finite-automata",
@@ -767,7 +2731,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::theory-of-computation::context-free-grammars",
@@ -775,7 +2740,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::theory-of-computation::push-down-automata",
@@ -783,7 +2749,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::theory-of-computation::regular-languages",
@@ -791,7 +2758,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::theory-of-computation::context-free-languages",
@@ -799,7 +2767,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::theory-of-computation::pumping-lemma",
@@ -807,7 +2776,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::theory-of-computation::turing-machines",
@@ -815,7 +2785,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Computability",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::theory-of-computation::undecidability",
@@ -823,7 +2794,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Computability",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             }
           ]
         }
@@ -845,7 +2817,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Compiler Phases",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::compiler-design::parsing",
@@ -853,7 +2826,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Compiler Phases",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::compiler-design::syntax-directed-translation",
@@ -861,7 +2835,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Compiler Phases",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::compiler-design::runtime-environments",
@@ -869,7 +2844,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Compiler Phases",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::compiler-design::intermediate-code-generation",
@@ -877,7 +2853,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Compiler Phases",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::compiler-design::local-optimisation",
@@ -885,7 +2862,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Optimisation and Data Flow Analysis",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::compiler-design::constant-propagation",
@@ -893,7 +2871,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Optimisation and Data Flow Analysis",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::compiler-design::liveness-analysis",
@@ -901,7 +2880,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Optimisation and Data Flow Analysis",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::compiler-design::common-sub-expression-elimination",
@@ -909,7 +2889,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Optimisation and Data Flow Analysis",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             }
           ]
         }
@@ -931,7 +2912,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Processes and Concurrency",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::processes",
@@ -939,7 +2921,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Processes and Concurrency",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::threads",
@@ -947,7 +2930,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Processes and Concurrency",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::inter-process-communication",
@@ -955,7 +2939,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Processes and Concurrency",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::concurrency-and-synchronisation",
@@ -963,7 +2948,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Processes and Concurrency",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::deadlock",
@@ -971,7 +2957,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Processes and Concurrency",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::cpu-scheduling",
@@ -979,7 +2966,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Scheduling and Memory",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::i-o-scheduling",
@@ -987,7 +2975,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Scheduling and Memory",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::memory-management",
@@ -995,7 +2984,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Scheduling and Memory",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::virtual-memory",
@@ -1003,7 +2993,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Scheduling and Memory",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::operating-systems::file-systems",
@@ -1011,7 +3002,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "File Systems",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             }
           ]
         }
@@ -1033,7 +3025,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Database Models and SQL",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::relational-model",
@@ -1041,7 +3034,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Database Models and SQL",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::relational-algebra",
@@ -1049,7 +3043,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Database Models and SQL",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::tuple-calculus",
@@ -1057,7 +3052,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Database Models and SQL",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::sql",
@@ -1065,7 +3061,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Database Models and SQL",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::integrity-constraints",
@@ -1073,7 +3070,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Database Models and SQL",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::normal-forms",
@@ -1081,7 +3079,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Database Models and SQL",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::file-organisation",
@@ -1089,7 +3088,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "File Organisation and Transactions",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::indexing",
@@ -1097,7 +3097,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "File Organisation and Transactions",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::b-trees",
@@ -1105,7 +3106,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "File Organisation and Transactions",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::bplus-trees",
@@ -1113,7 +3115,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "File Organisation and Transactions",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::transactions",
@@ -1121,7 +3124,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "File Organisation and Transactions",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::databases::concurrency-control",
@@ -1129,7 +3133,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "File Organisation and Transactions",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             }
           ]
         }
@@ -1151,7 +3156,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Layering and Switching",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::circuit-switching",
@@ -1159,7 +3165,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Layering and Switching",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::packet-switching",
@@ -1167,7 +3174,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Layering and Switching",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::virtual-circuit-switching",
@@ -1175,7 +3183,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Layering and Switching",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::performance-metrics",
@@ -1183,7 +3192,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Layering and Switching",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::data-link-layer",
@@ -1191,7 +3201,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Link Layer and Routing",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::error-detection",
@@ -1199,7 +3210,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Link Layer and Routing",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::medium-access-control",
@@ -1207,7 +3219,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Link Layer and Routing",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::ethernet",
@@ -1215,7 +3228,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Link Layer and Routing",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::distance-vector-routing",
@@ -1223,7 +3237,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Link Layer and Routing",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::link-state-routing",
@@ -1231,7 +3246,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Data Link Layer and Routing",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::ipv4",
@@ -1239,7 +3255,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::fragmentation",
@@ -1247,7 +3264,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::cidr-notation",
@@ -1255,7 +3273,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::network-address-translation-nat",
@@ -1263,7 +3282,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::tcp-flow-control",
@@ -1271,7 +3291,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::tcp-congestion-control",
@@ -1279,7 +3300,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::socket-api",
@@ -1287,7 +3309,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::dns",
@@ -1295,7 +3318,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             },
             {
               "id": "gate::computer-networks::http",
@@ -1303,7 +3327,8 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "IPv4, Transport and Application Layer",
-              "links": []
+              "links": [],
+              "resourceLinks": []
             }
           ]
         }
