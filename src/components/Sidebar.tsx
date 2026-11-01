@@ -50,7 +50,7 @@ export function Sidebar() {
             <Code2 className="w-4 h-4 text-primary-foreground" />
           </div>
           <div>
-            <span className="block font-semibold tracking-tight">Tracker</span>
+            <span className="block font-semibold tracking-tight">dsaflo</span>
             <span className="block text-[10px] uppercase tracking-[0.2em] text-muted-foreground">DSA workspace</span>
           </div>
         </div>

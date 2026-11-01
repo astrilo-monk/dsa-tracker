@@ -1,6 +1,6 @@
-# Kunal Kushwaha DSA Tracker
+# dsaflo
 
-A beautifully designed, production-ready Data Structures and Algorithms practice tracker. 
+A beautifully designed, production-ready Data Structures and Algorithms practice tracker.
 Built entirely with Next.js App Router, Tailwind CSS, Shadcn UI (Custom), Zustand, and Framer Motion. 
 
 This tracker uses the curriculum provided by Kunal Kushwaha, parsed directly from his open-source GitHub repository.

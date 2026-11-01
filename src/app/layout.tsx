@@ -9,8 +9,8 @@ import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "DSA Tracker | Kunal Kushwaha",
-  description: "A beautifully designed DSA practice tracker based on Kunal Kushwaha's curriculum.",
+  title: "dsaflo",
+  description: "dsaflo - a beautifully designed DSA practice tracker.",
 };
 
 export default function RootLayout({
