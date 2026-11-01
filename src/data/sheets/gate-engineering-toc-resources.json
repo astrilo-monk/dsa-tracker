@@ -1,0 +1,176 @@
+{
+  "id": "gate::theory-of-computation",
+  "title": "Theory of Computation",
+  "slug": "theory-of-computation",
+  "weightage": "~7-9 marks",
+  "groups": [
+    {
+      "difficulty": "Uncategorized",
+      "questions": [
+        {
+          "id": "gate::theory-of-computation::regular-expressions",
+          "title": "Regular expressions",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Automata and Languages",
+          "links": [
+            { "label": "Regular expressions and finite automata: GATE notes hub (BYJU'S Exam Prep)", "url": "https://byjusexamprep.com/computer-science-engineering-exams/theory-of-computation", "platform": "Notes", "kind": "resource" },
+            { "label": "Equivalence of NFAs, DFAs and regular expressions (Waterloo CS 360)", "url": "https://cs.uwaterloo.ca/~s4bendav/files/CS360S21Lec04.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Regular expressions to NFA and DFA to regular expression (Illinois CS 373)", "url": "https://courses.grainger.illinois.edu/cs373/sp2013/Lectures/lec07.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "NFA with epsilon-transitions and regular expressions (Chalmers lecture 6)", "url": "https://www.cse.chalmers.se/edu/year/2014/course/TMV027/lec6.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Equivalence of regular expressions, DFA and NFA (Toronto CSC 236 PDF)", "url": "https://www.cs.toronto.edu/~xinyuan/files/csc236_2024/lectures/W9-equivalenceoffiniteautomaton-filled.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Regular expressions, Arden's theorem, DFA to regular expression (IIT Kharagpur lecture index)", "url": "https://facweb.iitkgp.ac.in/~ratna/SFA.htm", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::theory-of-computation::finite-automata",
+          "title": "Finite automata",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Automata and Languages",
+          "links": [
+            { "label": "Finite automata and regular languages: GATE notes hub (BYJU'S Exam Prep)", "url": "https://byjusexamprep.com/computer-science-engineering-exams/theory-of-computation", "platform": "Notes", "kind": "resource" },
+            { "label": "DFA, NFA, subset construction, epsilon-NFA (IIT Kharagpur lecture index)", "url": "https://facweb.iitkgp.ac.in/~ratna/SFA.htm", "platform": "Notes", "kind": "resource" },
+            { "label": "Nondeterminism, closure properties, regex to finite automata (MIT 18.404 lecture 2)", "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/nondeterminism-closure-properties-regular-expressions-2192-finite-automata", "platform": "Notes", "kind": "resource" },
+            { "label": "DFAs, NFAs and conversions (Illinois CS 373 notes PDF)", "url": "https://mfleck.web.engr.illinois.edu/cs373-notes.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "NFA to DFA and NFAs with regular expressions (UW CSE 311 lecture 26)", "url": "https://courses.cs.washington.edu/courses/cse311/12au/slides/Lecture26.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "DFA state minimization and closure properties (USF CS 411 PDF)", "url": "https://www.cs.usfca.edu/~galles/cs411/lecture/lecture7.printable.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::theory-of-computation::context-free-grammars",
+          "title": "Context-free grammars",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Automata and Languages",
+          "links": [
+            { "label": "Context-free grammars: GATE notes hub (BYJU'S Exam Prep)", "url": "https://byjusexamprep.com/computer-science-engineering-exams/theory-of-computation", "platform": "Notes", "kind": "resource" },
+            { "label": "Context-free grammars, ambiguity, Chomsky normal form (lecture PDF)", "url": "https://www.du.edu.eg/upFilesCenter/sci/1584970961.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "CFGs, Chomsky normal form, CFG to PDA (Fordham CISC 4090 PDF)", "url": "https://storm.cis.fordham.edu/leeds/cisc4090/Lecture3.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Context-free languages: CFG, CNF conversion example (URI CSC 544)", "url": "https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc544/lecture-notes/05-context-free-languages.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Converting grammars to Chomsky normal form (WWU CSCI 301 lecture 33)", "url": "https://facultyweb.cs.wwu.edu/~wehrwes/courses/csci301_24f/lectures/L33/N33.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Context-free languages, CNF and Greibach normal form (NYU lecture 3 PDF)", "url": "https://cs.nyu.edu/~yap/classes/theory/02s/lect/l3/l.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "ExamSide: Push-down automata and context-free language PYQs (1 mark)", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/theory-of-computation/push-down-automata-and-context-free-language/marks-1", "platform": "PYQ", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::theory-of-computation::push-down-automata",
+          "title": "Push-down automata",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Automata and Languages",
+          "links": [
+            { "label": "Push-down automata and context-free grammars: PDA design, CFG to PDA (Utah CS 3100 chapter)", "url": "https://my.eng.utah.edu/~cs3100/lectures/l18/pda-notes.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Equivalence of CFG and PDA (LiU TDDD14 lecture 10 slides)", "url": "https://www.ida.liu.se/~TDDD14/lectures/slides/lecture_10_slides.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Nondeterministic PDAs accept context-free languages (WWU CSCI 301 lecture 29)", "url": "https://facultyweb.cs.wwu.edu/~wehrwes/courses/csci301_25s/lectures/L29/N29.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Pushdown automata with examples (NYU lecture 3 PDF)", "url": "https://cs.nyu.edu/~yap/classes/theory/02s/lect/l3/l.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Context-free languages and PDAs (Fordham PDF)", "url": "https://storm.cis.fordham.edu/leeds/cisc4090/Lecture3.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "ExamSide: Push-down automata and context-free language PYQs (1 mark)", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/theory-of-computation/push-down-automata-and-context-free-language/marks-1", "platform": "PYQ", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::theory-of-computation::regular-languages",
+          "title": "Regular languages",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Automata and Languages",
+          "links": [
+            { "label": "Closure properties of regular languages (Radboud lecture 4 PDF)", "url": "https://www.cs.ru.nl/~jrot/TnA2017/lecture4.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Closure properties and the pumping lemma (Waterloo CS 360 lecture 5)", "url": "https://cs.uwaterloo.ca/~s4bendav/files/CS360S21Lec05.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Decision properties of regular languages: emptiness, finiteness, equivalence (UCI PDF)", "url": "https://ics.uci.edu/~wayne/courses/cs162/notes/rs1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Closure properties and DFA minimization (USF CS 411 PDF)", "url": "https://www.cs.usfca.edu/~galles/cs411/lecture/lecture7.printable.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Closure properties of regular languages (SE 3310 week 4 PDF)", "url": "https://whisperlab.org/theory-of-computation/lectures/week4.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::theory-of-computation::context-free-languages",
+          "title": "Context-free languages",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Automata and Languages",
+          "links": [
+            { "label": "Context-free languages: hierarchy, CNF, CFL pumping lemma (URI CSC 544)", "url": "https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc544/lecture-notes/05-context-free-languages.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Context-free languages and the pumping lemma for CFLs (NYU lecture 3 PDF)", "url": "https://cs.nyu.edu/~yap/classes/theory/02s/lect/l3/l.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Context-free languages and PDAs (Fordham PDF)", "url": "https://storm.cis.fordham.edu/leeds/cisc4090/Lecture3.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Context-free grammars and languages (lecture PDF)", "url": "https://www.du.edu.eg/upFilesCenter/sci/1584970961.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Context-free languages: GATE notes hub (BYJU'S Exam Prep)", "url": "https://byjusexamprep.com/computer-science-engineering-exams/theory-of-computation", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "ExamSide: Push-down automata and context-free language PYQs (1 mark)", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/theory-of-computation/push-down-automata-and-context-free-language/marks-1", "platform": "PYQ", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::theory-of-computation::pumping-lemma",
+          "title": "Pumping lemma",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Automata and Languages",
+          "links": [
+            { "label": "Pumping lemma with worked examples (Sharif lecture 7 PDF)", "url": "https://sharif.edu/~mdolati/courses/40415/Lecture07_Pumping.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Non-regular languages and the pumping lemma (BU CS 332 lecture 4)", "url": "https://cs-people.bu.edu/mbun/courses/332_S20/slides/CS332-Lec04.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Using the pumping lemma, key concepts (Calgary CPSC 351 summary)", "url": "https://cspages.ucalgary.ca/~eberly/Courses/CPSC351/2026a/2_Finite_Automata/L05/L05_summary.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Pumping lemma and closure properties (Radboud PDF)", "url": "https://www.cs.ru.nl/~jrot/TnA2017/lecture4.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Pumping lemma for context-free languages (NYU lecture 3 PDF)", "url": "https://cs.nyu.edu/~yap/classes/theory/02s/lect/l3/l.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Pumping lemma for CFLs via Chomsky normal form (URI CSC 544)", "url": "https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc544/lecture-notes/05-context-free-languages.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::theory-of-computation::turing-machines",
+          "title": "Turing machines",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Computability",
+          "links": [
+            { "label": "Turing machines, variants, Church-Turing thesis (Northeastern notes)", "url": "https://khoury.northeastern.edu/home/rraj/Courses/G714/S09/Notes/3.TuringMachines.txt", "platform": "Notes", "kind": "resource" },
+            { "label": "Turing machines: RE, recursive, multi-tape, nondeterministic (Illinois CS 475 PDF)", "url": "https://courses.grainger.illinois.edu/cs475/fa2017/LectureNotes/ChurchTuring.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Turing machines, variants and the Church-Turing thesis (Freiburg slides)", "url": "https://ac.informatik.uni-freiburg.de/teaching/ss_17/tcs/slides/04-TuringMachines.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Turing machine notes: nondeterministic TM, decidable vs recognizable", "url": "https://glennhenry.github.io/cs-notes/theory-of-computation-and-automata/turing-machine", "platform": "Notes", "kind": "resource" },
+            { "label": "Decidability and the Chomsky hierarchy (Korea Univ. lecture 11 PDF)", "url": "https://ssp.korea.ac.kr/assets/2023fall_toc/lec11.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::theory-of-computation::undecidability",
+          "title": "Undecidability",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Computability",
+          "links": [
+            { "label": "A_TM, halting problem, Rice's theorem (Northeastern notes)", "url": "https://khoury.northeastern.edu/home/rraj/Courses/G714/S08/Notes/Undecidability.txt", "platform": "Notes", "kind": "resource" },
+            { "label": "Reducibility and Rice's theorem (URI CSC 544)", "url": "https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc544/lecture-notes/10-reducibility.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Reductions, Rice's theorem, EQ_TM (IIIT Delhi lecture 23 notes)", "url": "https://faculty.iiitd.ac.in/~dbera/teach/cse322-w22/Lectures/L23-notes.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Undecidability, halting problem, Rice's theorem (Waterloo CS 365)", "url": "https://cs.uwaterloo.ca/~eblais/cs365/w26/undecidability", "platform": "Notes", "kind": "resource" },
+            { "label": "Undecidability, semi-decidable vs decidable (TU Dresden lecture 4 PDF)", "url": "https://iccl.inf.tu-dresden.de/w/images/c/c6/CT2025-Lecture-04-print.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Reductions: A_TM, emptiness, halting (lecture 14)", "url": "https://www.dsteurer.org/toc13/lectures/14", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Theory of Computation (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)", "url": "https://nptel.ac.in/courses/106106049/", "platform": "Other", "kind": "resource" },
+            { "label": "ExamSide: Undecidability PYQs (1 mark)", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/theory-of-computation/undecidability/marks-1", "platform": "PYQ", "kind": "resource" },
+            { "label": "GFG: Theory of Computation GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": []
+}

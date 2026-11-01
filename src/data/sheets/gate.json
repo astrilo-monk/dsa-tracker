@@ -2618,8 +2618,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Basic Algorithms",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Algorithms for GATE CS/IT: searching, sorting, D&C (Gate AT Zeal)",
+                  "url": "https://gateatzeal.com/blogs/crack-algorithms-for-gate-cs-it-in-2-weeks/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Divide and conquer: binary search recurrence (GATE CS guide)",
+                  "url": "https://engineeringhulk.com/?p=5821",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Algorithms: GATE CS complete guide",
+                  "url": "https://engineeringhulk.com/?p=5818",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Algorithms and data structures workbook (searching, sorting, greedy, DP)",
+                  "url": "https://www.scribd.com/document/728946922/7-Algorithms-Data-Structures-CS-IT-Workbook",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (topic-wise quizzes)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Algorithms subject page and questions",
+                  "url": "https://gateoverflow.in/subject/algorithms",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-47403",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::sorting",
@@ -2627,8 +2677,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Basic Algorithms",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Comparison sorts, stability, in-place, lower bound (UW CSE 332)",
+                  "url": "https://courses.cs.washington.edu/courses/cse332/25sp/lecture/14-end-sorting.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Sorting: the big picture, heap sort, merge sort, quick sort (UW CSE 332 PDF)",
+                  "url": "https://courses.cs.washington.edu/courses/cse332/14wi/slides/lecture13/08-sorting-steve.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "O(n log n) sorts and the comparison lower bound (UCI notes)",
+                  "url": "https://ics.uci.edu/~pattis/ICS-23/lectures/notes/Sorting2.txt",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Algorithms for GATE CS/IT: sorting and complexity table (Gate AT Zeal)",
+                  "url": "https://gateatzeal.com/blogs/crack-algorithms-for-gate-cs-it-in-2-weeks/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (topic-wise quizzes)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Algorithms subject page and questions",
+                  "url": "https://gateoverflow.in/subject/algorithms",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-47403",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::hashing",
@@ -2636,8 +2736,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Basic Algorithms",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "GFG: Hashing notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/hashing-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Introduction to hashing: chaining and open addressing (UMass lecture 32)",
+                  "url": "https://people.cs.umass.edu/~barring/cs187f11/lecture/32.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Hashing I: direct-access tables, chaining, open addressing (MIT 6.046 slides)",
+                  "url": "https://web.cs.hacettepe.edu.tr/~bgenc/courses/bbm408/lectures/lecture9/lecture9.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Hashing II: linear probing, double hashing (UW CSE 332 PDF)",
+                  "url": "https://courses.cs.washington.edu/courses/cse332/25wi/lectures/cse332-25wi-lec11-HashingII.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Hashing notes: load factor and expected probes (UTA CSE 3318)",
+                  "url": "https://ranger.uta.edu/~weems/NOTES3318/notes12.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (topic-wise quizzes)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Data structures previous GATE questions (hashing)",
+                  "url": "https://gateoverflow.in/subject/programming-in-c/data-structures",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::asymptotic-worst-case-time-and-space-complexity",
@@ -2645,8 +2795,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Basic Algorithms",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Asymptotic analysis and recurrences: Big-O, master theorem (GATE CS guide)",
+                  "url": "https://engineeringhulk.com/cs-it/algorithms/asymptotic-analysis/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Asymptotic analysis and recurrences (JHU lecture 2 PDF)",
+                  "url": "https://www.cs.jhu.edu/~mdinitz/IntroAlgorithms/Lectures/lecture2.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Asymptotic notations, recursion trees, master method (Stanford CS161 PDF)",
+                  "url": "https://graphics.stanford.edu/courses/cs161-18-winter/LectureSlides/18cs161-01-17_v1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Recurrence relations: a complete guide (GFG)",
+                  "url": "https://www.geeksforgeeks.org/dsa/recurrence-relations-a-complete-guide/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (topic-wise quizzes)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Algorithms subject page and questions",
+                  "url": "https://gateoverflow.in/subject/algorithms",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-47403",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::greedy",
@@ -2654,8 +2854,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Algorithm Design Techniques",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "GFG: Greedy algorithm notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/greedy-algorithm-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Greedy algorithms: activity selection, knapsack, Huffman (UNL CSCE 423 slides)",
+                  "url": "https://cse.unl.edu/~sscott/teach/Classes/cse423S10/slides/lecture10-greedy.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Greedy algorithms: interval scheduling, knapsack, Huffman (Pomona CS161)",
+                  "url": "https://drk04747.sites.pomona.edu/classes/algorithms/lectures/10_greedy.v2.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Greedy algorithms: activity selection, Huffman, fractional knapsack (UTA CSE 5311)",
+                  "url": "https://crystal.uta.edu/~kumar/CSE5311_10FLDAA/CSE5311M4.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Greedy choice property and Huffman correctness (Indiana B403)",
+                  "url": "https://homes.luddy.indiana.edu/achauhan/Teaching/B403/LectureNotes/08-greedy.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Greedy method PYQs (2 marks)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/algorithms/greedy-method/marks-2",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (topic-wise quizzes)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-47403",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::dynamic-programming",
@@ -2663,8 +2919,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Algorithm Design Techniques",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Dynamic programming: LCS, LIS, knapsack, matrix chain (GATE CS guide)",
+                  "url": "https://engineeringhulk.com/cs-it/algorithms/dynamic-programming/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Dynamic programming notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/dynamic-programming-dp-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Chain matrix multiplication and knapsack (Stanford CS161 lecture 13)",
+                  "url": "https://web.stanford.edu/class/archive/cs/cs161/cs161.1172/CS161Lecture13.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Dynamic programming: knapsack, matrix chain, Floyd-Warshall (HKUST L11 PDF)",
+                  "url": "https://cse.hkust.edu.hk/~dekai/271/notes/L11/L11.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Dynamic programming: LCS, knapsack, matrix-chain (Emory PDF)",
+                  "url": "https://cs.emory.edu/~cheung/Courses/253/Syllabus/DynProg/Docs/Knapsack.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Dynamic programming PYQs (1 mark)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/algorithms/dynamic-programming/marks-1",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (topic-wise quizzes)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-47403",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::divide-and-conquer",
@@ -2672,8 +2984,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Algorithm Design Techniques",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Divide and conquer: binary search, merge sort, quick sort, Strassen (GATE CS guide)",
+                  "url": "https://engineeringhulk.com/?p=5821",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Divide and conquer notes for GATE exam",
+                  "url": "https://www.geeksforgeeks.org/divide-and-conquer-notes-for-gate-exam",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Divide and conquer and the master method (Stanford CS161 PDF)",
+                  "url": "https://graphics.stanford.edu/courses/cs161-18-winter/LectureSlides/18cs161-01-17_v1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Recurrences and master theorem (JHU lecture 2 PDF)",
+                  "url": "https://www.cs.jhu.edu/~mdinitz/IntroAlgorithms/Lectures/lecture2.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (topic-wise quizzes)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Algorithms subject page and questions",
+                  "url": "https://gateoverflow.in/subject/algorithms",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-47403",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::graph-traversals",
@@ -2681,8 +3043,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Graph Algorithms",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Graph algorithms: BFS, DFS, shortest paths, MST (GATE CS guide)",
+                  "url": "https://engineeringhulk.com/?p=5824",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graphs: representations, BFS and DFS (Otago lecture PDF)",
+                  "url": "https://www.cs.otago.ac.nz/cosc242/pdf/L19.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "BFS and DFS: running time and implementation (JHU lecture 13 PDF)",
+                  "url": "https://www.cs.jhu.edu/~mdinitz/classes/IntroAlgorithms/Fall2021/Lectures/Lecture13/lecture13.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graph representation, BFS, DFS, edge classification (MIT 6.006 review notes)",
+                  "url": "https://courses.csail.mit.edu/6.006/fall11/exams.dead/notes2-2.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graph algorithms: adjacency list vs matrix, DFS, BFS (Stanford CS106B)",
+                  "url": "https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1244/lectures/24-graphs/",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (graph traversal quiz)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GATE Overflow: Algorithms subject page and questions",
+                  "url": "https://gateoverflow.in/subject/algorithms",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/classroom/youtube-computer-computer-algorithms-2-47574",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::minimum-spanning-trees",
@@ -2690,8 +3108,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Graph Algorithms",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Prim's and Kruskal's with the cut property (Duke COMPSCI 330 PDF)",
+                  "url": "https://courses.cs.duke.edu/spring20/compsci330/lecture14scribe.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "MST: cut lemma, Kruskal, union-find (Berkeley CS 170 notes)",
+                  "url": "https://people.eecs.berkeley.edu/~jordan/courses/170-fall05/notes/lecture8.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Minimum spanning trees: Kruskal and Prim analysis (Waterloo CS 341 PDF)",
+                  "url": "https://student.cs.uwaterloo.ca/~cs341/lectures/lecture13-eric.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Kruskal's algorithm and proof (Georgia Tech CS 3510 PDF)",
+                  "url": "https://faculty.cc.gatech.edu/~ladha/algo/L7.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Minimum spanning trees: Prim, Kruskal, union-find (NTNU IDATA2302)",
+                  "url": "https://franckc.folk.ntnu.no/idata2302/2026/graphs/mst/index.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Graph algorithms: BFS, DFS, shortest paths, MST (GATE CS guide)",
+                  "url": "https://engineeringhulk.com/?p=5824",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Greedy method PYQs (2 marks, includes MST)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/algorithms/greedy-method/marks-2",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (MST quiz)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::algorithms::shortest-paths",
@@ -2699,8 +3173,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Graph Algorithms",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Bellman-Ford and Floyd-Warshall (Georgia Tech CS 3510 PDF)",
+                  "url": "https://faculty.cc.gatech.edu/~ladha/algo/L8.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Shortest paths I: intro, relaxation, negative edges (MIT 6.006 PDF)",
+                  "url": "https://courses.csail.mit.edu/6.006/fall09/lecture_notes/lecture14.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Bellman-Ford, Dijkstra, Floyd-Warshall complexity summary (Tulane CS 5633 PDF)",
+                  "url": "https://cs.tulane.edu/~cwenk/teaching/cs5633/spring05/slides/Lecture-18.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Shortest paths: Dijkstra, Bellman-Ford, all-pairs (York CSE 3101 PDF)",
+                  "url": "https://www.eecs.yorku.ca/course_archive/2017-18/F/3101/LEC/graph2.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Dijkstra recap, Bellman-Ford, negative cycles (Northeastern CS 3000 PDF)",
+                  "url": "https://www.ccs.neu.edu/home/jullman/cs3000s20/slides/Lec12Before.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Greedy method PYQs (2 marks, includes Dijkstra)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/algorithms/greedy-method/marks-2",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Algorithms GATE CSE previous year questions (shortest paths quiz)",
+                  "url": "https://geeksforgeeks.org/algorithms-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-design-and-analysis-of-algorithms-daa-46806",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                },
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/classroom/youtube-computer-computer-algorithms-2-47574",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             }
           ]
         }
@@ -2722,8 +3252,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Regular expressions and finite automata: GATE notes hub (BYJU'S Exam Prep)",
+                  "url": "https://byjusexamprep.com/computer-science-engineering-exams/theory-of-computation",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Equivalence of NFAs, DFAs and regular expressions (Waterloo CS 360)",
+                  "url": "https://cs.uwaterloo.ca/~s4bendav/files/CS360S21Lec04.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Regular expressions to NFA and DFA to regular expression (Illinois CS 373)",
+                  "url": "https://courses.grainger.illinois.edu/cs373/sp2013/Lectures/lec07.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NFA with epsilon-transitions and regular expressions (Chalmers lecture 6)",
+                  "url": "https://www.cse.chalmers.se/edu/year/2014/course/TMV027/lec6.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Equivalence of regular expressions, DFA and NFA (Toronto CSC 236 PDF)",
+                  "url": "https://www.cs.toronto.edu/~xinyuan/files/csc236_2024/lectures/W9-equivalenceoffiniteautomaton-filled.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Regular expressions, Arden's theorem, DFA to regular expression (IIT Kharagpur lecture index)",
+                  "url": "https://facweb.iitkgp.ac.in/~ratna/SFA.htm",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::theory-of-computation::finite-automata",
@@ -2731,8 +3317,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Finite automata and regular languages: GATE notes hub (BYJU'S Exam Prep)",
+                  "url": "https://byjusexamprep.com/computer-science-engineering-exams/theory-of-computation",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "DFA, NFA, subset construction, epsilon-NFA (IIT Kharagpur lecture index)",
+                  "url": "https://facweb.iitkgp.ac.in/~ratna/SFA.htm",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Nondeterminism, closure properties, regex to finite automata (MIT 18.404 lecture 2)",
+                  "url": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/nondeterminism-closure-properties-regular-expressions-2192-finite-automata",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "DFAs, NFAs and conversions (Illinois CS 373 notes PDF)",
+                  "url": "https://mfleck.web.engr.illinois.edu/cs373-notes.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NFA to DFA and NFAs with regular expressions (UW CSE 311 lecture 26)",
+                  "url": "https://courses.cs.washington.edu/courses/cse311/12au/slides/Lecture26.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "DFA state minimization and closure properties (USF CS 411 PDF)",
+                  "url": "https://www.cs.usfca.edu/~galles/cs411/lecture/lecture7.printable.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::theory-of-computation::context-free-grammars",
@@ -2740,8 +3382,70 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Context-free grammars: GATE notes hub (BYJU'S Exam Prep)",
+                  "url": "https://byjusexamprep.com/computer-science-engineering-exams/theory-of-computation",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Context-free grammars, ambiguity, Chomsky normal form (lecture PDF)",
+                  "url": "https://www.du.edu.eg/upFilesCenter/sci/1584970961.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "CFGs, Chomsky normal form, CFG to PDA (Fordham CISC 4090 PDF)",
+                  "url": "https://storm.cis.fordham.edu/leeds/cisc4090/Lecture3.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Context-free languages: CFG, CNF conversion example (URI CSC 544)",
+                  "url": "https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc544/lecture-notes/05-context-free-languages.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Converting grammars to Chomsky normal form (WWU CSCI 301 lecture 33)",
+                  "url": "https://facultyweb.cs.wwu.edu/~wehrwes/courses/csci301_24f/lectures/L33/N33.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Context-free languages, CNF and Greibach normal form (NYU lecture 3 PDF)",
+                  "url": "https://cs.nyu.edu/~yap/classes/theory/02s/lect/l3/l.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Push-down automata and context-free language PYQs (1 mark)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/theory-of-computation/push-down-automata-and-context-free-language/marks-1",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::theory-of-computation::push-down-automata",
@@ -2749,8 +3453,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Push-down automata and context-free grammars: PDA design, CFG to PDA (Utah CS 3100 chapter)",
+                  "url": "https://my.eng.utah.edu/~cs3100/lectures/l18/pda-notes.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Equivalence of CFG and PDA (LiU TDDD14 lecture 10 slides)",
+                  "url": "https://www.ida.liu.se/~TDDD14/lectures/slides/lecture_10_slides.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Nondeterministic PDAs accept context-free languages (WWU CSCI 301 lecture 29)",
+                  "url": "https://facultyweb.cs.wwu.edu/~wehrwes/courses/csci301_25s/lectures/L29/N29.html",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pushdown automata with examples (NYU lecture 3 PDF)",
+                  "url": "https://cs.nyu.edu/~yap/classes/theory/02s/lect/l3/l.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Context-free languages and PDAs (Fordham PDF)",
+                  "url": "https://storm.cis.fordham.edu/leeds/cisc4090/Lecture3.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Push-down automata and context-free language PYQs (1 mark)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/theory-of-computation/push-down-automata-and-context-free-language/marks-1",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::theory-of-computation::regular-languages",
@@ -2758,8 +3518,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Closure properties of regular languages (Radboud lecture 4 PDF)",
+                  "url": "https://www.cs.ru.nl/~jrot/TnA2017/lecture4.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Closure properties and the pumping lemma (Waterloo CS 360 lecture 5)",
+                  "url": "https://cs.uwaterloo.ca/~s4bendav/files/CS360S21Lec05.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Decision properties of regular languages: emptiness, finiteness, equivalence (UCI PDF)",
+                  "url": "https://ics.uci.edu/~wayne/courses/cs162/notes/rs1.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Closure properties and DFA minimization (USF CS 411 PDF)",
+                  "url": "https://www.cs.usfca.edu/~galles/cs411/lecture/lecture7.printable.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Closure properties of regular languages (SE 3310 week 4 PDF)",
+                  "url": "https://whisperlab.org/theory-of-computation/lectures/week4.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::theory-of-computation::context-free-languages",
@@ -2767,8 +3577,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Context-free languages: hierarchy, CNF, CFL pumping lemma (URI CSC 544)",
+                  "url": "https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc544/lecture-notes/05-context-free-languages.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Context-free languages and the pumping lemma for CFLs (NYU lecture 3 PDF)",
+                  "url": "https://cs.nyu.edu/~yap/classes/theory/02s/lect/l3/l.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Context-free languages and PDAs (Fordham PDF)",
+                  "url": "https://storm.cis.fordham.edu/leeds/cisc4090/Lecture3.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Context-free grammars and languages (lecture PDF)",
+                  "url": "https://www.du.edu.eg/upFilesCenter/sci/1584970961.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Context-free languages: GATE notes hub (BYJU'S Exam Prep)",
+                  "url": "https://byjusexamprep.com/computer-science-engineering-exams/theory-of-computation",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Push-down automata and context-free language PYQs (1 mark)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/theory-of-computation/push-down-automata-and-context-free-language/marks-1",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::theory-of-computation::pumping-lemma",
@@ -2776,8 +3642,64 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Automata and Languages",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Pumping lemma with worked examples (Sharif lecture 7 PDF)",
+                  "url": "https://sharif.edu/~mdolati/courses/40415/Lecture07_Pumping.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Non-regular languages and the pumping lemma (BU CS 332 lecture 4)",
+                  "url": "https://cs-people.bu.edu/mbun/courses/332_S20/slides/CS332-Lec04.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Using the pumping lemma, key concepts (Calgary CPSC 351 summary)",
+                  "url": "https://cspages.ucalgary.ca/~eberly/Courses/CPSC351/2026a/2_Finite_Automata/L05/L05_summary.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pumping lemma and closure properties (Radboud PDF)",
+                  "url": "https://www.cs.ru.nl/~jrot/TnA2017/lecture4.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pumping lemma for context-free languages (NYU lecture 3 PDF)",
+                  "url": "https://cs.nyu.edu/~yap/classes/theory/02s/lect/l3/l.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Pumping lemma for CFLs via Chomsky normal form (URI CSC 544)",
+                  "url": "https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc544/lecture-notes/05-context-free-languages.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::theory-of-computation::turing-machines",
@@ -2785,8 +3707,58 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Computability",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "Turing machines, variants, Church-Turing thesis (Northeastern notes)",
+                  "url": "https://khoury.northeastern.edu/home/rraj/Courses/G714/S09/Notes/3.TuringMachines.txt",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Turing machines: RE, recursive, multi-tape, nondeterministic (Illinois CS 475 PDF)",
+                  "url": "https://courses.grainger.illinois.edu/cs475/fa2017/LectureNotes/ChurchTuring.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Turing machines, variants and the Church-Turing thesis (Freiburg slides)",
+                  "url": "https://ac.informatik.uni-freiburg.de/teaching/ss_17/tcs/slides/04-TuringMachines.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Turing machine notes: nondeterministic TM, decidable vs recognizable",
+                  "url": "https://glennhenry.github.io/cs-notes/theory-of-computation-and-automata/turing-machine",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Decidability and the Chomsky hierarchy (Korea Univ. lecture 11 PDF)",
+                  "url": "https://ssp.korea.ac.kr/assets/2023fall_toc/lec11.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             },
             {
               "id": "gate::theory-of-computation::undecidability",
@@ -2794,8 +3766,70 @@
               "difficulty": "Uncategorized",
               "platform": "Other",
               "subcategory": "Computability",
-              "links": [],
-              "resourceLinks": []
+              "links": [
+                {
+                  "label": "A_TM, halting problem, Rice's theorem (Northeastern notes)",
+                  "url": "https://khoury.northeastern.edu/home/rraj/Courses/G714/S08/Notes/Undecidability.txt",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Reducibility and Rice's theorem (URI CSC 544)",
+                  "url": "https://homepage.cs.uri.edu/faculty/hamel/courses/2015/spring2015/csc544/lecture-notes/10-reducibility.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Reductions, Rice's theorem, EQ_TM (IIIT Delhi lecture 23 notes)",
+                  "url": "https://faculty.iiitd.ac.in/~dbera/teach/cse322-w22/Lectures/L23-notes.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Undecidability, halting problem, Rice's theorem (Waterloo CS 365)",
+                  "url": "https://cs.uwaterloo.ca/~eblais/cs365/w26/undecidability",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Undecidability, semi-decidable vs decidable (TU Dresden lecture 4 PDF)",
+                  "url": "https://iccl.inf.tu-dresden.de/w/images/c/c6/CT2025-Lecture-04-print.pdf",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "Reductions: A_TM, emptiness, halting (lecture 14)",
+                  "url": "https://www.dsteurer.org/toc13/lectures/14",
+                  "platform": "Notes",
+                  "kind": "resource"
+                },
+                {
+                  "label": "NPTEL: Theory of Automata, Formal Languages and Computation (IIT Madras)",
+                  "url": "https://nptel.ac.in/courses/106106049/",
+                  "platform": "Other",
+                  "kind": "resource"
+                },
+                {
+                  "label": "ExamSide: Undecidability PYQs (1 mark)",
+                  "url": "https://questions-next.examside.com/past-years/gate/gate-cse/theory-of-computation/undecidability/marks-1",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                },
+                {
+                  "label": "GFG: Theory of Computation GATE CSE previous year questions",
+                  "url": "https://www.geeksforgeeks.org/gate/theory-of-computation-gate-questions",
+                  "platform": "PYQ",
+                  "kind": "resource"
+                }
+              ],
+              "resourceLinks": [
+                {
+                  "label": "YouTube",
+                  "url": "https://classcentral.com/course/youtube-toc-theory-of-computation-46804",
+                  "platform": "YouTube",
+                  "kind": "resource"
+                }
+              ]
             }
           ]
         }
