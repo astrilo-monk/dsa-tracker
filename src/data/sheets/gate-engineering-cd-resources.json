@@ -1,0 +1,158 @@
+{
+  "id": "gate::compiler-design",
+  "title": "Compiler Design",
+  "slug": "compiler-design",
+  "weightage": "~4-6 marks",
+  "groups": [
+    {
+      "difficulty": "Uncategorized",
+      "questions": [
+        {
+          "id": "gate::compiler-design::lexical-analysis",
+          "title": "Lexical analysis",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Compiler Phases",
+          "links": [
+            { "label": "Compiler Design for GATE CS: complete study guide", "url": "https://engineeringhulk.com/?p=5867", "platform": "Notes", "kind": "resource" },
+            { "label": "Lexing: tokens, regex to NFA to DFA (UW CSE 401)", "url": "https://www.cs.washington.edu/education/courses/cse401/03au/slides/02-lexing.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Lexical analysis: regular expressions to scanners (Technion Theory of Compilation)", "url": "https://csaws.cs.technion.ac.il/~yahave/courses/tocs2011/compilers-lec02.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Lexing and DFAs (Harvard CS 153 lecture 8)", "url": "https://groups.seas.harvard.edu/courses/cs153/2019fa/lectures/Lec08-Lexing.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Lexical analysis: tokens, lexemes, patterns (UCSB CMPSC 160 lecture 2)", "url": "https://cs.ucsb.edu/~yufeiding/cs160/slides/cs160-lec2_2022.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "GATE CSE compiler design: marks analysis, topic-wise PYQs (token counting)", "url": "https://themlhub.ai/blog/compiler-design-gate-cse", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "ExamSide: Compiler Design previous GATE questions", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/compiler-design/parsing/marks-2", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::compiler-design::parsing",
+          "title": "Parsing",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Compiler Phases",
+          "links": [
+            { "label": "Syntax analysis and parsing: LL(1), LR, SLR, LALR, FIRST and FOLLOW (GATE guide)", "url": "https://engineeringhulk.com/?p=5869", "platform": "Notes", "kind": "resource" },
+            { "label": "Table-driven LL(1) parsing, FIRST and FOLLOW (Cambridge Compiler Construction)", "url": "https://www.cl.cam.ac.uk/teaching/2021/CompConstr/CC_2021_LL1_Table_Driven_Parsing.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "LR(0), SLR(1), LR(1) construction (IIT Hyderabad parsing slides)", "url": "https://people.iith.ac.in/ramakrishna/Compilers-Aug14/slides/10-parsing-6.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "LR parsing: LR(0) vs SLR(1) vs LR(1) vs LALR(1) (Rutgers CS 415 lecture 15)", "url": "https://www.cs.rutgers.edu/courses/415/classes/spring_2016_zhang/lectures/lec15.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Parsing recap with LL(1), LR(0), SLR(1), LALR(1) exercises (Technion lecture 14)", "url": "https://csaws.cs.technion.ac.il/~yahave/courses/tocs2011/compilers-lec14.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "ExamSide: Parsing previous GATE questions (2 marks)", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/compiler-design/parsing/marks-2", "platform": "PYQ", "kind": "resource" },
+            { "label": "Code360: Parsing and syntax-directed translation GATE questions", "url": "https://www.naukri.com/code360/library/parsing-and-syntax-directed-translation-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::compiler-design::syntax-directed-translation",
+          "title": "Syntax-directed translation",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Compiler Phases",
+          "links": [
+            { "label": "Syntax-directed translation: SDD, S-attributed, L-attributed (CS 4300 Ch. 5)", "url": "https://www.cs.csustan.edu/~xliang/Courses2/CS4300-22F/Notes/Ch5a.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "SDD vs SDT scheme, S- and L-attributed (IIT Madras CS3300 lecture 4)", "url": "https://www.cse.iitm.ac.in/~krishna/cs3300/lecture4.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Syntax-directed translation: attributes, evaluation orders (Stony Brook CSE 304)", "url": "https://www3.cs.stonybrook.edu/~amione/CSE304_Course/materials/lectures/Lecture11.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Syntax-directed translation (CMPS 450 chapter 5 notes)", "url": "https://cs.csub.edu/~eddie/cmps4500/ch05_notes.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Syntax-directed translation: SDD and translation schemes (lecture notes PDF)", "url": "https://jeppiaarinstitute.org/pdf/lectures/113.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "Code360: Parsing and syntax-directed translation GATE questions", "url": "https://www.naukri.com/code360/library/parsing-and-syntax-directed-translation-questions", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: Compiler Design previous GATE questions", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/compiler-design/parsing/marks-2", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::compiler-design::runtime-environments",
+          "title": "Runtime environments",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Compiler Phases",
+          "links": [
+            { "label": "Activation records, static vs dynamic scoping, runtime stack (Technion lecture 10)", "url": "https://csaws.cs.technion.ac.il/~yahave/courses/tocs2011/compilers-lec10.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Run-time environments: stack allocation, parameter passing (Stony Brook CSE 504)", "url": "https://www3.cs.stonybrook.edu/~youngkwon/cse304/Lecture12.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Activation records and runtime stack (Berkeley CS 164 lecture 24)", "url": "https://inst.eecs.berkeley.edu/~cs164/fa06/lectures/lecture24.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Runtime environments: storage allocation, procedures, parameter passing (PSU CS 322)", "url": "https://web.cecs.pdx.edu/~apt/cs322/lecture8.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Runtime organization: static, stack, heap allocation (Uppsala lecture 11)", "url": "https://www.it.uu.se/edu/course/homepage/komp/ht15/lecture11.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "ExamSide: Compiler Design previous GATE questions", "url": "https://questions-next.examside.com/past-years/gate/gate-cse/compiler-design/parsing/marks-2", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::compiler-design::intermediate-code-generation",
+          "title": "Intermediate code generation",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Compiler Phases",
+          "links": [
+            { "label": "Intermediate code generation: 3AC, DAG, basic blocks, CFG (GATE guide)", "url": "https://engineeringhulk.com/?p=5871", "platform": "Notes", "kind": "resource" },
+            { "label": "Intermediate code: syntax trees, DAGs, quadruples, triples (Stony Brook CSE 304)", "url": "https://www3.cs.stonybrook.edu/~amione/CSE304_Course/materials/lectures/Lecture16a.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Intermediate representation: CFG, 3-address code, SSA (UniBE Compiler Construction)", "url": "https://scg.unibe.ch/download/lectures/cc/CC-05-IntermediateRepresentation.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Intermediate code, quadruples, basic blocks and flow graphs (Linköping lecture notes)", "url": "https://www.lysator.liu.se/~padrone/temporary/koi/2025/lectures/lecture-11/index.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Compiler Design for GATE CS: complete study guide", "url": "https://engineeringhulk.com/?p=5867", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE CSE compiler design: marks analysis, topic-wise PYQs (basic blocks and CFGs)", "url": "https://themlhub.ai/blog/compiler-design-gate-cse", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::compiler-design::local-optimisation",
+          "title": "Local optimisation",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Optimisation and Data Flow Analysis",
+          "links": [
+            { "label": "Basic blocks, leaders, DAG, value numbering, dead code (GATE guide)", "url": "https://engineeringhulk.com/cs-it/compiler-design/intermediate-code/", "platform": "Notes", "kind": "resource" },
+            { "label": "Basic blocks, flow graphs and local transformations (Linköping lecture notes)", "url": "https://www.lysator.liu.se/~padrone/temporary/koi/2025/lectures/lecture-11/index.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Analysis and transformation: constant folding, dead code elimination (Princeton CS 320)", "url": "https://www.cs.princeton.edu/courses/archive/spr03/cs320/notes/analysis-lect.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Control flow graph, basic blocks and 3-address code (UniBE Compiler Construction)", "url": "https://scg.unibe.ch/download/lectures/cc/CC-05-IntermediateRepresentation.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE CSE compiler design: marks analysis, topic-wise PYQs (basic blocks and optimisation)", "url": "https://themlhub.ai/blog/compiler-design-gate-cse", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::compiler-design::constant-propagation",
+          "title": "Constant propagation",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Optimisation and Data Flow Analysis",
+          "links": [
+            { "label": "Reaching definitions and constant propagation (Princeton CS 320)", "url": "https://www.cs.princeton.edu/courses/archive/spr03/cs320/notes/analysis-lect.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Dataflow analysis: reaching definitions, constant propagation (EPFL CS-420)", "url": "https://cs420.epfl.ch/c/06_dataflow.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Dataflow analysis: reaching definitions and available expressions (UPenn CIS 341)", "url": "https://www.seas.upenn.edu/~cis3410/17sp/lectures/lec24.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Data-flow analysis: reaching definitions, simple constant propagation (Korea Univ. AAA616)", "url": "https://prl.korea.ac.kr/courses/aaa616/2022/slides/lec10.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE CSE compiler design: marks analysis, topic-wise PYQs (data-flow optimisation)", "url": "https://themlhub.ai/blog/compiler-design-gate-cse", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::compiler-design::liveness-analysis",
+          "title": "Liveness analysis",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Optimisation and Data Flow Analysis",
+          "links": [
+            { "label": "Dataflow analysis: live variables with worked CFG examples (EPFL CS-420)", "url": "https://cs420.epfl.ch/c/06_dataflow.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Live variables, reaching definitions, available expressions (Princeton CS 320)", "url": "https://www.cs.princeton.edu/courses/archive/spr03/cs320/notes/analysis-lect.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Liveness analysis and iterative dataflow equations (UPenn CIS 341 lecture 22)", "url": "https://seas.upenn.edu/~cis3410/13sp/lectures/lec22.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Live variables analysis and data-flow framework (Korea Univ. AAA616)", "url": "https://prl.korea.ac.kr/courses/aaa616/2022/slides/lec10.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE CSE compiler design: marks analysis, topic-wise PYQs (data-flow optimisation)", "url": "https://themlhub.ai/blog/compiler-design-gate-cse", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::compiler-design::common-sub-expression-elimination",
+          "title": "Common sub-expression elimination",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Optimisation and Data Flow Analysis",
+          "links": [
+            { "label": "Available expressions and common sub-expression elimination (UPenn CIS 341 lecture 22)", "url": "https://seas.upenn.edu/~cis3410/13sp/lectures/lec22.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Available expressions: gen/kill equations and CSE (EPFL CS-420)", "url": "https://cs420.epfl.ch/archive/20/c/06_dataflow.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Available expressions analysis with CSE application (Korea Univ. AAA616)", "url": "https://prl.korea.ac.kr/courses/aaa616/2022/slides/lec10.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "DAG-based CSE and basic blocks (GATE guide)", "url": "https://engineeringhulk.com/cs-it/compiler-design/intermediate-code/", "platform": "Notes", "kind": "resource" },
+            { "label": "Available expressions analysis (Princeton CS 320)", "url": "https://www.cs.princeton.edu/courses/archive/spr03/cs320/notes/analysis-lect.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Compiler Design for GATE CS/IT (Ravindrababu Ravula, via Class Central)", "url": "https://www.classcentral.com/classroom/youtube-compiler-design-54062/611af97a470f8", "platform": "YouTube", "kind": "resource" },
+            { "label": "GATE CSE compiler design: marks analysis, topic-wise PYQs (data-flow optimisation)", "url": "https://themlhub.ai/blog/compiler-design-gate-cse", "platform": "PYQ", "kind": "resource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": []
+}

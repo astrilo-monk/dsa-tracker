@@ -1,0 +1,231 @@
+{
+  "id": "gate::databases",
+  "title": "Databases",
+  "slug": "databases",
+  "weightage": "~7-9 marks",
+  "groups": [
+    {
+      "difficulty": "Uncategorized",
+      "questions": [
+        {
+          "id": "gate::databases::er-model",
+          "title": "ER model",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Database Models and SQL",
+          "links": [
+            { "label": "DBMS for GATE CS: complete notes (ER model, relational model, SQL, normalisation)", "url": "https://engineeringhulk.com/cs-it/dbms/", "platform": "Notes", "kind": "resource" },
+            { "label": "GFG: Databases (DBMS) for GATE exam, topic-wise tutorial", "url": "https://www.geeksforgeeks.org/dbms/databases-dbms-for-gate-exam", "platform": "Notes", "kind": "resource" },
+            { "label": "ER model: entities, cardinality constraints, weak entities (ULB course notes)", "url": "https://cs.ulb.ac.be/public/_media/teaching/infoh303/ernotes2p.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "The entity/relationship model: weak entities, relationships, ER diagrams (lecture 12 PDF)", "url": "https://hufocw.org/Download/file/17334", "platform": "Notes", "kind": "resource" },
+            { "label": "ER to relational mapping algorithm (UQU Database I, lecture 5)", "url": "https://drive.uqu.edu.sa/_/oghadreti/files/DBL5.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Mapping ER to relational model: rules for all relationship cases (Code360)", "url": "https://www.naukri.com/code360/library/mapping-er-to-relational-model-1925", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: ER model)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::relational-model",
+          "title": "Relational model",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Database Models and SQL",
+          "links": [
+            { "label": "DBMS for GATE CS: complete notes", "url": "https://engineeringhulk.com/cs-it/dbms/", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational model: relations, keys, constraints, ER mapping (UQU lecture 5)", "url": "https://drive.uqu.edu.sa/_/oghadreti/files/DBL5.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational model: keys, foreign keys, referential integrity (UMD lecture notes)", "url": "https://github.com/umddb/datascience-fall14/blob/master/lecture-notes/relational.md", "platform": "Notes", "kind": "resource" },
+            { "label": "Mapping ER diagrams to the relational model (Waterloo CS 338 lecture 16)", "url": "https://student.cs.uwaterloo.ca/~cs338/CS338-Lecture-16-Mapping-ERD-to-Relational-Data-Model.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational model: structure, algebra, calculus (Masaryk Univ. chapter 3 PDF)", "url": "https://www.fi.muni.cz/~xdohnal/lectures/PB154/mod03_1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: functional dependency and key concepts)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::relational-algebra",
+          "title": "Relational algebra",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Database Models and SQL",
+          "links": [
+            { "label": "The relational algebra and relational calculus (Purdue CS 448, chapter 8)", "url": "https://www.cs.purdue.edu/homes/bb/cs448_Fall2017/lpdf/Chapter08.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Introduction to relational algebra: five basic operations and division (Adelphi CSC 443)", "url": "https://home.adelphi.edu/~siegfried/cs443/443l9.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational algebra and relational calculus (UTK CS 465, chapter 5)", "url": "https://web.eecs.utk.edu/~bvanderz/teaching/cs465Sp20/notes/ch05.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational algebra, division operation example (Masaryk Univ. chapter 3 PDF)", "url": "https://www.fi.muni.cz/~xdohnal/lectures/PB154/mod03_1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational algebra and SQL equivalence (lecture 5 slides)", "url": "https://www.slideshare.net/slideshow/ml111-lecture-5-relational-algebra-and-advanced-sqlpdf/266399926", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: relational algebra)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::tuple-calculus",
+          "title": "Tuple calculus",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Database Models and SQL",
+          "links": [
+            { "label": "Tuple and domain relational calculus (Purdue CS 448, chapter 8)", "url": "https://www.cs.purdue.edu/homes/bb/cs448_Fall2017/lpdf/Chapter08.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Tuple relational calculus: how to form queries (UTK CS 465, chapter 5)", "url": "https://web.eecs.utk.edu/~bvanderz/teaching/cs465Sp20/notes/ch05.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Tuple and domain relational calculus formulas (Masaryk Univ. chapter 3 PDF)", "url": "https://www.fi.muni.cz/~xdohnal/lectures/PB154/mod03_1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational algebra and relational calculus (Northeastern lecture 4)", "url": "https://www.scribd.com/document/503672800/4-RAAndRC", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational calculus: TRC syntax with examples (lecture 6)", "url": "https://www.scribd.com/presentation/744570218/lecture-6", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: tuple calculus)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::sql",
+          "title": "SQL",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Database Models and SQL",
+          "links": [
+            { "label": "SQL: joins, nested queries, subqueries with IN/ANY/ALL (Northeastern CS 3200 L04)", "url": "https://course.ccs.neu.edu/cs3200sp18s2/download/L04-SQL.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Introduction to SQL: group by, having, nested subqueries (lecture PDF)", "url": "https://www.uomus.edu.iq/uploads/lectures/47/9584ef2f6dde4511b3b79686cdcfdf75.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "SQL constructs, multi-table queries, outer joins, aggregation (UMD lecture notes)", "url": "https://github.com/umddb/datascience-fall14/blob/master/lecture-notes/relational.md", "platform": "Notes", "kind": "resource" },
+            { "label": "SQL clause processing order, grouping and aggregation (SQL lecture notes)", "url": "https://knowt.com/note/b07f229b-aee1-43ff-abb9-0177fa6c57e1/Comprehensive-SQL-Lecture-Notes", "platform": "Notes", "kind": "resource" },
+            { "label": "DBMS for GATE CS: complete notes", "url": "https://engineeringhulk.com/cs-it/dbms/", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: SQL)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" },
+            { "label": "GFG: Database Management System GATE CSE previous year questions", "url": "https://www.geeksforgeeks.org/dbms/database-management-system-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::integrity-constraints",
+          "title": "Integrity constraints",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Database Models and SQL",
+          "links": [
+            { "label": "Foreign key constraints and referential integrity in SQL (Northeastern CS 3200 L04)", "url": "https://course.ccs.neu.edu/cs3200sp18s2/download/L04-SQL.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Keys, foreign keys, referential integrity examples (UMD lecture notes)", "url": "https://github.com/umddb/datascience-fall14/blob/master/lecture-notes/relational.md", "platform": "Notes", "kind": "resource" },
+            { "label": "Integrity constraints: domain, entity, referential, key; CHECK (SQL notes)", "url": "https://www.scribd.com/document/859070461/SQL-Notes-and-Concepts", "platform": "Notes", "kind": "resource" },
+            { "label": "Referential integrity actions: ON DELETE/UPDATE CASCADE, SET NULL (SQL lecture notes)", "url": "https://knowt.com/note/b07f229b-aee1-43ff-abb9-0177fa6c57e1/Comprehensive-SQL-Lecture-Notes", "platform": "Notes", "kind": "resource" },
+            { "label": "Relational model constraints (UQU lecture 5)", "url": "https://drive.uqu.edu.sa/_/oghadreti/files/DBL5.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: key concepts)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::normal-forms",
+          "title": "Normal forms",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Database Models and SQL",
+          "links": [
+            { "label": "Normalisation: FDs, closure, candidate keys, 1NF to BCNF, decomposition (GATE guide)", "url": "https://engineeringhulk.com/?p=5847", "platform": "Notes", "kind": "resource" },
+            { "label": "Normalization notes: Armstrong's axioms, attribute closure, BCNF algorithm (Berkeley)", "url": "https://dsf.berkeley.edu/dbcourse/section/normalization_notes.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Functional dependencies, lossless join, dependency preservation (UMD CMSC 424 lecture 10)", "url": "https://www.cbcb.umd.edu/confcour/Spring2008/CMSC424-materials/Lecture10.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Functional dependencies, BCNF and 3NF decomposition (Edinburgh lecture 2a)", "url": "https://homepages.inf.ed.ac.uk/opb/ad/lect2a.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Definitions of 2NF, 3NF, lossless join, Armstrong's axioms (EMU PDF)", "url": "https://emunix.emich.edu/~haynes/CommonCourseMaterial/471/DefinitionsRegardingNormalForms.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Worked normal form checks: candidate keys, 2NF vs 3NF (HKUST tutorial)", "url": "https://www.scribd.com/presentation/45485513/Tutorial-5", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: normalization and normal forms)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" },
+            { "label": "GATE CSE DBMS: marks analysis by topic (normalisation trends)", "url": "https://themlhub.ai/blog/dbms-gate-cse", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::file-organisation",
+          "title": "File organisation",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "File Organisation and Transactions",
+          "links": [
+            { "label": "File organisation: heap, sorted, hashed files and cost of operations (UW CSEP 544)", "url": "https://courses.cs.washington.edu/courses/csep544/02sp/lectures/lecture06.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Files and indices: cost of operations (Cornell CS 432, chapter 8)", "url": "https://cs.cornell.edu/courses/cs432/2002fa/slides/Chapter8.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "File organisations, ordered indexes, B and B+ trees (UCT chapter 11 PDF)", "url": "https://www.cs.uct.ac.za/mit_notes/database/pdfs/chp11.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Storage and file organisation: heap, sorted, clustered, hash comparison (York EECS 4411)", "url": "https://www.eecs.yorku.ca/course_archive/2013-14/W/4411/notes/storage.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Physical DB design: heaps, hashing, sorted files, B-trees (UoC lecture)", "url": "https://opencourses.uoc.gr/mod/resource/view.php?id=6926", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: file organization)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: File structures and indexing PYQs (1 mark)", "url": "https://questions.examside.com/past-years/gate/gate-cse/database-management-system/file-structures-and-indexing/marks-1", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::indexing",
+          "title": "Indexing",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "File Organisation and Transactions",
+          "links": [
+            { "label": "Indexing: primary, secondary, clustered, dense, sparse (UW CSE 444 lecture 5)", "url": "https://courses.cs.washington.edu/courses/cse444/15sp/lectures/lecture05-indexing-large.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Index classification and tree-structured indices (UW CSEP 544 lecture 8)", "url": "https://courses.cs.washington.edu/courses/csep544/99au/lectures/class8.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Single-level ordered indexes: primary, clustering, secondary (UCT chapter 11 PDF)", "url": "https://www.cs.uct.ac.za/mit_notes/database/pdfs/chp11.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Comparing file organisations and index types (UC Davis ECS 165B)", "url": "https://www.cs.ucdavis.edu/~green/courses/ecs165b/Lecture8.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "DBMS for GATE CS: indexing and B+ trees", "url": "https://engineeringhulk.com/cs-it/dbms/", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: indexing, B tree and B+ tree)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: File structures and indexing PYQs (1 mark)", "url": "https://questions.examside.com/past-years/gate/gate-cse/database-management-system/file-structures-and-indexing/marks-1", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::b-trees",
+          "title": "B trees",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "File Organisation and Transactions",
+          "links": [
+            { "label": "Advanced trees: B-trees and B+ trees in the DBMS context (GATE guide)", "url": "https://engineeringhulk.com/?p=5808", "platform": "Notes", "kind": "resource" },
+            { "label": "B-tree definition, order, insertion and deletion (UCT chapter 11 PDF)", "url": "https://www.cs.uct.ac.za/mit_notes/database/pdfs/chp11.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "B-tree of order m: properties and operations (UoC lecture)", "url": "https://opencourses.uoc.gr/mod/resource/view.php?id=6926", "platform": "Notes", "kind": "resource" },
+            { "label": "DBMS for GATE CS: indexing and B+ trees", "url": "https://engineeringhulk.com/cs-it/dbms/", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: indexing, B tree and B+ tree)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: File structures and indexing PYQs (1 mark)", "url": "https://questions.examside.com/past-years/gate/gate-cse/database-management-system/file-structures-and-indexing/marks-1", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::bplus-trees",
+          "title": "B+ trees",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "File Organisation and Transactions",
+          "links": [
+            { "label": "B+ tree insertion and deletion with worked diagrams (UW CSE 444 lecture 18)", "url": "https://courses.cs.washington.edu/courses/cse444/02au/slides/lecture18.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "B+ tree insertion and fan-out (UW CSE 444 lecture 5)", "url": "https://courses.cs.washington.edu/courses/cse444/15sp/lectures/lecture05-indexing-large.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "ISAM vs B+ tree, height balance, cost (UW CSEP 544 lecture 8)", "url": "https://courses.cs.washington.edu/courses/csep544/99au/lectures/class8.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "B+ tree definition, search, insertion, deletion (UCT chapter 11 PDF)", "url": "https://www.cs.uct.ac.za/mit_notes/database/pdfs/chp11.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Advanced trees: B and B+ trees, GATE applications", "url": "https://engineeringhulk.com/?p=5808", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: indexing, B tree and B+ tree)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" },
+            { "label": "ExamSide: File structures and indexing PYQs (1 mark)", "url": "https://questions.examside.com/past-years/gate/gate-cse/database-management-system/file-structures-and-indexing/marks-1", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::transactions",
+          "title": "Transactions",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "File Organisation and Transactions",
+          "links": [
+            { "label": "Transactions: serializability, precedence graph, recoverable schedules (UW CSE 444 lecture 11-13)", "url": "https://courses.cs.washington.edu/courses/cse444/10sp/lectures/lecture11-13.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Conflict and view serializability, precedence graphs (UNSW COMP3311 week 9)", "url": "https://cgi.cse.unsw.edu.au/~cs3311/23T1/lectures/week09-thursday/slides.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Transactions and schedules: precedence graph test (BU DS 310)", "url": "https://ds310.cds.bu.edu/L11-Txns2.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Schedules, conflict serializability, 2PL (Duke CPS 116 lecture 23)", "url": "https://courses.cs.duke.edu/fall05/cps116/lectures/23-tx.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "DBMS for GATE CS: transactions and concurrency control", "url": "https://engineeringhulk.com/cs-it/dbms/", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: transactions and concurrency control)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" },
+            { "label": "GATE Overflow: transaction and concurrency questions", "url": "https://gateoverflow.in/tag/transaction-and-concurrency?start=120", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::databases::concurrency-control",
+          "title": "Concurrency control",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "File Organisation and Transactions",
+          "links": [
+            { "label": "Transactions and locking: 2PL, strict 2PL, deadlock (UW CSE 444 lecture 15)", "url": "https://courses.cs.washington.edu/courses/cse444/20sp/lectures/lecture15-transactions-locking.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Isolation levels: 2PL, strict 2PL, recoverability (UW CSE 344 lecture 18)", "url": "https://courses.cs.washington.edu/courses/cse344/24au/lectures/lec18_isolationlevels.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Concurrency control summary: 2PL, ACA, precedence graph (UW CSEP 544 lecture 13)", "url": "https://courses.cs.washington.edu/courses/csep544/99au/lectures/class13.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Implementation of transactions: conflict serializability and 2PL proof (UW CSE 414)", "url": "https://courses.cs.washington.edu/courses/cse414/18sp/lectures/lec24-txns-impl.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Locking and 2PL (BU DS 310)", "url": "https://ds310.cds.bu.edu/L11-Txns2.html", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: DBMS complete playlist (Gate Smashers, via Class Central)", "url": "https://classcentral.com/course/youtube-dbms-database-management-system-complete-playlist-46805", "platform": "YouTube", "kind": "resource" },
+            { "label": "GFG: GATE CS topic-wise PYQ quizzes (DBMS: transactions and concurrency control)", "url": "https://www.geeksforgeeks.org/gate/gate-cs-subject-wise-and-topic-wise-pyq-quizzes", "platform": "PYQ", "kind": "resource" },
+            { "label": "GATE Overflow: transaction and concurrency questions", "url": "https://gateoverflow.in/tag/transaction-and-concurrency?start=120", "platform": "PYQ", "kind": "resource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": []
+}

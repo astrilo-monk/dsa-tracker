@@ -27,6 +27,9 @@ const RESOURCE_DATASET_FILES = [
   "gate-engineering-dsa-resources.json",
   "gate-engineering-digitallogic-resources.json",
   "gate-engineering-coa-resources.json",
+  "gate-engineering-os-resources.json",
+  "gate-engineering-cd-resources.json",
+  "gate-engineering-dbms-resources.json",
   "gate-engineering-algorithms-resources.json",
   "gate-engineering-toc-resources.json",
 ].map((file) => path.join(process.cwd(), "src/data/sheets", file));

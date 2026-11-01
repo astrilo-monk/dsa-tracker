@@ -1,0 +1,201 @@
+{
+  "id": "gate::operating-systems",
+  "title": "Operating Systems",
+  "slug": "operating-systems",
+  "weightage": "~8-10 marks",
+  "groups": [
+    {
+      "difficulty": "Uncategorized",
+      "questions": [
+        {
+          "id": "gate::operating-systems::system-calls",
+          "title": "System calls",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Processes and Concurrency",
+          "links": [
+            { "label": "Operating Systems for GATE CS: complete study guide", "url": "https://engineeringhulk.com/cs-it/operating-systems/", "platform": "Notes", "kind": "resource" },
+            { "label": "Operating systems: GATE notes hub (BYJU'S Exam Prep)", "url": "https://byjusexamprep.com/computer-science-engineering-exams/operating-system", "platform": "Notes", "kind": "resource" },
+            { "label": "User mode, kernel mode, traps and system calls (UCI ICS 143 review)", "url": "https://www.ics.uci.edu/~ics143/lectures/final-review-2020.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "System call dispatch, mode switch vs context switch (Temple CIS 5512)", "url": "https://cis.temple.edu/~qzeng/cis5512-fall2017/slides/02-processes-and-threads.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Process, kernel threads and user-level threads review (UW CSE 451)", "url": "https://courses.cs.washington.edu/courses/cse451/13au/lectures/6-PKTULT.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::processes",
+          "title": "Processes",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Processes and Concurrency",
+          "links": [
+            { "label": "Operating Systems for GATE CS: complete study guide", "url": "https://engineeringhulk.com/cs-it/operating-systems/", "platform": "Notes", "kind": "resource" },
+            { "label": "Process states, PCB, context switch, fork/exec (OS Concepts study guide)", "url": "https://os-book.com/OS9/study-guide/Study-Guide.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Processes and threads: PCB, context vs mode switch (Virginia Tech CS 5204)", "url": "https://courses.cs.vt.edu/cs5204/fall15-gback/lectures/Lecture-Processes-and-Threads.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Context switches, IPC and threads (Rochester CSC 256)", "url": "https://www.cs.rochester.edu/users/faculty/sandhya/csc256/lectures/lecture04-contextswitch_ipc_threads.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Process state models and PCB (ECE 254 notes)", "url": "https://csclub.uwaterloo.ca/~matedesc/ece254-midterm-notes.html", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions (process management quiz)", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::threads",
+          "title": "Threads",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Processes and Concurrency",
+          "links": [
+            { "label": "Operating Systems for GATE CS: complete study guide", "url": "https://engineeringhulk.com/cs-it/operating-systems/", "platform": "Notes", "kind": "resource" },
+            { "label": "Review of processes, kernel threads, user-level threads (UW CSE 451)", "url": "https://courses.cs.washington.edu/courses/cse451/13au/lectures/6-PKTULT.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "User vs kernel threads, multithreading models (Rochester CSC 256)", "url": "https://www.cs.rochester.edu/users/faculty/sandhya/csc256/lectures/lecture04-contextswitch_ipc_threads.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Threads, thread states, thread types (UCI ICS 143 review)", "url": "https://www.ics.uci.edu/~ics143/lectures/final-review-2020.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Many-to-one, one-to-one, many-to-many models (OS Concepts study guide)", "url": "https://os-book.com/OS9/study-guide/Study-Guide.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::inter-process-communication",
+          "title": "Inter-process communication",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Processes and Concurrency",
+          "links": [
+            { "label": "Operating Systems for GATE CS: complete study guide", "url": "https://engineeringhulk.com/cs-it/operating-systems/", "platform": "Notes", "kind": "resource" },
+            { "label": "Shared memory, message passing, pipes, sockets (Rochester CSC 256)", "url": "https://www.cs.rochester.edu/u/sandhya/csc256/lectures/lecture04-ipc_threads.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "IPC models: shared memory vs message passing (UCI ICS 143 review)", "url": "https://www.ics.uci.edu/~ics143/lectures/final-review-2020.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Blocking vs non-blocking message passing (OS Concepts study guide)", "url": "https://os-book.com/OS9/study-guide/Study-Guide.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Operating Systems complete GATE CS notes: IPC and system calls", "url": "https://www.scribd.com/document/1070236149/Operating-Systems", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::concurrency-and-synchronisation",
+          "title": "Concurrency and synchronisation",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Processes and Concurrency",
+          "links": [
+            { "label": "OS formulas and conditions cheat sheet: mutual exclusion, progress, bounded waiting", "url": "https://engineeringhulk.com/?p=5843", "platform": "Notes", "kind": "resource" },
+            { "label": "Process synchronization: Peterson, semaphores, classic problems (FSU COP 4610)", "url": "https://www.cs.fsu.edu/~lacher/courses/COP4610/lectures_8e/ch06.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Classic synchronization problems: bounded buffer, readers-writers (CSU CS 370)", "url": "https://www.cs.colostate.edu/~cs370/Spring24/lectures/CS370-L11-ProcessSynchronization-PartC-Spring24-Pouchet.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Process synchronization I: critical section, semaphores (LSU CSC 4103)", "url": "https://www.cct.lsu.edu/~kosar/csc4103-spring07/slides/06_Process_Synchronization_I.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Process synchronization: critical sections, semaphores, dining philosophers (UMBC CMSC 421)", "url": "https://courses.cs.umbc.edu/undergraduate/421/Fall99/0101/Slides/2up/cs421f99.ch06.2up.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::deadlock",
+          "title": "Deadlock",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Processes and Concurrency",
+          "links": [
+            { "label": "Deadlock: conditions, prevention, avoidance, Banker's algorithm (UMD CMSC 412)", "url": "https://www.cs.umd.edu/~hollings/cs412/s02/lectures/lect10/lect10.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Deadlock: resource allocation graphs and Banker's algorithm (UCR CS 153)", "url": "https://www.cs.ucr.edu/~csong/cs153/20f/l/deadlock.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Deadlock prevention, avoidance, detection and recovery (Mount Holyoke CS 322)", "url": "https://courses.teresco.org/cs322_s08/notes/deadlock.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Deadlock detection and recovery, safe states (DCU CA216 lecture 8)", "url": "https://redbrick.dcu.ie/~nanaki/notes/ca2/ca216/lectures/lecture08_4.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Operating Systems for GATE CS: complete study guide", "url": "https://engineeringhulk.com/cs-it/operating-systems/", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions (deadlocks quiz)", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::cpu-scheduling",
+          "title": "CPU scheduling",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Scheduling and Memory",
+          "links": [
+            { "label": "OS formulas cheat sheet: completion, turnaround, waiting, response time", "url": "https://engineeringhulk.com/?p=5843", "platform": "Notes", "kind": "resource" },
+            { "label": "Scheduling: FCFS, SJF, round robin, priority, MLFQ with examples (LiU TDDB68)", "url": "https://www.ida.liu.se/~TDDB68/slides/pdf/lecture_06_scheduling.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Scheduling algorithms with worked tables (UMass CS 377 lecture 5)", "url": "https://none.cs.umass.edu/~shenoy/courses/fall14/lectures/Lec05.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Processor scheduling: FCFS, RR, SJF/SRTF, HRRN (Waterloo CS 350)", "url": "https://student.cs.uwaterloo.ca/~cs350/F03/notes/sched.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "CPU scheduling algorithms and aging (Mount Holyoke CS 432)", "url": "https://courses.teresco.org/cs432_f02/lectures/04-cpusched/04-cpusched.html", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions (CPU scheduling quiz)", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::i-o-scheduling",
+          "title": "I/O scheduling",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Scheduling and Memory",
+          "links": [
+            { "label": "Disk scheduling: FCFS, SSTF, SCAN, C-SCAN, LOOK, C-LOOK (LSU CSC 4103)", "url": "https://www.cct.lsu.edu/~kosar/csc4103-spring08/slides/18-Mass_Storage_IO-I.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Mass storage and disk scheduling with exercise (Buffalo CSE 421)", "url": "https://cse.buffalo.edu/faculty/tkosar/cse421-521_fall2011/slides/19-Mass_Storage_IO_I.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Disk scheduling algorithms compared (Siena CS 330 lecture 20)", "url": "https://courses.teresco.org/cs330_s12/lectures/lect20", "platform": "Notes", "kind": "resource" },
+            { "label": "Disk structure and scheduling with head-movement figures (lecture notes PDF)", "url": "https://jeppiaarinstitute.org/pdf/lectures/604.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "OS formulas cheat sheet: disk access time, seek distance, RAID", "url": "https://engineeringhulk.com/?p=5843", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions (input-output systems quiz)", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::memory-management",
+          "title": "Memory management",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Scheduling and Memory",
+          "links": [
+            { "label": "Paging, TLB, multilevel page tables (Bowdoin CSCI 3310 slides)", "url": "https://tildesites.bowdoin.edu/~sbarker/teaching/courses/os/26spring/slides/memory-paging.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Memory management: partitions, fragmentation, paging, TLB hit ratio (Rutgers CS 416)", "url": "https://people.cs.rutgers.edu/pxk/416/lectures/l-memory.html", "platform": "Notes", "kind": "resource" },
+            { "label": "Multilevel paging and the TLB (UMich EECS 482 lecture 12)", "url": "https://nicolehamilton.com/UMich Faculty Page/eecs482ss20/lectures/12 Multilevel paging eviction.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Paging and segmentation (Lecture 3 PDF)", "url": "https://hufocw.org/Download/file/25520", "platform": "Notes", "kind": "resource" },
+            { "label": "OS formulas cheat sheet: EAT, TLB, page table size, multilevel paging", "url": "https://engineeringhulk.com/?p=5843", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions (memory management quiz)", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::virtual-memory",
+          "title": "Virtual memory",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "Scheduling and Memory",
+          "links": [
+            { "label": "Virtual memory: paging, replacement algorithms, thrashing (UCI CompSci 143A)", "url": "https://ics.uci.edu/~mbdillen/compsci143a/notes/ch08.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Demand paging and page replacement: FIFO, MIN, LRU, clock (Bowdoin slides)", "url": "https://tildesites.bowdoin.edu/~sbarker/teaching/courses/os/26spring/slides/memory-paging.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Virtual memory: page replacement, LRU approximation, thrashing (CTU lecture 7)", "url": "https://cw.fel.cvut.cz/old/_media/courses/ae4b33oss/lecture-7-2014.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Virtual memory and demand paging (Rochester CSC 2/456 notes)", "url": "https://www.cs.rochester.edu/~scott/456/notes/07-virtual_memory", "platform": "Notes", "kind": "resource" },
+            { "label": "OS formulas cheat sheet: EAT with page faults, page fault rate", "url": "https://engineeringhulk.com/?p=5843", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions (memory management quiz)", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        },
+        {
+          "id": "gate::operating-systems::file-systems",
+          "title": "File systems",
+          "difficulty": "Uncategorized",
+          "platform": "Other",
+          "subcategory": "File Systems",
+          "links": [
+            { "label": "File allocation: contiguous, linked, indexed (Rochester CSC 256 lecture 15)", "url": "https://www.cs.rochester.edu/u/kshen/csc256-spring2007/lectures/lecture15-file1.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "Free space management: bit vector, linked list (LSU CSC 4103)", "url": "https://www.cct.lsu.edu/~kosar/csc4103-spring07/slides/16-File_System_II.pdf", "platform": "Notes", "kind": "resource" },
+            { "label": "File system implementation: FAT, indexed allocation, Unix inodes (Siena CS 330)", "url": "https://courses.teresco.org/cs330_s12/lectures/lect20", "platform": "Notes", "kind": "resource" },
+            { "label": "File system implementation, virtual file systems, RAID (UCalgary CPSC 457)", "url": "https://wiki.ucalgary.ca/page/Courses/Computer_Science/CPSC_457.S2016/Lecture_Notes/L13.html", "platform": "Notes", "kind": "resource" },
+            { "label": "OS formulas cheat sheet: inode maximum file size, disk accesses", "url": "https://engineeringhulk.com/?p=5843", "platform": "Notes", "kind": "resource" },
+            { "label": "YouTube: Operating System complete playlist (Gate Smashers)", "url": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiGz9donHRrE9I3Mwn6XdP8p", "platform": "YouTube", "kind": "resource" },
+            { "label": "NPTEL: Operating System (IIT Delhi, Prof. Sorav Bansal)", "url": "https://nptel.ac.in/courses/106102132", "platform": "Other", "kind": "resource" },
+            { "label": "GFG: Operating Systems GATE CSE previous year questions", "url": "https://geeksforgeeks.org/operating-systems-gate-questions", "platform": "PYQ", "kind": "resource" }
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": []
+}
