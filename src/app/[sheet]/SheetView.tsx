@@ -112,7 +112,7 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
                   rel="noopener noreferrer"
                   className="text-primary hover:underline hover:text-primary/80 transition-colors text-xl md:text-2xl mt-1"
                 >
-                  Drive Link
+                  {sheetMeta.playlistLabel}
                 </a>
               </>
             )}

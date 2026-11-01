@@ -9,6 +9,7 @@ export type SheetMeta = {
   accent: string;
   emoji: string;
   playlistUrl?: string;
+  playlistLabel?: string;
   /** Word used for completed items. Defaults to "Solved". */
   doneLabel?: string;
 };
@@ -23,6 +24,7 @@ export const sheetCatalog: SheetMeta[] = [
     accent: "sky",
     emoji: "📘",
     playlistUrl: "https://www.youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ",
+    playlistLabel: "Playlist",
   },
   {
     id: "pratyush",
@@ -33,6 +35,7 @@ export const sheetCatalog: SheetMeta[] = [
     accent: "sky",
     emoji: "📗",
     playlistUrl: "https://www.youtube.com/playlist?list=PLbJhGqY-mq47k_WLUtzVjmarUm1EuXPj2",
+    playlistLabel: "Playlist",
   },
   {
     id: "gate",
@@ -43,6 +46,7 @@ export const sheetCatalog: SheetMeta[] = [
     accent: "sky",
     emoji: "🎓",
     playlistUrl: "https://drive.google.com/drive/folders/1PoUJaFlgRQnJzKNhkr5jTfh8tM60zq1I?usp=sharing",
+    playlistLabel: "Drive Link",
     doneLabel: "Done",
   },
 ];
