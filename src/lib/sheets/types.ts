@@ -22,6 +22,9 @@ export interface SheetQuestion {
   subcategory?: string;
   note?: string;
   resourceLinks?: SheetLink[];
+  isCustom?: boolean;
+  patternId?: string;
+  sheetId?: string;
 }
 
 export interface SheetResource {

@@ -2,19 +2,30 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, Plus, X } from "lucide-react";
+import { signIn, useSession } from "next-auth/react";
 import { useTrackerStore } from "@/store/useTrackerStore";
 import { ProblemRow } from "./ProblemRow";
-import type { SheetPattern, SheetQuestion } from "@/lib/sheets/types";
+import type { Difficulty, SheetId, SheetPattern, SheetQuestion } from "@/lib/sheets/types";
 
 interface TopicCardProps {
   pattern: SheetPattern;
   index: number;
   /** Word for completed items, e.g. "Solved" (DSA) or "Done" (GATE). */
   doneLabel?: string;
+  sheetId: SheetId;
+  onQuestionAdded: (question: SheetQuestion) => void;
+  allowQuestionCreation: boolean;
 }
 
-export function TopicCard({ pattern, index, doneLabel = "Solved" }: TopicCardProps) {
+export function TopicCard({
+  pattern,
+  index,
+  doneLabel = "Solved",
+  sheetId,
+  onQuestionAdded,
+  allowQuestionCreation,
+}: TopicCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const { problemStates } = useTrackerStore();
 
@@ -23,9 +34,26 @@ export function TopicCard({ pattern, index, doneLabel = "Solved" }: TopicCardPro
   const solvedCount = allQuestions.filter(p => problemStates[p.id]?.status === 'solved').length;
   const progressPercent = totalProblems === 0 ? 0 : Math.round((solvedCount / totalProblems) * 100);
 
-  const renderGroup = (title: string, questions: SheetQuestion[], colorClass: string) => {
+  const renderGroup = (
+    title: string,
+    questions: SheetQuestion[],
+    colorClass: string,
+    difficulty: Difficulty = title as Difficulty,
+  ) => {
     if (questions.length === 0) return null;
-    return <ProblemGroup key={title} title={title} problems={questions} colorClass={colorClass} />;
+    return (
+      <ProblemGroup
+        key={title}
+        title={title}
+        problems={questions}
+        colorClass={colorClass}
+        difficulty={difficulty}
+        sheetId={sheetId}
+        patternId={pattern.id}
+        onQuestionAdded={onQuestionAdded}
+        allowQuestionCreation={allowQuestionCreation}
+      />
+    );
   };
 
   // Uncategorized questions are normally one "Other Practices" block. When every one of them
@@ -109,7 +137,7 @@ export function TopicCard({ pattern, index, doneLabel = "Solved" }: TopicCardPro
               {pattern.groups.find(g => g.difficulty === "Easy") && renderGroup("Easy", pattern.groups.find(g => g.difficulty === "Easy")!.questions, "text-sky-500")}
               {pattern.groups.find(g => g.difficulty === "Medium") && renderGroup("Medium", pattern.groups.find(g => g.difficulty === "Medium")!.questions, "text-amber-500")}
               {pattern.groups.find(g => g.difficulty === "Hard") && renderGroup("Hard", pattern.groups.find(g => g.difficulty === "Hard")!.questions, "text-rose-500")}
-              {uncategorized && uncategorizedSections.map(section => renderGroup(section.title, section.questions, section.colorClass))}
+              {uncategorized && uncategorizedSections.map(section => renderGroup(section.title, section.questions, section.colorClass, "Uncategorized"))}
             </div>
           </motion.div>
         )}
@@ -118,8 +146,32 @@ export function TopicCard({ pattern, index, doneLabel = "Solved" }: TopicCardPro
   );
 }
 
-function ProblemGroup({ title, problems, colorClass }: { title: string, problems: SheetQuestion[], colorClass: string }) {
+function ProblemGroup({
+  title,
+  problems,
+  colorClass,
+  difficulty,
+  sheetId,
+  patternId,
+  onQuestionAdded,
+  allowQuestionCreation,
+}: {
+  title: string;
+  problems: SheetQuestion[];
+  colorClass: string;
+  difficulty: Difficulty;
+  sheetId: SheetId;
+  patternId: string;
+  onQuestionAdded: (question: SheetQuestion) => void;
+  allowQuestionCreation: boolean;
+}) {
   const [isExpanded, setIsExpanded] = useState(true);
+  const [isAdding, setIsAdding] = useState(false);
+  const [titleInput, setTitleInput] = useState("");
+  const [urlInput, setUrlInput] = useState("");
+  const [isSaving, setIsSaving] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const { status } = useSession();
   const playlistLinks = Array.from(
     new Map(
       problems
@@ -150,6 +202,32 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
           </span>
         </div>
         <div className="flex items-center gap-2">
+          {status === "authenticated" || allowQuestionCreation ? (
+            <button
+              type="button"
+              onClick={(event) => {
+                event.stopPropagation();
+                setIsAdding((current) => !current);
+                setError(null);
+              }}
+              className="inline-flex items-center gap-1 rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
+              title={`Add a ${title.toLowerCase()} question`}
+            >
+              {isAdding ? <X className="h-3 w-3" /> : <Plus className="h-3 w-3" />}
+              {isAdding ? "Cancel" : "Add"}
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={(event) => {
+                event.stopPropagation();
+                signIn("github");
+              }}
+              className="text-[10px] font-medium text-muted-foreground hover:text-foreground"
+            >
+              Sign in to add
+            </button>
+          )}
           {playlistLinks.length > 0 && (
             <div className="flex items-center gap-1.5">
               {playlistLinks.map((link) => (
@@ -181,6 +259,64 @@ function ProblemGroup({ title, problems, colorClass }: { title: string, problems
             className="border-t border-border bg-background/50"
           >
             <div className="p-2 space-y-1.5">
+              {isAdding && (
+                <form
+                  onSubmit={async (event) => {
+                    event.preventDefault();
+                    setIsSaving(true);
+                    setError(null);
+                    try {
+                      const response = await fetch("/api/questions", {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({
+                          sheetId,
+                          patternId,
+                          title: titleInput,
+                          difficulty,
+                          url: urlInput,
+                        }),
+                      });
+                      const result = await response.json();
+                      if (!response.ok) throw new Error(result.error || "Failed to add question.");
+                      onQuestionAdded(result.question);
+                      setTitleInput("");
+                      setUrlInput("");
+                      setIsAdding(false);
+                    } catch (saveError) {
+                      setError(saveError instanceof Error ? saveError.message : "Failed to add question.");
+                    } finally {
+                      setIsSaving(false);
+                    }
+                  }}
+                  className="rounded-lg border border-primary/30 bg-primary/5 p-3 space-y-2"
+                  onClick={(event) => event.stopPropagation()}
+                >
+                  <input
+                    value={titleInput}
+                    onChange={(event) => setTitleInput(event.target.value)}
+                    placeholder={`Question title (${title})`}
+                    maxLength={200}
+                    required
+                    className="w-full rounded-md border border-border bg-background px-2.5 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+                  />
+                  <input
+                    value={urlInput}
+                    onChange={(event) => setUrlInput(event.target.value)}
+                    placeholder="Question URL (optional)"
+                    type="url"
+                    className="w-full rounded-md border border-border bg-background px-2.5 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-primary"
+                  />
+                  {error && <p className="text-xs text-danger">{error}</p>}
+                  <button
+                    type="submit"
+                    disabled={isSaving}
+                    className="rounded-md bg-primary px-3 py-1.5 text-xs font-medium text-primary-foreground disabled:opacity-50"
+                  >
+                    {isSaving ? "Adding..." : "Add question"}
+                  </button>
+                </form>
+              )}
               {problems.map((problem) => (
                 <ProblemRow key={problem.id} problem={problem} />
               ))}

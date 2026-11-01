@@ -1,16 +1,43 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSession } from "next-auth/react";
 import { useSheetData } from "@/hooks/useSheetData";
 import { TopicCard } from "@/components/TopicCard";
 import { Search, Loader2 } from "lucide-react";
-import type { SheetId, SheetPattern } from "@/lib/sheets/types";
+import type { SheetId, SheetQuestion } from "@/lib/sheets/types";
 import { getSheetMeta } from "@/lib/sheets/catalog";
 
 export function SheetView({ sheetId }: { sheetId: SheetId }) {
+  const isLocalDevelopment = process.env.NODE_ENV === "development";
   const [searchQuery, setSearchQuery] = useState("");
+  const [customQuestions, setCustomQuestions] = useState<SheetQuestion[]>([]);
+  const { status } = useSession();
   const { data, isLoading, error } = useSheetData(sheetId);
   const sheetMeta = getSheetMeta(sheetId);
+
+  useEffect(() => {
+    if (status !== "authenticated" && !isLocalDevelopment) return;
+    let active = true;
+
+    fetch(`/api/questions?sheetId=${encodeURIComponent(String(sheetId))}`)
+      .then(async (response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load your questions.");
+        }
+        return response.json() as Promise<{ questions?: SheetQuestion[] }>;
+      })
+      .then((result) => {
+        if (active) setCustomQuestions(result.questions ?? []);
+      })
+      .catch((loadError) => {
+        if (active) console.error("Custom question load error:", loadError);
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [isLocalDevelopment, sheetId, status]);
 
   if (isLoading) {
     return (
@@ -34,8 +61,24 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
     );
   }
 
+  const patternsWithCustomQuestions = data.patterns.map((pattern) => ({
+    ...pattern,
+    groups: pattern.groups.map((group) => ({
+      ...group,
+      questions: [
+        ...group.questions,
+        ...(status === "authenticated" || isLocalDevelopment ? customQuestions : []).filter(
+          (question) =>
+              question.patternId === pattern.id &&
+              question.difficulty === group.difficulty &&
+              question.sheetId === String(sheetId),
+        ),
+      ],
+    })),
+  }));
+
   // Filter patterns based on search query
-  const filteredPatterns = data.patterns.map(pattern => {
+  const filteredPatterns = patternsWithCustomQuestions.map(pattern => {
     // Filter questions inside each group
     const newGroups = pattern.groups.map(group => {
       const newQuestions = group.questions.filter(q => 
@@ -91,7 +134,15 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
 
       <div className="space-y-4">
         {filteredPatterns.map((pattern, index) => (
-          <TopicCard key={pattern.id} pattern={pattern} index={index + 1} doneLabel={sheetMeta.doneLabel} />
+          <TopicCard
+            key={pattern.id}
+            pattern={pattern}
+            index={index + 1}
+            doneLabel={sheetMeta.doneLabel}
+            sheetId={sheetId}
+            onQuestionAdded={(question) => setCustomQuestions((current) => [...current, question])}
+            allowQuestionCreation={status === "authenticated" || isLocalDevelopment}
+          />
         ))}
         {filteredPatterns.length === 0 && (
           <div className="text-center py-12 bg-card border border-border rounded-xl">
