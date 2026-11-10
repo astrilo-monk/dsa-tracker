@@ -137,7 +137,9 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
         
         <div className="relative w-full md:w-72 md:shrink-0">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground" />
-          <input 
+          <input
+            role="searchbox"
+            aria-label="Search problems"
             type="text" 
             placeholder="Search problems..."
             className="w-full pl-10 pr-4 py-2 bg-background border border-border rounded-md focus:outline-none focus:ring-1 focus:ring-primary text-sm shadow-sm transition-all duration-200"
@@ -148,9 +150,12 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
       </div>
 
       {sheetId === "pratyush" && (
-        <div className="inline-flex items-center p-1 bg-muted/50 rounded-lg border border-border">
+        <div role="tablist" aria-label="Pratyush views" className="inline-flex items-center p-1 bg-muted/50 rounded-lg border border-border">
           <button
             type="button"
+            role="tab"
+            aria-selected={activeView === "patterns"}
+            aria-controls="pratyush-pattern-list"
             onClick={() => setActiveView("patterns")}
             className={`px-4 py-1.5 text-sm font-medium rounded-md transition-colors ${
               activeView === "patterns" ? "bg-background text-foreground shadow-sm border border-border/50" : "text-muted-foreground hover:text-foreground"
@@ -160,6 +165,9 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
           </button>
           <button
             type="button"
+            role="tab"
+            aria-selected={activeView === "challenges"}
+            aria-controls="pratyush-pattern-list"
             onClick={() => setActiveView("challenges")}
             className={`px-4 py-1.5 text-sm font-medium rounded-md transition-colors ${
               activeView === "challenges" ? "bg-background text-foreground shadow-sm border border-border/50" : "text-muted-foreground hover:text-foreground"
@@ -170,7 +178,7 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
         </div>
       )}
 
-      <div className="space-y-4">
+      <div id={sheetId === "pratyush" ? "pratyush-pattern-list" : undefined} role={sheetId === "pratyush" ? "tabpanel" : undefined} className="space-y-4">
         {filteredPatterns.map((pattern, index) => (
           <TopicCard
             key={pattern.id}

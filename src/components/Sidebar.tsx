@@ -32,7 +32,9 @@ export function Sidebar() {
   return (
     <>
       <button 
-        className="lg:hidden fixed top-4 right-4 z-50 p-2 bg-card border border-border rounded-md shadow-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isOpen}
+        className="lg:hidden fixed top-[calc(1rem+env(safe-area-inset-top))] right-4 z-50 min-h-11 min-w-11 p-2 bg-card border border-border rounded-md shadow-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
         onClick={() => setIsOpen(!isOpen)}
       >
         {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -40,7 +42,7 @@ export function Sidebar() {
 
       <aside 
         className={cn(
-          "fixed inset-y-0 left-0 z-40 w-64 bg-[#0d1017]/95 backdrop-blur-xl border-r border-border flex flex-col transition-transform duration-300 ease-in-out",
+          "fixed inset-y-0 left-0 z-40 w-64 bg-[#0d1017]/95 backdrop-blur-xl border-r border-border flex flex-col transition-transform duration-300 ease-in-out pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)]",
           "lg:translate-x-0",
           isOpen ? "translate-x-0" : "-translate-x-full"
         )}
@@ -64,7 +66,7 @@ export function Sidebar() {
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "flex items-center space-x-3 px-3 py-2.5 rounded-lg transition-all duration-200 group relative",
+                  "flex items-center min-h-11 space-x-3 px-3 py-2.5 rounded-lg transition-all duration-200 group relative",
                   isActive 
                     ? "text-primary font-medium bg-primary/10 shadow-[inset_3px_0_0_var(--primary)]"
                     : "text-muted-foreground hover:bg-muted/80 hover:text-foreground"

@@ -77,17 +77,20 @@ export function TopicCard({
 
   return (
     <div className="bg-card/90 border border-border rounded-2xl overflow-hidden transition-all duration-200 hover:border-primary/40 hover:shadow-[0_12px_40px_rgba(0,0,0,0.2)] group/card">
-      <button 
+      <button
+        type="button"
+        aria-expanded={isExpanded}
+        aria-controls={`pattern-content-${pattern.id}`}
         onClick={() => setIsExpanded(!isExpanded)}
-        className="w-full px-5 py-4 flex items-center justify-between hover:bg-muted/40 transition-colors"
+        className="w-full min-h-16 px-5 py-4 flex items-center justify-between hover:bg-muted/40 transition-colors text-left"
       >
         <div className="flex items-center space-x-4">
           <div className="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center font-semibold text-sm border border-primary/20">
             {index}
           </div>
           <div className="text-left">
-            <h2 className="text-base font-semibold tracking-tight">{pattern.title}</h2>
-            <p className="text-xs text-muted-foreground mt-0.5">
+            <h2 className="text-base font-semibold tracking-tight text-balance">{pattern.title}</h2>
+            <p className="text-xs text-muted-foreground mt-0.5 tabular-nums">
               {solvedCount} / {totalProblems} {doneLabel}
               {pattern.weightage && <span className="text-muted-foreground/70"> · {pattern.weightage}</span>}
             </p>
@@ -112,10 +115,12 @@ export function TopicCard({
 
       <AnimatePresence>
         {isExpanded && (
-          <motion.div 
+          <motion.div
+            id={`pattern-content-${pattern.id}`}
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
+            style={{ transformOrigin: "top center" }}
             className="border-t border-border bg-[#0c0f16]/60"
           >
             <div className="p-4 sm:p-5 space-y-4">

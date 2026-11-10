@@ -1,8 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useTrackerStore, ProblemState } from "@/store/useTrackerStore";
-import { Check, Flame, ExternalLink, MessageSquare, Link2, BookOpen, Maximize2, X } from "lucide-react";
+import { Check, Flame, ExternalLink, MessageSquare, BookOpen, Maximize2, X } from "lucide-react";
 import { cn } from "./Sidebar";
 import { motion, AnimatePresence } from "framer-motion";
 import type { SheetQuestion, SheetLink } from "@/lib/sheets/types";
@@ -43,7 +43,7 @@ export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = f
   };
 
   return (
-    <div className="group rounded-xl border border-transparent bg-transparent hover:bg-[#151923] transition-all duration-200 hover:border-border/80 relative overflow-hidden">
+    <div className="group rounded-xl border border-transparent bg-transparent hover:bg-[#151923] transition-all duration-200 hover:border-border/80 relative overflow-hidden [view-transition-name:problem-row]">
       <div className="px-3 py-2.5 relative z-10">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         
@@ -51,8 +51,10 @@ export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = f
         <div className="flex items-start sm:items-center space-x-3 flex-1 min-w-0">
           <button 
             onClick={handleStatusChange}
+            aria-label={`Mark ${problem.title} as ${state.status === 'unsolved' ? 'solved' : state.status === 'solved' ? 'revising' : 'unsolved'}`}
             className={cn(
-              "mt-0.5 sm:mt-0 flex-shrink-0 w-5 h-5 rounded-[6px] border flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50",
+              "relative mt-0.5 sm:mt-0 flex-shrink-0 w-5 h-5 rounded-[6px] border flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50",
+              "after:absolute after:-inset-2.5 after:content-['']",
               state.status === 'solved' ? "bg-primary border-primary text-primary-foreground shadow-sm" : 
               state.status === 'revising' ? "bg-amber-500 border-amber-500 text-white shadow-sm" : 
               "border-border/80 hover:border-primary/70 text-transparent bg-background/80"
@@ -104,16 +106,39 @@ export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = f
         </div>
 
         <div className="flex items-center space-x-0.5 flex-shrink-0">
+            {additionalLinks.length > 0 && (
+              <div className="flex max-w-[min(42vw,20rem)] items-center gap-1 overflow-x-auto pr-1">
+                {additionalLinks.map((link: SheetLink) => (
+                  <a
+                    key={`${problem.id}-${link.url}`}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex shrink-0 items-center gap-1 rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
+                  >
+                    {link.kind === 'resource' || link.label.toLowerCase().includes('video') || link.url.includes('youtu') ? (
+                      <BookOpen className="w-3 h-3 flex-shrink-0" />
+                    ) : (
+                      <ExternalLink className="w-3 h-3 flex-shrink-0" />
+                    )}
+                    <span className="truncate">{link.label}</span>
+                  </a>
+                ))}
+              </div>
+            )}
             <button 
               onClick={() => setShowNotes(!showNotes)}
-              className={cn("p-1.5 rounded-lg transition-all duration-200", state.notes ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
+              aria-label={showNotes ? "Hide notes" : "Show notes"}
+              aria-expanded={showNotes}
+              className={cn("min-h-11 min-w-11 p-2 rounded-lg transition-all duration-200", state.notes ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
               title="Notes"
             >
               <MessageSquare className="w-4 h-4" />
             </button>
             <button 
               onClick={() => toggleImportant(problem.id)}
-              className={cn("p-1.5 rounded-lg transition-all duration-200", state.important ? "text-orange-500 bg-orange-500/10" : "text-muted-foreground hover:bg-muted/80")}
+              aria-label={state.important ? "Remove from important" : "Mark as important"}
+              className={cn("min-h-11 min-w-11 p-2 rounded-lg transition-all duration-200", state.important ? "text-orange-500 bg-orange-500/10" : "text-muted-foreground hover:bg-muted/80")}
               title="Mark Important"
             >
               <Flame className="w-4 h-4" />
@@ -121,26 +146,6 @@ export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = f
         </div>
         </div>
 
-        {additionalLinks.length > 0 && (
-          <div className="mt-2 ml-8 flex flex-wrap gap-1.5">
-            {additionalLinks.map((link: SheetLink) => (
-              <a
-                key={`${problem.id}-${link.url}`}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex max-w-full items-center gap-1 rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
-              >
-                {link.kind === 'resource' || link.label.toLowerCase().includes('video') || link.url.includes('youtu') ? (
-                  <BookOpen className="w-3 h-3 flex-shrink-0" />
-                ) : (
-                  <ExternalLink className="w-3 h-3 flex-shrink-0" />
-                )}
-                <span className="truncate">{link.label}</span>
-              </a>
-            ))}
-          </div>
-        )}
       </div>
 
       {/* Notes Section */}
@@ -153,7 +158,8 @@ export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = f
             className="border-t border-border bg-muted/20 px-3 py-2.5"
           >
             <div className="relative">
-              <textarea 
+              <textarea
+                aria-label={`Notes for ${problem.title}`}
                 value={tempNotes}
                 onChange={(e) => setTempNotes(e.target.value)}
                 placeholder="Add your personal notes, intuitions, or time complexities here..."
