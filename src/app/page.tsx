@@ -98,7 +98,7 @@ export default function Dashboard() {
             </div>
           ) : (
             <div className="space-y-4 flex-1">
-              {sheetsData.map(sheet => {
+              {sheetsData.map((sheet, index) => {
                 const sheetTotal = sheet.patterns.reduce((pAcc, pattern) => {
                   return pAcc + pattern.groups.reduce((gAcc, group) => gAcc + group.questions.length, 0);
                 }, 0);
@@ -111,7 +111,12 @@ export default function Dashboard() {
                 const meta = sheetCatalog.find(s => s.id === sheet.id);
                 
                 return (
-                  <Link href={meta?.href || "#"} key={sheet.id} className="block group">
+                  <Link
+                    href={meta?.href || "#"}
+                    key={sheet.id}
+                    className="block group animate-in fade-in slide-in-from-bottom-2 duration-300"
+                    style={{ animationDelay: `${index * 70}ms`, animationFillMode: "both" }}
+                  >
                     <div className="p-4 rounded-lg border border-border bg-background hover:bg-muted/30 transition-all duration-200">
                       <div className="flex justify-between items-center mb-3">
                         <div className="flex items-center gap-2">
@@ -172,7 +177,7 @@ function StatCard({ title, value, icon: Icon, color, bg }: { title: string, valu
       </div>
       <div>
         <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">{title}</p>
-        <p className="text-2xl font-semibold tracking-tight">{value}</p>
+        <p className="text-2xl font-semibold tracking-tight tabular-nums">{value}</p>
       </div>
     </motion.div>
   );
