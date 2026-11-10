@@ -12,6 +12,7 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
   const isLocalDevelopment = process.env.NODE_ENV === "development";
   const [searchQuery, setSearchQuery] = useState("");
   const [customQuestions, setCustomQuestions] = useState<SheetQuestion[]>([]);
+  const [activeView, setActiveView] = useState<"patterns" | "challenges">("patterns");
   const { status } = useSession();
   const { data, isLoading, error } = useSheetData(sheetId);
   const sheetMeta = getSheetMeta(sheetId);
@@ -63,22 +64,36 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
 
   const patternsWithCustomQuestions = data.patterns.map((pattern) => ({
     ...pattern,
-    groups: pattern.groups.map((group) => ({
+    groups: pattern.groups.map((group, groupIndex) => ({
       ...group,
       questions: [
         ...group.questions,
         ...(status === "authenticated" || isLocalDevelopment ? customQuestions : []).filter(
           (question) =>
               question.patternId === pattern.id &&
-              question.difficulty === group.difficulty &&
+              (sheetId === "pratyush" ? groupIndex === 0 : question.difficulty === group.difficulty) &&
               question.sheetId === String(sheetId),
         ),
       ],
     })),
   }));
 
-  // Filter patterns based on search query
-  const filteredPatterns = patternsWithCustomQuestions.map(pattern => {
+  const isProblemChallenge = (question: SheetQuestion) =>
+    /problem challenge/i.test(question.title);
+
+  const visiblePatterns = sheetId === "pratyush" && activeView === "challenges"
+    ? patternsWithCustomQuestions
+        .map((pattern) => ({
+          ...pattern,
+          groups: pattern.groups.map((group) => ({
+            ...group,
+            questions: group.questions.filter(isProblemChallenge),
+          })),
+        }))
+        .filter((pattern) => pattern.groups.some((group) => group.questions.length > 0))
+    : patternsWithCustomQuestions;
+
+  const filteredPatterns = visiblePatterns.map(pattern => {
     // Filter questions inside each group
     const newGroups = pattern.groups.map(group => {
       const newQuestions = group.questions.filter(q => 
@@ -132,6 +147,29 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
         </div>
       </div>
 
+      {sheetId === "pratyush" && (
+        <div className="inline-flex items-center p-1 bg-muted/50 rounded-lg border border-border">
+          <button
+            type="button"
+            onClick={() => setActiveView("patterns")}
+            className={`px-4 py-1.5 text-sm font-medium rounded-md transition-colors ${
+              activeView === "patterns" ? "bg-background text-foreground shadow-sm border border-border/50" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Patterns
+          </button>
+          <button
+            type="button"
+            onClick={() => setActiveView("challenges")}
+            className={`px-4 py-1.5 text-sm font-medium rounded-md transition-colors ${
+              activeView === "challenges" ? "bg-background text-foreground shadow-sm border border-border/50" : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            {data.challengeLabel ?? "Problem Challenges"}
+          </button>
+        </div>
+      )}
+
       <div className="space-y-4">
         {filteredPatterns.map((pattern, index) => (
           <TopicCard
@@ -140,6 +178,7 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
             index={index + 1}
             doneLabel={sheetMeta.doneLabel}
             sheetId={sheetId}
+            hideDifficulty={sheetId === "pratyush" && activeView === "challenges"}
             onQuestionAdded={(question) => setCustomQuestions((current) => [...current, question])}
             allowQuestionCreation={status === "authenticated" || isLocalDevelopment}
           />

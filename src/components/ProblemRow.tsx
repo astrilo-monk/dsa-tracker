@@ -10,9 +10,10 @@ import type { SheetQuestion, SheetLink } from "@/lib/sheets/types";
 interface ProblemRowProps {
   problem: SheetQuestion;
   isResourceOnly?: boolean;
+  hideDifficulty?: boolean;
 }
 
-export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps) {
+export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = false }: ProblemRowProps) {
   const { problemStates, markStatus, toggleImportant, updateNotes } = useTrackerStore();
   const state = problemStates[problem.id] || { status: 'unsolved', notes: '', bookmarked: false, important: false };
   const links = problem.links || [];
@@ -88,7 +89,7 @@ export function ProblemRow({ problem, isResourceOnly = false }: ProblemRowProps)
             )}
             
             <div className="flex flex-wrap items-center gap-1.5">
-              {!isResourceOnly && problem.difficulty !== "Uncategorized" && (
+              {!isResourceOnly && !hideDifficulty && problem.difficulty !== "Uncategorized" && (
                 <span className={cn("text-[10px] font-medium px-2 py-0.5 rounded-full border", getDifficultyColor(problem.difficulty))}>
                   {problem.difficulty}
                 </span>

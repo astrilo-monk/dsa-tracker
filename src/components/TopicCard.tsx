@@ -14,6 +14,7 @@ interface TopicCardProps {
   /** Word for completed items, e.g. "Solved" (DSA) or "Done" (GATE). */
   doneLabel?: string;
   sheetId: SheetId;
+  hideDifficulty?: boolean;
   onQuestionAdded: (question: SheetQuestion) => void;
   allowQuestionCreation: boolean;
 }
@@ -23,6 +24,7 @@ export function TopicCard({
   index,
   doneLabel = "Solved",
   sheetId,
+  hideDifficulty = false,
   onQuestionAdded,
   allowQuestionCreation,
 }: TopicCardProps) {
@@ -50,6 +52,7 @@ export function TopicCard({
         difficulty={difficulty}
         sheetId={sheetId}
         patternId={pattern.id}
+        hideDifficulty={hideDifficulty}
         onQuestionAdded={onQuestionAdded}
         allowQuestionCreation={allowQuestionCreation}
       />
@@ -134,10 +137,22 @@ export function TopicCard({
                 </div>
               )}
               
-              {pattern.groups.find(g => g.difficulty === "Easy") && renderGroup("Easy", pattern.groups.find(g => g.difficulty === "Easy")!.questions, "text-sky-500")}
-              {pattern.groups.find(g => g.difficulty === "Medium") && renderGroup("Medium", pattern.groups.find(g => g.difficulty === "Medium")!.questions, "text-amber-500")}
-              {pattern.groups.find(g => g.difficulty === "Hard") && renderGroup("Hard", pattern.groups.find(g => g.difficulty === "Hard")!.questions, "text-rose-500")}
-              {uncategorized && uncategorizedSections.map(section => renderGroup(section.title, section.questions, section.colorClass, "Uncategorized"))}
+              {hideDifficulty
+                ? (
+                  <div className="space-y-1.5">
+                    {allQuestions.map((problem) => (
+                      <ProblemRow key={problem.id} problem={problem} hideDifficulty />
+                    ))}
+                  </div>
+                )
+                : (
+                  <>
+                    {pattern.groups.find(g => g.difficulty === "Easy") && renderGroup("Easy", pattern.groups.find(g => g.difficulty === "Easy")!.questions, "text-sky-500")}
+                    {pattern.groups.find(g => g.difficulty === "Medium") && renderGroup("Medium", pattern.groups.find(g => g.difficulty === "Medium")!.questions, "text-amber-500")}
+                    {pattern.groups.find(g => g.difficulty === "Hard") && renderGroup("Hard", pattern.groups.find(g => g.difficulty === "Hard")!.questions, "text-rose-500")}
+                    {uncategorized && uncategorizedSections.map(section => renderGroup(section.title, section.questions, section.colorClass, "Uncategorized"))}
+                  </>
+                )}
             </div>
           </motion.div>
         )}
@@ -151,6 +166,7 @@ function ProblemGroup({
   problems,
   colorClass,
   difficulty,
+  hideDifficulty,
   sheetId,
   patternId,
   onQuestionAdded,
@@ -160,6 +176,7 @@ function ProblemGroup({
   problems: SheetQuestion[];
   colorClass: string;
   difficulty: Difficulty;
+  hideDifficulty: boolean;
   sheetId: SheetId;
   patternId: string;
   onQuestionAdded: (question: SheetQuestion) => void;
@@ -318,7 +335,7 @@ function ProblemGroup({
                 </form>
               )}
               {problems.map((problem) => (
-                <ProblemRow key={problem.id} problem={problem} />
+                <ProblemRow key={problem.id} problem={problem} hideDifficulty={hideDifficulty} />
               ))}
             </div>
           </motion.div>

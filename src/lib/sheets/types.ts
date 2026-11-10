@@ -53,6 +53,7 @@ export interface SheetDataset {
   title: string;
   slug: string;
   description: string;
+  challengeLabel?: string;
   patterns: SheetPattern[];
 }
 

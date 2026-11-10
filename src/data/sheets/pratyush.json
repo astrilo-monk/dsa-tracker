@@ -3,6 +3,7 @@
   "title": "Pratyush DSA Sheet",
   "slug": "pratyush",
   "description": "Complete Pratyush DSA curriculum.",
+  "challengeLabel": "Problem Challenges",
   "patterns": [
     {
       "id": "pratyush-pattern-two-pointers",
