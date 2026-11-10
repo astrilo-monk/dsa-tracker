@@ -81,17 +81,21 @@ export function SheetView({ sheetId }: { sheetId: SheetId }) {
   const isProblemChallenge = (question: SheetQuestion) =>
     /problem challenge/i.test(question.title);
 
-  const visiblePatterns = sheetId === "pratyush" && activeView === "challenges"
+  const visiblePatterns = sheetId !== "pratyush"
     ? patternsWithCustomQuestions
+    : patternsWithCustomQuestions
         .map((pattern) => ({
           ...pattern,
           groups: pattern.groups.map((group) => ({
             ...group,
-            questions: group.questions.filter(isProblemChallenge),
+            questions: group.questions.filter((question) =>
+              activeView === "challenges"
+                ? isProblemChallenge(question)
+                : !isProblemChallenge(question),
+            ),
           })),
         }))
-        .filter((pattern) => pattern.groups.some((group) => group.questions.length > 0))
-    : patternsWithCustomQuestions;
+        .filter((pattern) => pattern.groups.some((group) => group.questions.length > 0));
 
   const filteredPatterns = visiblePatterns.map(pattern => {
     // Filter questions inside each group
