@@ -5,20 +5,22 @@ import { useTrackerStore, ProblemState } from "@/store/useTrackerStore";
 import { Check, Flame, ExternalLink, MessageSquare, BookOpen, Maximize2, X } from "lucide-react";
 import { cn } from "./Sidebar";
 import { motion, AnimatePresence } from "framer-motion";
-import type { SheetQuestion, SheetLink } from "@/lib/sheets/types";
+import type { SheetQuestion, SheetLink, SheetId } from "@/lib/sheets/types";
 
 interface ProblemRowProps {
   problem: SheetQuestion;
   isResourceOnly?: boolean;
   hideDifficulty?: boolean;
+  sheetId?: SheetId;
 }
 
-export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = false }: ProblemRowProps) {
+export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = false, sheetId }: ProblemRowProps) {
   const { problemStates, markStatus, toggleImportant, updateNotes } = useTrackerStore();
   const state = problemStates[problem.id] || { status: 'unsolved', notes: '', bookmarked: false, important: false };
   const links = problem.links || [];
   const additionalLinks = links.slice(1);
-  
+  const useStackedGateLinks = sheetId === "gate" && additionalLinks.length > 0;
+
   const [showNotes, setShowNotes] = useState(false);
   const [isNotesExpanded, setIsNotesExpanded] = useState(false);
   const [tempNotes, setTempNotes] = useState(state.notes);
@@ -45,92 +47,139 @@ export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = f
   return (
     <div className="group rounded-xl border border-transparent bg-transparent hover:bg-[#151923] transition-all duration-200 hover:border-border/80 relative overflow-hidden [view-transition-name:problem-row]">
       <div className="px-3 py-2.5 relative z-10">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        
-        {/* Left Side: Status & Title */}
-        <div className="flex items-start sm:items-center space-x-3 flex-1 min-w-0">
-          <button 
-            onClick={handleStatusChange}
-            aria-label={`Mark ${problem.title} as ${state.status === 'unsolved' ? 'solved' : state.status === 'solved' ? 'revising' : 'unsolved'}`}
-            className={cn(
-              "relative mt-0.5 sm:mt-0 flex-shrink-0 w-5 h-5 rounded-[6px] border flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50",
-              "after:absolute after:-inset-2.5 after:content-['']",
-              state.status === 'solved' ? "bg-primary border-primary text-primary-foreground shadow-sm" : 
-              state.status === 'revising' ? "bg-amber-500 border-amber-500 text-white shadow-sm" : 
-              "border-border/80 hover:border-primary/70 text-transparent bg-background/80"
-            )}
-            title={`Status: ${state.status}`}
-          >
-            <Check className="w-3.5 h-3.5" strokeWidth={3} />
-          </button>
-          
-          <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3">
-            {links[0]?.url ? (
-              <a
-                href={links[0].url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cn(
-                  "font-medium text-sm leading-snug hover:text-primary transition-colors inline-flex items-center gap-1.5 w-fit",
-                  state.status === 'solved' && "text-muted-foreground line-through opacity-70"
-                )}
-              >
-                {isResourceOnly && <BookOpen className="w-3.5 h-3.5 text-muted-foreground" />}
-                <span className="hover:underline line-clamp-1">{problem.title}</span>
-              </a>
-            ) : (
-              // Syllabus topics (GATE) have no link, so don't render a dead "#" anchor.
-              <span
-                className={cn(
-                  "font-medium text-sm leading-snug inline-flex items-center gap-1.5 w-fit",
-                  state.status === 'solved' && "text-muted-foreground line-through opacity-70"
-                )}
-              >
-                {problem.title}
-              </span>
-            )}
+        <div className={cn(
+          "flex gap-3",
+          useStackedGateLinks ? "flex-col" : "flex-col sm:flex-row sm:items-center justify-between"
+        )}>
+          {/* Left Side: Status & Title */}
+          <div className="flex items-start sm:items-center space-x-3 flex-1 min-w-0">
+            <button 
+              onClick={handleStatusChange}
+              aria-label={`Mark ${problem.title} as ${state.status === 'unsolved' ? 'solved' : state.status === 'solved' ? 'revising' : 'unsolved'}`}
+              className={cn(
+                "relative mt-0.5 sm:mt-0 flex-shrink-0 w-5 h-5 rounded-[6px] border flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary/50",
+                "after:absolute after:-inset-2.5 after:content-['']",
+                state.status === 'solved' ? "bg-primary border-primary text-primary-foreground shadow-sm" : 
+                state.status === 'revising' ? "bg-amber-500 border-amber-500 text-white shadow-sm" : 
+                "border-border/80 hover:border-primary/70 text-transparent bg-background/80"
+              )}
+              title={`Status: ${state.status}`}
+            >
+              <Check className="w-3.5 h-3.5" strokeWidth={3} />
+            </button>
             
-            <div className="flex flex-wrap items-center gap-1.5">
-              {!isResourceOnly && !hideDifficulty && problem.difficulty !== "Uncategorized" && (
-                <span className={cn("text-[10px] font-medium px-2 py-0.5 rounded-full border", getDifficultyColor(problem.difficulty))}>
-                  {problem.difficulty}
+            <div className="flex-1 min-w-0 flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3">
+              {links[0]?.url ? (
+                <a
+                  href={links[0].url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={cn(
+                    "font-medium text-sm leading-snug hover:text-primary transition-colors inline-flex items-center gap-1.5 w-fit",
+                    state.status === 'solved' && "text-muted-foreground line-through opacity-70"
+                  )}
+                >
+                  {isResourceOnly && <BookOpen className="w-3.5 h-3.5 text-muted-foreground" />}
+                  <span className="hover:underline line-clamp-1">{problem.title}</span>
+                </a>
+              ) : (
+                // Syllabus topics (GATE) have no link, so don't render a dead "#" anchor.
+                <span
+                  className={cn(
+                    "font-medium text-sm leading-snug inline-flex items-center gap-1.5 w-fit",
+                    state.status === 'solved' && "text-muted-foreground line-through opacity-70"
+                  )}
+                >
+                  {problem.title}
                 </span>
               )}
-              {problem.platform && problem.platform !== 'Other' && (
-                <span className="text-[10px] font-medium px-2 py-0.5 rounded-full border border-border bg-muted text-muted-foreground">
-                  {problem.platform}
-                </span>
-              )}
+              
+              <div className="flex flex-wrap items-center gap-1.5">
+                {!isResourceOnly && !hideDifficulty && problem.difficulty !== "Uncategorized" && (
+                  <span className={cn("text-[10px] font-medium px-2 py-0.5 rounded-full border", getDifficultyColor(problem.difficulty))}>
+                    {problem.difficulty}
+                  </span>
+                )}
+                {problem.platform && problem.platform !== 'Other' && (
+                  <span className="text-[10px] font-medium px-2 py-0.5 rounded-full border border-border bg-muted text-muted-foreground">
+                    {problem.platform}
+                  </span>
+                )}
+              </div>
             </div>
           </div>
+
+          {!useStackedGateLinks && (
+            <div className="self-center sm:self-auto flex items-center space-x-0.5 flex-shrink-0">
+              {additionalLinks.length > 0 && (
+                <div className="flex max-w-[min(42vw,20rem)] items-center gap-1 overflow-x-auto pr-1">
+                  {additionalLinks.map((link: SheetLink) => (
+                    <a
+                      key={`${problem.id}-${link.url}`}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex shrink-0 items-center gap-1 rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
+                    >
+                      {link.kind === 'resource' || link.label.toLowerCase().includes('video') || link.url.includes('youtu') ? (
+                        <BookOpen className="w-3 h-3 flex-shrink-0" />
+                      ) : (
+                        <ExternalLink className="w-3 h-3 flex-shrink-0" />
+                      )}
+                      <span className="truncate">{link.label}</span>
+                    </a>
+                  ))}
+                </div>
+              )}
+              <button 
+                onClick={() => setShowNotes(!showNotes)}
+                aria-label={showNotes ? "Hide notes" : "Show notes"}
+                aria-expanded={showNotes}
+                className={cn("inline-flex min-h-11 min-w-11 items-center justify-center p-2 leading-none rounded-lg transition-all duration-200", state.notes ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
+                title="Notes"
+              >
+                <MessageSquare className="w-4 h-4" />
+              </button>
+              <button 
+                onClick={() => toggleImportant(problem.id)}
+                aria-label={state.important ? "Remove from important" : "Mark as important"}
+                className={cn("inline-flex min-h-11 min-w-11 items-center justify-center p-2 leading-none rounded-lg transition-all duration-200", state.important ? "text-orange-500 bg-orange-500/10" : "text-muted-foreground hover:bg-muted/80")}
+                title="Mark Important"
+              >
+                <Flame className="w-4 h-4" />
+              </button>
+            </div>
+          )}
         </div>
 
-        <div className="flex items-center space-x-0.5 flex-shrink-0">
-            {additionalLinks.length > 0 && (
-              <div className="flex max-w-[min(42vw,20rem)] items-center gap-1 overflow-x-auto pr-1">
-                {additionalLinks.map((link: SheetLink) => (
-                  <a
-                    key={`${problem.id}-${link.url}`}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex shrink-0 items-center gap-1 rounded-md border border-border bg-background/70 px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
-                  >
-                    {link.kind === 'resource' || link.label.toLowerCase().includes('video') || link.url.includes('youtu') ? (
-                      <BookOpen className="w-3 h-3 flex-shrink-0" />
-                    ) : (
-                      <ExternalLink className="w-3 h-3 flex-shrink-0" />
-                    )}
-                    <span className="truncate">{link.label}</span>
-                  </a>
-                ))}
-              </div>
-            )}
+        {useStackedGateLinks && (
+          <div className="mt-2 ml-8 flex flex-wrap items-center gap-1.5">
+            {additionalLinks.map((link: SheetLink) => (
+              <a
+                key={`${problem.id}-${link.url}`}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex max-w-full items-center gap-1.5 rounded-md border border-border bg-background/70 px-2 py-1 text-[10px] font-medium text-muted-foreground transition-colors hover:border-primary/30 hover:text-foreground"
+              >
+                {link.kind === 'resource' || link.label.toLowerCase().includes('video') || link.url.includes('youtu') ? (
+                  <BookOpen className="w-3 h-3 flex-shrink-0" />
+                ) : (
+                  <ExternalLink className="w-3 h-3 flex-shrink-0" />
+                )}
+                <span className="max-w-[18rem] sm:max-w-[26rem] truncate">{link.label}</span>
+              </a>
+            ))}
+          </div>
+        )}
+
+        {useStackedGateLinks && (
+          <div className="mt-2 flex justify-end items-center space-x-0.5 flex-shrink-0">
             <button 
               onClick={() => setShowNotes(!showNotes)}
               aria-label={showNotes ? "Hide notes" : "Show notes"}
               aria-expanded={showNotes}
-              className={cn("min-h-11 min-w-11 p-2 rounded-lg transition-all duration-200", state.notes ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
+              className={cn("inline-flex min-h-11 min-w-11 items-center justify-center p-2 leading-none rounded-lg transition-all duration-200", state.notes ? "text-primary bg-primary/10" : "text-muted-foreground hover:bg-muted/80")}
               title="Notes"
             >
               <MessageSquare className="w-4 h-4" />
@@ -138,14 +187,13 @@ export function ProblemRow({ problem, isResourceOnly = false, hideDifficulty = f
             <button 
               onClick={() => toggleImportant(problem.id)}
               aria-label={state.important ? "Remove from important" : "Mark as important"}
-              className={cn("min-h-11 min-w-11 p-2 rounded-lg transition-all duration-200", state.important ? "text-orange-500 bg-orange-500/10" : "text-muted-foreground hover:bg-muted/80")}
+              className={cn("inline-flex min-h-11 min-w-11 items-center justify-center p-2 leading-none rounded-lg transition-all duration-200", state.important ? "text-orange-500 bg-orange-500/10" : "text-muted-foreground hover:bg-muted/80")}
               title="Mark Important"
             >
               <Flame className="w-4 h-4" />
             </button>
-        </div>
-        </div>
-
+          </div>
+        )}
       </div>
 
       {/* Notes Section */}

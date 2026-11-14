@@ -136,7 +136,7 @@ export function TopicCard({
                          links: resource.links,
                          platform: resource.links[0]?.platform || "Other"
                        };
-                       return <ProblemRow key={pseudoQuestion.id} problem={pseudoQuestion} isResourceOnly={true} />;
+                       return <ProblemRow key={pseudoQuestion.id} problem={pseudoQuestion} isResourceOnly={true} sheetId={sheetId} />;
                     })}
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export function TopicCard({
                 ? (
                   <div className="space-y-1.5">
                     {allQuestions.map((problem) => (
-                      <ProblemRow key={problem.id} problem={problem} hideDifficulty />
+                      <ProblemRow key={problem.id} problem={problem} hideDifficulty sheetId={sheetId} />
                     ))}
                   </div>
                 )
@@ -340,7 +340,7 @@ function ProblemGroup({
                 </form>
               )}
               {problems.map((problem) => (
-                <ProblemRow key={problem.id} problem={problem} hideDifficulty={hideDifficulty} />
+                <ProblemRow key={problem.id} problem={problem} hideDifficulty={hideDifficulty} sheetId={sheetId} />
               ))}
             </div>
           </motion.div>
